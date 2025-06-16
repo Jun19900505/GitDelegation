@@ -23,33 +23,27 @@ Assuming that $\omega_{s}>0$, the analysis of an opaque fund largely follows the
          \hat{\omega}_{s} = \mathrm{Var}[s|x+e] = \frac{\omega_{s}\omega_{e}}{\beta^2 \omega_{s} + \omega_{e}}.
      \end{equation}
  \end{lemma}
- Investors update their belief about the realized skill using $x+e$, where $\xi$ measures how much they rely on the fund information provided by the manager. Holding $\beta$ constant, $\xi$ is large when investors' prior is unreliable ($\omega_{s}$ is large) and the fund information is transparent ($\omega_{e}$ is small). In what follows, the updated expectation about the manager's realized skill, $\hat{s}$, is referred to as the \textit{reputation}. 
+ Investors update their belief about the realized skill using $x+e$, where $\xi$ measures how much they rely on the fund information provided by the manager. Holding $\beta$ constant, $\xi$ is large when investors' prior is unreliable ($\omega_{s}$ is large) and the fund information is transparent ($\omega_{e}$ is small). In what follows, the updated expectation about the manager's realized skill, $\hat{s}$, is referred to as the \textit{reputation}.  
 
+ \subsection{Manager's Optimization} \label{ss:optimization_opaque}
+Following the same procedures as the transparent benchmark, the manager's optimization problem in (\ref{eq:managerproblem_transparent}) is re-written as follows:
 \begin{equation}
-    F(\beta) = 
+	\max_{x}\ sx - \lambda x^2 + \theta(1-\lambda\beta)\beta \left[\xi^2(x^2 + \omega_{e}) + \hat{\omega}_{s}\right].\label{eq:managerproblem opaque}
 \end{equation}
-With this $\hat{s}$, the trader's objective in equation \eqref{max_prob} can be written as a simple quadratic function of $x$, as presented in the following lemma.
+As in the baseline model, the first two terms of equation (\ref{eq:managerproblem opaque}) represent the trader's expected trading profit. The third term corresponds to her profits from the fund flow, $M$, which also increases with $|x|$ because she can potentially inflate her reputation $|\hat{s}|$ by placing a large order (either buy or sell).
 
-\begin{lemma}[Trader's problem] \label{lemma:maximization} Each trader's maximization problem is
-\begin{equation}
-\max_{x}\ s x-\lambda x^{2}+\theta\xi^{2}\left(\gamma^{2}x^{2}+2\gamma(1-\gamma)s x\right).\label{max_prob_2}
-\end{equation}
-\end{lemma}
-
-The first term of equation \eqref{max_prob_2} is the trader's expected trading revenue. The second term represents the trading cost resulting from her price impact, which is increasing in the size of her trade, $|x|$. The third term corresponds to her reputation benefit, which also increases with $|x|$ because she can potentially inflate her reputation $|\hat{s}|$ by placing a large order (either buy or sell) and influencing the price that the recruiter observes.
-
-The unique solution to \eqref{max_prob_2} (given $\beta$) is
+The unique solution to \eqref{eq:managerproblem opaque} (given $\beta$) is
 \begin{equation}
 x=F(\beta)s,\label{x}
 \end{equation}
 where
 \begin{equation}
-F(\beta)\equiv\frac{1+2\theta\xi^{2}\gamma(1-\gamma)}{2\left(\lambda-\theta\xi^{2}\gamma^{2}\right)}.\label{F}
+F(\beta)\equiv\frac{1}{2\left(\lambda-\theta(1-\lambda\beta)\beta\xi^{2}\right)}.\label{F}
 \end{equation}
-$F(\cdot)$ is a nonlinear function of $\beta$ because $\lambda$, $\xi$, and $\gamma$ are functions of $\beta$. 
+$F(\cdot)$ is a nonlinear in $\beta$ because $\lambda$ and $\xi$ are functions of $\beta$. 
 
 %===========================================
-\subsection{Equilibrium} \label{ss:equilibrium}
+\subsection{Equilibrium under Opacity} \label{ss:equilibrium}
 Each trader optimally chooses \eqref{x} given that the market maker and the recruiter believe that she follows strategy \eqref{x_conj}. In equilibrium, their beliefs must be correct, that is, \eqref{x_conj} and \eqref{x} must be consistent with each other, requiring the following condition:
 \begin{equation}
 \beta=F(\beta).\label{fixed_point}
