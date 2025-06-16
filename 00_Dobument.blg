@@ -11,46 +11,47 @@ Database file #1: Reference.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--there is no volume, number, and pages in anton2021best
 Warning--there's a number but no volume in di2015fake
-You've used 20 entries,
+You've used 22 entries,
             6828 wiz_defined-function locations,
-            1426 strings with 12683 characters,
-and the built_in function-call counts, 22648 in all, are:
-= -- 3574
-> -- 726
-< -- 59
-+ -- 236
-- -- 235
-* -- 1315
-:= -- 2813
-add.period$ -- 20
-call.type$ -- 20
-change.case$ -- 146
-chr.to.int$ -- 20
-cite$ -- 21
-duplicate$ -- 689
-empty$ -- 1191
-format.name$ -- 224
-if$ -- 5897
+            1437 strings with 12953 characters,
+and the built_in function-call counts, 24722 in all, are:
+= -- 3905
+> -- 806
+< -- 64
++ -- 262
+- -- 262
+* -- 1437
+:= -- 3079
+add.period$ -- 22
+call.type$ -- 22
+change.case$ -- 161
+chr.to.int$ -- 22
+cite$ -- 24
+duplicate$ -- 747
+empty$ -- 1293
+format.name$ -- 250
+if$ -- 6439
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 68
-num.names$ -- 170
-pop$ -- 236
+newline$ -- 74
+num.names$ -- 186
+pop$ -- 260
 preamble$ -- 1
-purify$ -- 146
+purify$ -- 161
 quote$ -- 0
-skip$ -- 1743
+skip$ -- 1896
 stack$ -- 0
-substring$ -- 2076
-swap$ -- 189
-text.length$ -- 19
+substring$ -- 2240
+swap$ -- 198
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 340
-warning$ -- 1
-while$ -- 167
+type$ -- 374
+warning$ -- 2
+while$ -- 180
 width$ -- 0
-write$ -- 306
-(There was 1 warning)
+write$ -- 335
+(There were 2 warnings)
