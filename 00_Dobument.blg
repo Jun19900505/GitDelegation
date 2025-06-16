@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: 00_Dobument.aux
+The style file: econ-aea.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: Reference.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--there's a number but no volume in di2015fake
+You've used 20 entries,
+            6828 wiz_defined-function locations,
+            1426 strings with 12683 characters,
+and the built_in function-call counts, 22648 in all, are:
+= -- 3574
+> -- 726
+< -- 59
++ -- 236
+- -- 235
+* -- 1315
+:= -- 2813
+add.period$ -- 20
+call.type$ -- 20
+change.case$ -- 146
+chr.to.int$ -- 20
+cite$ -- 21
+duplicate$ -- 689
+empty$ -- 1191
+format.name$ -- 224
+if$ -- 5897
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 68
+num.names$ -- 170
+pop$ -- 236
+preamble$ -- 1
+purify$ -- 146
+quote$ -- 0
+skip$ -- 1743
+stack$ -- 0
+substring$ -- 2076
+swap$ -- 189
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 340
+warning$ -- 1
+while$ -- 167
+width$ -- 0
+write$ -- 306
+(There was 1 warning)

@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  This bbl file is created by aea.bst ver.3.2
+%  The latest aea.bst is available at
+%  <https://github.com/ShiroTakeda/econ-bst>
+
+\begin{thebibliography}{xxx}
+
+\harvarditem[Berk and Green]{Berk and Green}{2004}{berk2004mutual}
+\textbf{Berk, Jonathan~B, and Richard~C Green.} 2004. ``Mutual fund flows and performance in rational markets.'' \textit{Journal of Political Economy} 112 (6):   1269--1295.
+
+\harvarditem[Bijlsma et~al.]{Bijlsma, Boone, and Zwart}{2018}{bijlsma2018competition}
+\textbf{Bijlsma, Michiel, Jan Boone, and Gijsbert Zwart.} 2018. ``Competition for traders and risk.'' \textit{The RAND Journal of Economics} 49 (4):   855--876.
+
+\harvarditem[Busse et~al.]{Busse, Goyal, and Wahal}{2010}{busse2010performance}
+\textbf{Busse, Jeffrey~A, Amit Goyal, and Sunil Wahal.} 2010. ``Performance and persistence in institutional investment management.'' \textit{The Journal of Finance} 65 (2):   765--790.
+
+\harvarditem[C{\'e}l{\'e}rier and Vall{\'e}e]{C{\'e}l{\'e}rier and Vall{\'e}e}{2019}{celerier2019returns}
+\textbf{C{\'e}l{\'e}rier, Claire, and Boris Vall{\'e}e.} 2019. ``Returns to talent and the finance wage premium.'' \textit{The Review of Financial Studies} 32 (10):   4005--4040.
+
+\harvarditem[Cespa and Foucault]{Cespa and Foucault}{2014}{cespa2014illiquidity}
+\textbf{Cespa, Giovanni, and Thierry Foucault.} 2014. ``Illiquidity contagion and liquidity crashes.'' \textit{The Review of Financial Studies} 27 (6):   1615--1660.
+
+\harvarditem[Cespa and Vives]{Cespa and Vives}{2015}{cespa2015beauty}
+\textbf{Cespa, Giovanni, and Xavier Vives.} 2015. ``The beauty contest and short-term trading.'' \textit{The Journal of Finance} 70 (5):   2099--2154.
+
+\harvarditem[Dasgupta and Prat]{Dasgupta and Prat}{2008}{dasgupta2008information}
+\textbf{Dasgupta, Amil, and Andrea Prat.} 2008. ``Information aggregation in financial markets with career concerns.'' \textit{Journal of Economic Theory} 143 (1):   83--113.
+
+\harvarditem[Dasgupta]{Dasgupta}{2006}{dasgupta2006financial}
+\textbf{Dasgupta, Amiland Andrea~Prat.} 2006. ``Financial equilibrium with career concerns.'' \textit{Theoretical Economics} 1 (1):   67--93.
+
+\harvarditem[DiMaggio]{DiMaggio}{2015}{di2015fake}
+\textbf{DiMaggio, Marco.} 2015. ``Fake alphas, tail risk and reputation traps.'' \textit{Columbia Business School Research Paper} (14-4): .
+
+\harvarditem[Froot et~al.]{Froot, Scharfstein, and Stein}{1992}{froot1992herd}
+\textbf{Froot, Kenneth~A, David~S Scharfstein, and Jeremy~C Stein.} 1992. ``Herd on the street: Informational inefficiencies in a market with short-term speculation.'' \textit{The Journal of Finance} 47 (4):   1461--1484.
+
+\harvarditem[G{\^a}rleanu and Pedersen]{G{\^a}rleanu and Pedersen}{2018}{garleanu2018efficiently}
+\textbf{G{\^a}rleanu, Nicolae, and Lasse~Heje Pedersen.} 2018. ``Efficiently inefficient markets for assets and asset management.'' \textit{The Journal of Finance} 73 (4):   1663--1712.
+
+\harvarditem[Goldstein et~al.]{Goldstein, Ozdenoren, and Yuan}{2013}{goldstein2013trading}
+\textbf{Goldstein, Itay, Emre Ozdenoren, and Kathy Yuan.} 2013. ``Trading frenzies and their impact on real investment.'' \textit{Journal of Financial Economics} 109 (2):   566--582.
+
+\harvarditem[Greenwood and Thesmar]{Greenwood and Thesmar}{2011}{greenwood2011stock}
+\textbf{Greenwood, Robin, and David Thesmar.} 2011. ``Stock price fragility.'' \textit{Journal of Financial Economics} 102 (3):   471--490.
+
+\harvarditem[Guerrieri and Kondor]{Guerrieri and Kondor}{2012}{guerrieri2012fund}
+\textbf{Guerrieri, Veronica, and P{\'e}ter Kondor.} 2012. ``Fund managers, career concerns, and asset price volatility.'' \textit{American Economic Review} 102 (5):   1986--2017.
+
+\harvarditem[Kosowski et~al.]{Kosowski, Timmermann, Wermers, and White}{2006}{kosowski2006can}
+\textbf{Kosowski, Robert, Allan Timmermann, Russ Wermers, and Hal White.} 2006. ``Can mutual fund “stars” really pick stocks? New evidence from a bootstrap analysis.'' \textit{The Journal of Finance} 61 (6):   2551--2595.
+
+\harvarditem[Kyle]{Kyle}{1985}{kyle1985continuous}
+\textbf{Kyle, Albert~S.} 1985. ``Continuous auctions and insider trading.'' \textit{Econometrica}  1315--1335.
+
+\harvarditem[Malliaris and Yan]{Malliaris and Yan}{2021}{malliaris2021reputation}
+\textbf{Malliaris, Steven, and Hongjun Yan.} 2021. ``Reputation concerns and slow-moving capital.'' \textit{The Review of Asset Pricing Studies} 11 (3):   580--609.
+
+\harvarditem[Philippon and Reshef]{Philippon and Reshef}{2012}{philippon2012wages}
+\textbf{Philippon, Thomas, and Ariell Reshef.} 2012. ``Wages and human capital in the US finance industry: 1909--2006.'' \textit{The Quarterly Journal of Economics} 127 (4):   1551--1609.
+
+\harvarditem[Veldkamp]{Veldkamp}{2006}{veldkamp2006media}
+\textbf{Veldkamp, Laura~L.} 2006. ``Media frenzies in markets for financial information.'' \textit{American Economic Review} 96 (3):   577--601.
+
+\harvarditem[Wermers]{Wermers}{2000}{wermers2000mutual}
+\textbf{Wermers, Russ.} 2000. ``Mutual fund performance: An empirical decomposition into stock-picking talent, style, transactions costs, and expenses.'' \textit{The Journal of Finance} 55 (4):   1655--1695.
+
+\end{thebibliography}
