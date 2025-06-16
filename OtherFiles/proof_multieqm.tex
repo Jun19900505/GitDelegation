@@ -1,0 +1,331 @@
+In the following analyses, denote
+\begin{equation}
+a=\frac{\omega_{u,0}}{\omega_{s}},\ b=\frac{\omega_{u,0}}{\omega_{\delta}},\label{eq:ab}
+\end{equation}
+so that we rewrite equation (\ref{fixed_point}) as
+\begin{align}
+\beta & =F(\beta)\equiv\frac{1+2\theta\left(\frac{1}{a+b+\beta^{2}}\right)^{2}b\beta}{2\left(\frac{\beta}{\beta^{2}+a}-\theta\left(\frac{\beta}{a+b+\beta^{2}}\right)^{2}\right)}.\label{eq:beta=Fbeta}
+\end{align}
+By rearranging (\ref{eq:beta=Fbeta}), the equilibrium $\beta$ solves the following condition.
+\begin{equation}
+2\theta\beta=J(\beta^{2}),\label{eq:eqcond}
+\end{equation}
+where, by denoting $\beta^{2} = y$, 
+\begin{equation}
+J(y)=\frac{\left(y-a\right)\left(y+b+a\right)^{2}}{\left(y+a\right)\left(y+b\right)}.\label{eq:J}
+\end{equation}
+
+The first-order derivative of the RHS of (\ref{eq:eqcond}) with respect
+to $\beta$ is 
+\begin{equation}
+K^{(1)}(\beta)\equiv2\beta J^{(1)}(\beta^{2}),\label{eq:K1}
+\end{equation}
+with
+\begin{equation}
+J^{(1)}(y) \equiv \frac{N(y)}{\left(y+a\right)^{2}\left(y+b\right)^{2}},\label{eq:J1}\\
+\end{equation}
+where the numerator is 
+\[
+N(y)=y^{4}+2(a+b)y^{3}+n_{2}y^{2}+n_{1}y+n_{0}
+\]
+with coefficients being
+\[
+n_{2}=2a^{2}+6ab+b^{2},
+\]
+\[
+n_{1}=2a\left[3b^{2}+3ab+a^{2}\right],
+\]
+\[
+n_{0}=a\left(a^{2}+ab+2b^{2}\right)(a+b).
+\]
+
+From (\ref{eq:J}) and (\ref{eq:J1}), $y=a$ is the unique solution to $J(y)=0$ in $y>0$, and $J(y)$ is increasing in $y$ for $y\geq a$. Hence, there is no equilibrium in $y<a$, and we focus on $y\geq  a$. 
+
+The second-order derivative of the RHS of (\ref{eq:eqcond}) with
+respect to $\beta$ is expressed as
+\begin{align}
+K^{(2)}(y) & \equiv2\left(J^{(1)}(y)+2yJ^{(2)}(y)\right),\label{eq:K2def}
+\end{align}
+where $J^{(2)}$ denotes the second-order derivative of $J$ with
+respect to $y$. 
+$K^{(1)}$ and $K^{(2)}$ have the following properties: 
+\begin{lemma}\label{lem:K(1)K(2)}(i) $K^{(1)}(\beta)$ takes a U-shaped curve
+in relation to $\beta$.\\
+(ii) $K^{(2)}(a)<0$ and $K^{(2)}(\infty)>0$. There exists a unique
+solution to $K^{(2)}(y)=0$.
+\end{lemma}
+
+\begin{proof}
+Note that point (i) directly follows from point (ii). By denoting that $N^{(1)}(y)=\frac{dN(y)}{dy}$, it holds that 
+\begin{equation}
+J^{(1)}(y)+2yJ^{(2)}(y) =J^{(1)}(y)\frac{-7y^{2}-3(a+b)y+ab}{\left(y+a\right)\left(y+b\right)}+2y\frac{\left(y^{2}+(a+b)y+ab\right)N^{(1)}(y)}{\left(y+a\right)^{3}\left(y+b\right)^{3}}.\label{eq:K2}
+\end{equation}
+Evaluating at $y=a$, 
+\begin{align*}
+J^{(1)}(a)+2aJ^{(2)}(a) & =-J^{(1)}(a)\frac{5a+b}{a+b}+\frac{N^{(1)} (y)}{2a\left(a+b\right)^{2}}\\
+ & \propto-2a(a+b)(5a+b)J^{(1)}(a)+N^{(1)}(a)\\
+ & =-4a^{3}-b\left(4+b\right)a-b^{3}\\
+ & <0.
+\end{align*}
+Therefore, $K^{(2)}(a)<0$ holds. 
+
+The numerator of (\ref{eq:K2}) is summarized as 
+\begin{align*}
+T(y) & =-\left[y^{4}+2(a+b)y^{3}+n_{2}y^{2}+n_{1}y+n_{0}\right]\left[7y^{2}+3(a+b)y-ab\right]\\
+ & +2y\left(y^{2}+(a+b)y+ab\right)\left[4y^{3}+6(a+b)y^{2}+2n_{2}y+n_{1}\right].
+\end{align*}
+The above argument suggests that $T(a)<0$. 
+
+Using Mathematica, we summarize $T$ into the following polynomial: 
+\begin{equation}
+T(y)=\sum_{k=0}^{6}t_{k}y^{k},\label{eq:T}
+\end{equation}
+where the coefficients are
+\[
+t_{0}=a^{2}b(a+b)\left(a^{2}+ab+2b^{2}\right)>0,
+\]
+\[
+t_{1}=-3a\left(a^{4}+(a+b)(a-b)^{2}b+b^{4}\right)<0,
+\]
+\[
+t_{2}=-3a\left(3a^{3}+4a^{2}b+ab^{2}+5b^{3}\right)<0,
+\]
+\[
+t_{3} =-8a^{3}-8a^{2}b-9ab^{2}+b^{3},
+\]
+\[
+t_{4}  =3b\left(a+b\right)>0,
+\]
+\[
+t_{5}=3(a+b)>0,
+\]
+and $t_{6}=1$. As $t_{6}>0$, $T(\infty)=\infty>0$. Together with $T(a)<0$, the
+intermediate value theorem implies that $T(y)=0$ has at least one
+solution in $y>a$. 
+
+Suppose that $y_{min}$ is one of the solutions to $T(y)=0$. Consider
+the first-order derivative of $T$ evaluated at $y=y_{min}$ and multiplied
+$y_{min}$:
+\[
+\mathcal{T}(y_{min})=y_{min}\frac{dT(y_{min})}{dy}=\sum_{k=1}^{6}kt_{k}y_{min}^{k}.
+\]
+Applying $T(y_{min})=0$ and eliminating the terms related to $t_{3}$,
+\[
+\mathcal{T}(y_{min})=-3t_{0}-2t_{1}y_{min}-t_{2}y_{min}^{2}+t_{4}y_{min}^{4}+2t_{5}y_{min}^{5}+3t_{6}y_{min}^{6},
+\]
+According to the signs of $t_{k}$ and $y_{min}>a$, it holds that
+\begin{align*}
+\mathcal{T}(y_{min}) & >-3t_{0}-2t_{1}a-t_{2}a^{2}+t_{4}a^{4}+2t_{5}a^{5}+3t_{6}a^{6}\\
+ & =3a^{2}\left(6a^{4}+8a^{3}b+b^{4}+(a^{2}-b^{2})^{2}\right)\\
+ & >0.
+\end{align*}
+Therefore, if $y_{min}$ is a solution to $T(y)=0$, then the slope
+of $T(y)$ at this point must be positive. Together with $T(a)<0<T(\infty)$,
+$y_{min}$ is the unique solution to $T(y)=0$, and $T(y)>0\Leftrightarrow y>y_{min}$.\footnote{Suppose that $T(y)=0$ has more than two solutions. For any solutions,
+denoted as $y_{0}$ and $y_{1}$, the mean-value theorem implies that
+there exists at least one $y_{2}\in[y_{0},y_{1}]$ such that $\frac{dT(y_{2})}{dy}=0$.
+This contradicts to the strict positivity or negativity of $\mathcal{T}$.}  The argument above implies that $K^{(1)}(\beta)$ takes a U-shaped curve with respect to $\beta$, and the minimum point is given by
+$\beta_{min}\equiv\sqrt{y_{min}}$. Note that $\tilde{\beta}$ in footnote \ref{fn:highlowbeta_def} is given by $\tilde{\beta} = \beta_{min}$. 
+\end{proof}
+
+The RHS of (\ref{eq:eqcond}) is monotonically increasing in $\beta$, and Lemma \ref{lem:K(1)K(2)}
+attests that it is concave in $y\leq y_{min}$, while it becomes convex in
+$y>y_{min}$. In other words, the slope of the curve is the least
+steep at $y=y_{min}$, and it is given by 
+\begin{equation}
+K_{min}=2\beta_{min}J^{(1)}(y_{min}).\label{eq:Kmin}
+\end{equation}
+Note that $K_{min}$ is represented only by parameters, $a,b$, and
+does not involve $\theta$. 
+
+Consider the following condition to characterize equilibrium:
+\begin{equation}
+J(y_{min})>K_{min}\beta_{min}.\label{eq:no_multi}
+\end{equation}
+
+Then the following result holds:
+\begin{lemma}
+(i) If inequality (\ref{eq:no_multi}) holds, then there exist $\theta_{H}$ and $\theta_{L}$ with  $\theta_{H}>\theta_{L}$. If, and only if, $\theta \in \Theta\equiv(\theta_{L},\theta_{H})$, then the equilibrium condition (\ref{eq:eqcond}) has three solutions.
+\\
+(ii) If inequality (\ref{eq:no_multi}) is violated, then $\theta_{H} = \theta_{L}$, and the equilibrium
+condition (\ref{eq:eqcond}) has a unique solution. The solution is $\beta>\beta_{min}$ $(\beta<\beta_{min})$ if $\theta>\theta_{H}$ ($\theta<\theta_{H}$).
+\end{lemma}
+
+\begin{proof}
+Consider the plot of the curve, $J(\beta^{2})$, and the line, $2\theta\beta$, against $\beta$. With the curve being fixed, consider a line that goes through the origin and is tangent to the curve. The tangent point
+is characterized by $\beta$ that satisfies
+\begin{align*}
+J(\beta^{2}) & =K^{(1)}(\beta^{2})\beta,
+\end{align*}
+where the LHS represents the y-coordinate of the curve at $\beta$, and
+the RHS represents that of the line that goes through the origin.
+Note that their slopes must be identical and $K^{(1)}(\beta^{2})$. Applying
+(\ref{eq:K1}), the above condition is rewritten as
+\[
+J(\beta^{2})=2\beta^{2}J^{(1)}(\beta^{2}).
+\]
+Hence, denoting $y=\beta^{2}$, the tangent point is characterized by
+the solution to 
+\[
+0=G(y)=2yJ^{(1)}(y)-J(y).
+\]
+Note that we focus on $y>\sqrt{a}$, and thus $y$ and $\beta$ have one-to-one
+mapping. 
+
+Function $G(y)$ has the following first-order derivative:
+\begin{align*}
+G^{(1)}(y) & =2\left(yJ^{(2)}(y)+J^{(1)}(y)\right)-J^{(1)}(y)\\
+ & =J^{(1)}(y)+2yJ^{(2)}(y)\\
+ & =\frac{K^{(2)}(y)}{2},
+\end{align*}
+where we apply the definition of $K^{(2)}$ in (\ref{eq:K2def}).
+Lemma \ref{lem:K(1)K(2)} has established that $K^{(2)}(a)<0$ and
+$K^{(2)}(\infty)>0$. Also, there is a unique $y=y_{min}$ such that
+$K^{(2)}(y_{min})=0$ and $K^{(2)}(y_{min})>0\Leftrightarrow y>y_{min}$.
+Hence, $G(y)$ takes a U-shaped curve with respect to $y$ and $y=y_{min}$
+is the minimizer of the curve.
+
+With $G(y)$ being U-shaped, $G(y)=0$ has two solutions if and only
+if its minimum point dips below the x-axis, namely,
+\[
+2y_{min}J^{(1)}(y_{min})-J(y_{min})<0.
+\]
+Applying the definition of $K_{min}$ in (\ref{eq:Kmin}), the above
+inequality is rewritten as condition (\ref{eq:no_multi}). 
+
+When condition (\ref{eq:no_multi}) holds and $G(y)=0$ has two solutions,
+we denote them as $y_{0}$ and $y_{1}(>y_{0})$. The corresponding
+slopes of these tangent lines are $K^{(1)}(y_{0})$ and $K^{(1)}(y_{1})$,
+respectively. Then the original line, $2\theta\beta$, and the curve, $J(\beta^2)$, have three intersections
+if and only if 
+\begin{equation}
+\frac{K^{(1)}(y_{1})}{2}\equiv\theta_{L}<\theta<\theta_{H}\equiv\frac{K^{(1)}(y_{0})}{2}.\label{eq:thetaHL}
+\end{equation}
+This result concludes the proof of statement (i) of the lemma. 
+
+Conversely, if condition (\ref{eq:no_multi}) does not hold, no tangent
+line that goes through the origin is obtained: function $J(\beta^2)$ becomes the least steep at $\beta_{min}=\sqrt{y_{min}}$, and the tangent line is specified by $K_{min}\beta - K_{min}\beta_{min} + J(\beta_{min}^2)$, while the intercept of this line is negative, as condition (\ref{eq:no_multi}) is violated.
+Hence, the line, $2\theta\beta$, and the curve, $J(\beta^2)$ have a unique intersection. This intersection occurs in $\beta>\beta_{min}$ if, and only if, $\theta> \theta'_{H}\equiv\frac{J(\beta_{min}^2)}{2\beta_{min}}$. 
+
+To conclude statement (ii), we must show that $\theta_{H}$ and $\theta_{L}$ in statement (i) converges to $\theta'_{H}$ in statement (ii) at the threshold of these two cases so that we re-define it as $\theta_{H}=\theta_{L}=\theta'_{H}$. This result is shown in Lemma \ref{lem:theta_s} below.
+\end{proof}
+
+Finally, consider the comparative statics with respect to $\omega_{s}$. The following result holds:
+\begin{lemma}\label{lem:theta_s}
+(i) $J(y_{min})-K_{min}\beta_{min}$ is increasing in $\omega_{s}$. Hence, there exists a unique $\tilde{\omega}_{s}>0$, such that, (\ref{eq:no_multi}) holds with equality, and inequality (\ref{eq:no_multi}) holds if and only if $\omega_{s}>\tilde{\omega}_{s}$. \\
+(ii) When condition (\ref{eq:no_multi}) holds, both $\theta_{H}$
+and $\theta_{L}$ increase as $\omega_{s}$ increases. Interval $\Theta$ expands, as the following inequalities hold:
+\[
+0<\frac{d\theta_{L}}{d \omega_{s}}<\frac{d\theta_{H}}{d \omega_{s}}.
+\]
+(iii) At $\omega_{s} = \tilde{\omega}_{s}$, it holds that $\theta_{H}=\theta_{L}=\theta'_{H}$, while at the limit of $\omega_{s}\rightarrow 0$, $\theta'_{H}\rightarrow 0$.\\
+(iv) There exists a unique threshold for $\varphi^*$, such that, $\varphi\ge\varphi^* (<\varphi^*)$ leads to case 1 (case 2) in Proposition \ref{prop:endogenous}.
+\end{lemma}
+
+\begin{proof}[Proof of Statements (i) and (ii).]  
+Note that we are interested in the reaction of the following function when $a=\frac{\omega_{u,0}}{\omega_{s}}$
+changes and, hereafter, we make the dependence of functions on $a$
+explicit:
+\[
+2\theta_{k}=K^{(1)}(y_{j},a)=2\sqrt{y_{j}}J^{(1)}(y_{j},a),
+\]
+where $y_{j}=y_{0},y_{1}$ denote the solutions to $G(y,a)=0$, if any, and $k=L,H$
+are appropriately determined following (\ref{eq:thetaHL}). According
+to the definition of $G$, the following partial derivative holds.
+\[
+\frac{\partial G(y,a)}{\partial a}=2y\frac{\partial J^{(1)}(y,a)}{\partial a}-\frac{\partial J(y,a)}{\partial a}.
+\]
+The first term is summarized by
+\begin{align*}
+\frac{\partial J^{(1)}(y,a)}{\partial a} & \propto(y+a)\frac{\partial N(y,a)}{\partial a}-2N(y,a)\\
+ & =(y+a)\left[2y^{3}+n_{2,a}y^{2}+n_{1,a}y+n_{0,a}\right]-\left[y^{4}+2(a+b)y^{3}+n_{2}y^{2}+n_{1}y+n_{0}\right]\\
+ & =\sum_{k=0}^{4}A_{k}y^{k}
+\end{align*}
+where $A_{4}=1$, $A_{3}=4(a+b)$, 
+\begin{align*}
+A_{2} & =2a^{2}+5b^{2}+2(3ab+a^{2})+2a\left[3b+2a\right],
+\end{align*}
+\begin{align*}
+A_{1} & =2a^{2}\left[3b+2a\right]\left(a^{2}+ab+2b^{2}\right)(2a+b)+a\left(2a+b\right)(a+b),
+\end{align*}
+\begin{align*}
+A_{0} & =a\left[(2a+b)\left(a^{2}+ab+2b^{2}+a(a+b)\right)-\left(a^{2}+ab+2b^{2}\right)(a+b)\right]\\
+ & >\left(a(a+b)\right)^{2}.
+\end{align*}
+Hence, $\frac{\partial J^{(1)}(y,a)}{\partial a}>0$. The second term
+is
+\begin{align}
+(y+b)\frac{\partial J(y,a)}{\partial a} & =-2\frac{\left(y+b+a\right)\left(y(a+b)+a^{2}\right)}{\left(y+a\right)^{2}}\nonumber \\
+ & <0.\label{eq:Ja}
+\end{align}
+Therefore, $\frac{\partial G}{\partial a}>0$. As the previous proof
+has established that $G(y,a)$ takes a $U$-shaped curve, $\frac{\partial G}{\partial a}>0$
+implies that its minimum point is monotonically decreasing in $\omega_{s}$,
+concluding the first statement of point (i) in the lemma. 
+
+As $a\rightarrow0$, it holds that $y_{min}\rightarrow0$ and 
+\[
+\lim_{a\rightarrow0}G(y_{min},a)=\lim_{a\rightarrow0}[2y_{min}-(y_{min}+b)]=-b<0.
+\]
+Also 
+\[
+\lim_{a\rightarrow\infty}G(y_{min},a)=+\infty.
+\]
+Therefore, together with 
+\[
+\frac{dG(y_{min},a)}{da}=\frac{dy_{min}}{da}\frac{\partial G}{\partial y}+\frac{\partial G}{\partial a}>0,
+\]
+the above limits imply the existence of $\bar{a}$, such that, condition
+(\ref{eq:no_multi}) holds if and only if $a<\bar{a}$. Given $\omega_{u,0}$,
+this result can be translated into $\omega_{s}$ so that $\tilde{\omega}_{s}=\frac{\omega_{u,0}}{\bar{a}}$. Noting that $a<\bar{a}\Leftrightarrow \omega_{s}>\tilde{\omega}_{s}$, we conclude the second half of point (i) in the lemma.
+
+Suppose that condition (\ref{eq:no_multi}) holds, meaning that $y_0$
+and $y_{1}$ exist. For $j\in {0,1}$, $\frac{\partial G}{\partial a}>0$ implies that
+$\frac{dy_{0}}{da}>0$ and $\frac{dy_{1}}{da}<0$. Also, the implicit
+function theorem leads to 
+\[
+\frac{dy_{j}}{da}=-\frac{1}{G^{(1)}(y_{j},a)}\frac{\partial G(y_{j},a)}{\partial a}.
+\]
+By taking the total derivative of $\theta_{k}$,
+\begin{align}
+\frac{d\theta_{k}}{da} & =\frac{1}{2}\frac{1}{\sqrt{y_{j}}}\frac{dy_{j}}{da}G^{(1)}(y_{j},a)+\sqrt{y_{j}}\frac{\partial J^{(1)}(y_{j},a)}{\partial a}\nonumber \\
+ & =-\frac{1}{2}\frac{1}{\sqrt{y_{j}}}\left(2y_{j}\frac{\partial J^{(1)}(y_{j},a)}{\partial a}-\frac{\partial J(y_{j},a)}{\partial a}\right)+\sqrt{y_{j}}\frac{\partial J^{(1)}(y_{j},a)}{\partial a}\nonumber \\
+ & =\frac{1}{2}\frac{1}{\sqrt{y_{j}}}\frac{\partial J(y_{j},a)}{\partial a}\label{eq:dtheta}\\
+ & <0,\nonumber 
+\end{align}
+where the last inequality follows from (\ref{eq:Ja}). Therefore,
+we conclude that the boundary slopes, $\theta_{H}$ and $\theta_{L}$
+are both increasing in $\omega_{s}$. 
+
+Consider the magnitude of the reactions. By plugging (\ref{eq:Ja})
+into (\ref{eq:dtheta}), 
+\[
+\frac{d\theta_{k}}{da}|\propto\frac{\sqrt{y_{j}}}{\left(y_{j}+a\right)^{2}}\left(1+\frac{a}{y_{j}+b}\right)\left(1+\frac{1}{y_{j}}\frac{a^{2}}{a+b}\right).
+\]
+It is straightforward that the last terms are all decreasing in $y_{j}$.
+Since we compare $y_{0}<y_{1}$ with $a$ being fixed, we obtain
+$\frac{d\theta_{H}}{d\omega_{s}}>\frac{d\theta_{L}}{d\omega_{s}}$,
+thereby concluding the proof.
+
+
+\paragraph{\normalfont{\it{Proof of Statements (iii) and (iv).}}}
+Note that $\lim_{\omega_{s}\rightarrow\tilde{\omega}_{s}}y_{j} = y_{min}$, and $J(y_{min})=K_{min}\beta_{min} = 2\beta_{min}J^{(1)}(y_{min})$ holds. Therefore, at this limit, 
+\begin{equation*}
+    \theta'_{H} = \frac{J(\beta_{min}^2)}{2\beta_{min}} = \beta_{min}J^{(1)}(\beta_{min}^2) = \frac{K_{min}}{2} = \theta_{k},
+\end{equation*}
+where the last equality holds because of (\ref{eq:K1}). This concludes the proof of statement (iii). 
+
+Finally, consider the limit at $\omega_{s}\rightarrow 0$, which implies $a\rightarrow\infty$ (given $\omega_{u,0}$). Since $y_{min}\searrow a$, we can denote it as $y_{min} = a+\epsilon$, where $\epsilon>0$ is a small positive and $\lim_{\omega_{s}\rightarrow\tilde{\omega}_{s}}\epsilon = 0$. With this notation, function $J$ is rewritten at the limit as
+\begin{equation*}
+    \lim_{\omega_{s}\rightarrow\tilde{\omega}_{s}}J(y_{min},a) = \lim_{a\rightarrow\infty,\epsilon\rightarrow0} \frac{\epsilon(2a+b+\epsilon)}{(2a+\epsilon)(a+b+\epsilon)} =0.
+\end{equation*}
+
+Since $\theta'_{H} = \frac{J(y_{min})}{2\sqrt{y_{min}}}$, we conclude that $\lim_{\omega_{s}\rightarrow\tilde{\omega}_{s}}\theta'_{H} = 0.$
+
+As for statement (iv), case 1 occurs if, and only if, the curve $\theta = \frac{\varphi}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}$ exceeds $\theta_{H}$ at $\omega_{s}=\tilde{\omega}_{s}$. The above analyses have already established that $\theta_{H} = \frac{K^{(1)(y_{min})}}{2}$, where $y_{min}$ is implicitly characterized by parameters $a$ and $b$, we can define the threshold $\varphi^*$ as 
+\begin{equation}
+    \varphi^* \equiv K^{(1)(y_{min})}\sqrt{\frac{\omega_{u,0}}{\bar{a}\omega_{u,1}}}.\label{eq:varphi*}
+\end{equation}
+\end{proof}
+
+Note that Proposition \ref{prop:eqm} follows from points (i) and (ii) of Lemma \ref{lem:theta_s}, whereas Proposition \ref{prop:endogenous} is shown by putting monotonically decreasing $\theta$ in equation (\ref{eq:theta}) together with points (i) and (ii).

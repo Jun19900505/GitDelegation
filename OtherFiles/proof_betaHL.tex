@@ -1,0 +1,27 @@
+The optimal trading strategy satisfies the following condition.
+\begin{equation}
+\therefore(1-2\lambda_{0}\beta_{0})+\frac{\psi}{2\lambda_{1}}\xi^{2}(\gamma^{2}\beta_{0}+\gamma(1-\gamma))=0.\label{eq:FOC}
+\end{equation}
+The marginal benefit of increasing $s^*$ is given by
+\begin{equation}
+\mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})]=\left[(1-\lambda_{0}\beta_{0})+\frac{\psi}{4\lambda_{1}}\xi^{2}(\gamma^{2}\beta_{0}+2\gamma(1-\gamma))\right]\beta_{0}+\frac{\psi}{4\lambda_{1}}\xi^{2}(1-\gamma)^{2}+(1-\psi)\frac{1}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}.\label{eq:MB_s}
+\end{equation}
+Then, it holds that
+\begin{align*}
+\frac{\partial\mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})]}{\partial\beta_{0}} & =\left[(1-2\lambda_{0}\beta_{0})+\frac{\psi}{2\lambda_{1}}\xi^{2}(\gamma^{2}\beta_{0}+\gamma(1-\gamma))\right]\\
+ & +\left[-\beta_{0}\frac{\partial\lambda_{0}}{\partial\beta_{0}}+\frac{\psi}{4\lambda_{1}}\frac{\partial}{\partial\beta_{0}}\left[\xi^{2}(\gamma^{2}\beta_{0}+2\gamma(1-\gamma))\right]\right]\beta_{0}+\frac{\psi}{4\lambda_{1}}\frac{\partial}{\partial\beta_{0}}\left(\xi^{2}(1-\gamma)^{2}\right).
+\end{align*}
+Note that the first term is zero due to the envelope theorem using (\ref{eq:FOC}). By using the notations introduced in equations (\ref{eq:ab}), the remaining terms are summarized as follows.\small{
+\begin{equation}
+-\beta_{0}\frac{\partial}{\partial\beta_{0}}\frac{\beta_{0}}{\beta_{0}^{2}+a}+\frac{\psi}{4\lambda_{1}}\left[\beta_{0}^{2}\frac{\partial}{\partial\beta_{0}}\left(\frac{\beta_{0}}{a+b+\beta_{0}^{2}}\right)^{2}+2\beta_{0}\frac{\partial}{\partial\beta}\left(\frac{1}{a+b+\beta_{0}^{2}}\right)^{2}b\beta_{0}+\frac{\partial}{\partial\beta}\left(\frac{b}{a+b+\beta_{0}^{2}}\right)^{2}\right].\label{eq:K}
+\end{equation}}
+From the proof in Appendix \ref{proofendogenous}, it holds that $y>a$ in the equilibrium. Therefore, the first term is negative. As for the second term, it holds that 
+\begin{align*}
+\text{Second terms of (\ref{eq:K})} & =2\beta_{0}^{3}\left(\frac{a+b-\beta_{0}^{2}}{(a+b+\beta_{0}^{2})^{3}}\right)+2\frac{a+b-3\beta_{0}^{2}}{(a+b+\beta_{0}^{2})^{3}}b\beta_{0}-4b^{2}\frac{\beta_{0}}{(a+b+\beta_{0}^{2})^{3}}\\
+ & \sim-y^{2}+y(a+b-3b)+b(a-b).
+\end{align*}
+Since $y>a$, the quadratic equation above is negative for all $y>a$ if and only if it is negative at $y=a$. This is true because
+\[
+-a^{2}+a(a-2b)+b(a-b)=-ab-b^{2}<0.
+\]
+Therefore, the marginal benefit in (\ref{eq:MB_s}) is decreasing in $\beta_{0}$, concluding the proof of Lemma \ref{lem:MB_beta}. Proposition \ref{prop:skill_inef} directly follows from Lemma \ref{lem:MB_beta} and equation (\ref{eq:FOC_SA}).

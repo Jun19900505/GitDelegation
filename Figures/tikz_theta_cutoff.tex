@@ -1,0 +1,49 @@
+\begin{figure}[t]
+    \centering
+    \begin{tikzpicture}[scale=2.0]
+
+    % Axes
+    \draw[thick,->] (0,0) -- (5,0) node[below] {$\omega_{s}$};
+    \draw[thick,->] (0,0) -- (0,3) node[left] {$\theta$};
+    % Fill below theta_L and right of threshold with dots
+    \fill[pattern=dots, pattern color = black!25] 
+        (0,0) to [out = 55, in = 190, looseness=1.2](4.8,2.8)
+        -- (4.8, 0)
+        to (0,0)
+        -- cycle;
+    % Fill by gray
+    \fill[gray!20] 
+        (0.765,1.) to [out = 25, in = 182, looseness=0.5](4.8,1.4)
+        -- (4.8,2.8)
+        to [out = 190, in = 49, looseness=1.02] (0.765,1.)
+        -- cycle;
+    % Curves
+    %\draw[thick, blue, domain=0:4.8, samples=300] plot (\x, {0.08*(-(\x)^2 + 12*(\x)}) node[right] {$y = x^{0.3}$};
+    \draw[thick] (0,0) to [out = 55, in = 190, looseness=1.2](4.8,2.8);
+    \draw[thick] (0.765,1.) to [out = 25, in = 182, looseness=0.5](4.8,1.4);
+    
+    
+    
+    
+
+    
+
+        
+    % Labels
+    \node at (1.0,2.4) {\footnotesize High-$\beta$ equilibrium};
+    \node at (3,1.8) {\footnotesize Multiple equilibria};
+    \node at (2.9, 0.5) {\footnotesize Low-$\beta$ equilibrium};
+    
+
+    % Points at the end of curves
+    \node[right] at (4.8,2.8) {$\theta_H$};
+    \node[right] at (4.8,1.4) {$\theta_L$};
+
+    % Threshold for multiple eqm
+    \draw[thick,dashed] (0.77,1.) -- (0.765,0) node[below] {$\tilde{\omega}_{s}$};
+
+    \end{tikzpicture}
+    \caption{Equilibrium Characterization with Exogenous $\theta$}
+    \caption*{\footnotesize{Note: This figure illustrates the equilibrium states using the reputation concern, $\theta$, and the skill potential, $\omega_{s}$.}}
+    \label{fig:theta}
+\end{figure}

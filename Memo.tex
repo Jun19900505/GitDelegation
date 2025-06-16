@@ -1,0 +1,42 @@
+Copy-edited:
+
+Introduction
+Subsection 3.6.1 -- 
+
+
+
+============================
+Implications for skill acquisition and skill potential in the finance industry
+
+(1) Cross-sectional skill diversification or clustering may occur without fundamental heterogeneity in underlying skill-acquisition problems across individuals.
+
+(2) Time series jumps in skill acquisition may occur even if changes in the underlying skill-acquisition environment are subtle.
+- deregulation, changes in technologies or required skill
+- deregulation may change the reputational concern (i.e., \theta), affecting the multiplicity?
+
+
+
+============================
+The trading strategy is $x=\beta(v-p_{0})$. When choosing $\beta$, the trader incorporates the price impact and reduces $\beta$ when the impact is large. The price impact, in turn, tends to be large when (i) the information advantage is large for the trader and (ii) the trader trades more intensively. (While effect [ii] is hump-shaped, the standard Kyle equilibrium takes the peak. In our model, the $\beta$ lies in the region, where an increase in $\beta$ reduces $\lambda$.)
+
+In general, $$\lambda  = \frac{\beta s}{\beta^2 s + \sigma_{u}^2}.$$ Note that $$\frac{\partial \lambda}{\partial \beta} = $$
+
+When $s$ is small, the effect (i) tends to be weak, leading to a small price impact.  
+
+
+=================
+Incorporating the optimal trading and the reputational benefit derived in Section \ref{sec:endogenous}, as well as the realized skill ($\eta$) and the equilibrium $\beta_{0}$, the expected utility of a trader in equation (\ref{max0a2}) is represented as follows.
+\begin{equation}
+V(\eta, \beta_{0}) = (1-\lambda_{0}\beta_{0})\beta_{0}\eta^2 + \theta r_{w}(\beta_{0})\eta^2 + (1-\psi)\frac{\sigma_{u,1}}{\sqrt{s}}\eta^2 + \bar{V}, \label{eq:Veta}
+\end{equation}
+where
+\begin{equation}
+r_{w}(\beta_{0}) = \xi^2 \left[\gamma^2 \beta_{0}^2 + 2\gamma(1-\gamma)\beta_{0} + (1-\gamma)^2  \right], \label{eq:r_w}
+\end{equation}
+and $\bar{V}$ denotes the terms unrelated to the skill acquisition.\footnote{The formal expression of $\bar{V}$ is given by $\bar{V} =\frac{\psi}{4\lambda_{1}}\left[{\xi}^{2}\gamma^{2}\sigma_{u,0}^{2}+\xi^{2}(1-\gamma)^{2}\sigma_{\delta}^{2}+\sigma_{u,0}^{2}\frac{\gamma\xi}{\beta_{0}}\right]$} The first term represents the maximized trading profit at $t=0$. It consists of the equilibrium trading intensity, captured by $(1-\lambda_{0}\beta_{0})\beta_{0}$, multiplied by the trader's informational advantage, represented by the size of the \textit{potential} mispricing, $\eta^2$.\footnote{In the standard \citet{kyle1985continuous} model, the optimal trading involves $\beta_{0} = \frac{1}{2\lambda_{0}}$, so that the optimized trading intensity is directly captured by $\frac{\beta_{0}}{2}$. Our model does not have this feature, as the trading intensity is set by incorporating both the price impact and the reputation concern.} The second term is the reputation benefit, which arises from the maximized wage, multiplied by the reputational concern, $\theta$. The maximized wage, in turn, consists of the realized skill, $\eta^2$, and the coefficient $r_{w}(\beta_{0})$ that represents how precisely the recruiter estimates the trader's skill (see equations [\ref{etahat_b}] and [\ref{w}]). The last term is the expected trading profit at $t=1$, $\mathrm{E}[\pi_{1}]$, as the trader earns this profit if she does not meet the recruiter with probability $1-\psi$. 
+
+For each realization of equilibrium $\beta_{0}$, the \textit{ex-ante} expected profit for the trader at the skill-acquisition stage incorporates the random realization of skill: 
+\begin{equation}
+ \mathrm{E}_{\eta}\left[V(\eta,\beta_{0})\right] =  \underset{\equiv v(s,\beta_{0})}{\underbrace{\left[ (1-\lambda_{0}\beta_{0})\beta_{0}+\theta r_{w}(\beta_{0})+(1-\psi)\frac{\sigma_{u,1}}{\sqrt{s}}\right]}}s^{*}, \label{eq:exanteV}
+\end{equation}
+where $\mathrm{E}_{\eta}$ represents the expectation with respect to the skill realization ($\eta$). As the utility in (\ref{eq:Veta}) is proportional to $\eta^2$, the \textit{ex-ante} expected utility takes the form of $ v(s,\beta_{0})s^*$. Coefficient $v(s,\beta_{0})$ represents the marginal benefit of increasing the skill potential ($s^*$), which is characterized by the market maker's and the recruiter's belief about the actual skill potential ($s$). This is because the market maker sets the price impact, and the recruiter computes the wage based on this belief $s$, rather than unobservable $s^*$. Conversely, the last term represents the actual skill potential ($s^{*}$), as the trader herself controls this value.

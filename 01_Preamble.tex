@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[authoryear]{natbib}
+\usepackage{hyperref}
+%\topmargin -1cm
+%\oddsidemargin 0.3cm
+%\evensidemargin 0cm
+\usepackage[margin=1in]{geometry}
+%\textwidth 16cm
+%\textheight 22cm
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfigure}
+\usepackage{setspace}
+\usepackage[multiple]{footmisc}
+\usepackage{bm}
+\usepackage{lscape}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{lineno}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{result}{Result}
+\numberwithin{equation}{section}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs,threeparttable}
+\newcommand\fnote[1]{\captionsetup{font=footnotesize}\caption*{#1}}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\setlist[enumerate]{itemsep=0pt}
+
+%%% color setting
+\definecolor{darkred}{rgb}{0.6, 0, 0}
+\definecolor{ChadDarkBlue}{rgb}{.1,0,.2}  
+\definecolor{ChadBlue}{rgb}{.1,.1,.65}  
+\definecolor{ChadRoyal}{rgb}{.2,.2,.8}  
+\definecolor{ChadGreen}{rgb}{0,.4,0}    % Dark Green
+\definecolor{ChadRed}{rgb}{.6,.2,.2}
+\hypersetup{
+    colorlinks=true,  % Enable colored links
+    linkcolor=ChadBlue,   % Color of internal links (like sections)
+    citecolor=ChadBlue,   % Color of citation links
+    filecolor=ChadBlue,   % Color of file links
+    urlcolor=ChadBlue,    % Color of external links
+    %refcolor=Chadred     % Color of reference links (if different from citecolor)
+}
+
+\usepackage{accents}
+\newcommand{\ubar}[1]{\underaccent{\bar}{#1}}

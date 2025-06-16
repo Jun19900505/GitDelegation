@@ -1,0 +1,170 @@
+\begin{center}
+{\LARGE\textbf{Online Appendix}}
+\end{center}
+\appendix
+\label{app:appendix}
+\onehalfspacing
+
+
+\section{Proof of Lemma \ref{lemma:beliefs}} \label{proofLbeliefs}
+From \eqref{x_conj} and \eqref{eq:p}, $p$ is observationally equivalent to $\frac{p-\hat{\delta}}{\lambda}=\beta s+u\equiv z_{p}$, which is the sum of two normally distributed variables from the market maker's perspective. Since $\delta\sim N(\hat{\delta}+ s,\omega_{\delta})$ is equivalently presented as $\delta=\hat{\delta}+ s+\epsilon$ with $\epsilon\sim N(0,\omega_{\delta})$, $\delta$ is observationally equivalent to $\delta-\hat{\delta}= s+\epsilon\equiv z_{\delta}$, which is also the sum of normal variables. Thus, given $Z=[z_{p},\ z_{\delta}]^{\mathrm{T}}$, the market maker's posterior mean of $ s$ is
+\begin{equation}
+\mathrm{E}\left[ s|Z\right]=\underbrace{\mathrm{E}[ s]}_{=0}+\Sigma_{ s Z}\Sigma_{Z}^{-1}(Z-\underbrace{E[Z]}_{=[0\ 0]^{\mathrm{T}}}),
+\end{equation}
+where
+\begin{equation}
+\Sigma_{ s Z}=
+\begin{bmatrix}
+\beta \omega_{s}, & \omega_{s}
+\end{bmatrix}
+\ \text{and}\ 
+\Sigma_{Z}=
+\begin{bmatrix}
+\beta^{2} \omega_{s}+\omega_{u},&\beta \omega_{s}\\
+\beta \omega_{s}, &\omega_{s}+\omega_{\delta}
+\end{bmatrix}.
+\end{equation}
+Since
+\begin{align}
+\mathrm{det}[\Sigma_{Z}]&=(\beta^{2}\omega_{s}+\omega_{u})(\omega_{s}+\omega_{\delta})-\beta^{2}\omega_{s}^{2}\nonumber\\
+&=\omega_{s}(\beta^{2}\omega_{\delta}+\omega_{u})+\omega_{u}\omega_{\delta},
+\end{align}
+it holds that
+\begin{align}
+\mathrm{E}\left[ s|Z\right]&=\begin{bmatrix}
+\beta \omega_{s},&\omega_{s}
+\end{bmatrix}\frac{1}{\mathrm{det}[\Sigma_{Z}]}\begin{bmatrix}
+\omega_{s}+\omega_{\delta},&-\beta \omega_{s}\\
+-\beta \omega_{s},&\beta^{2}\omega_{s}+\omega_{u}
+\end{bmatrix}
+\begin{bmatrix}
+z_{p}\\z_{\delta}
+\end{bmatrix}\nonumber\\
+&=\frac{\omega_{s}}{\omega_{s}(\beta^{2}\omega_{\delta}+\omega_{u})+\omega_{u}\omega_{\delta}}\left(\beta\omega_{\delta}z_{p}+\omega_{u}z_{\delta}\right)\nonumber\\
+&= \frac{\omega_{s}(\beta\omega_{\delta}+\omega_{u})}{\omega_{s}(\beta^{2}\omega_{\delta}+\omega_{u})+\omega_{u}\omega_{\delta}}\left(\frac{\beta\omega_{\delta}}{\beta\omega_{\delta}+\omega_{u}}z_{p}+\left(1-\frac{\beta\omega_{\delta}}{\beta\omega_{\delta}+\omega_{u}}\right)z_{\delta}\right)\nonumber\\
+&=\xi\left(\gamma z_{p}+(1-\gamma)z_{\delta}\right),\label{AP_xi}
+\end{align}
+where
+\begin{equation}
+\xi\equiv \frac{\omega_{s}(\beta\omega_{\delta}+\omega_{u})}{\omega_{s}(\beta^{2}\omega_{\delta}+\omega_{u})+\omega_{u}\omega_{\delta}}
+\end{equation}
+and
+\begin{equation}
+\gamma\equiv\frac{\beta\omega_{\delta}}{\beta\omega_{\delta}+\omega_{u}}.
+\end{equation}
+Re-writing $z_{p}$ and $z_{\delta}$ in \eqref{AP_xi} in terms of $p$ and $\delta$, we obtain the required result.\qed
+
+%[Y: Posterior variance is not needed in this lemma.]
+%The posterior variance of $ s$ is
+%\begin{align}
+%\hats\equiv\mathrm{Var}\left[ s|Z\right]&=\mathrm{Var}[ s]-\Sigma_{ s Z}\Sigma_{Z}^{-1}\Sigma_{ s Z}^{\mathrm{T}}\nonumber\\
+%&=s-\begin{bmatrix}
+%\betas&s
+%\end{bmatrix}\frac{1}{\mathrm{det}[\Sigma_{Z}]}\begin{bmatrix}
+%s+\omega_{\delta}&-\betas\\
+%-\betas&\beta^{2}s+\omega_{u}
+%\end{bmatrix}
+%\begin{bmatrix}
+%\betas\\ s
+%\end{bmatrix}\nonumber\\
+%&=s-\frac{\beta^{2}\sigma_{ s}^{4}\omega_{\delta}+\sigma_{ s}^{4}\omega_{u}}{s(\beta^{2}\omega_{\delta}+\omega_{u})+\omega_{u}\omega_{\delta}}\nonumber\\
+%&=s\left(\frac{\omega_{u}\omega_{\delta}}{s(\beta^{2}\omega_{\delta}+\omega_{u})+\omega_{u}\omega_{\delta}}\right).
+%\end{align}
+%Clearly, we have $\mathrm{Var}\left[ s|Z\right]<s$ due to learning.
+
+%*==*==*==*==*==*==*==*==*==*==*==*
+\section{Proof of Lemma \ref{lemma:maximization}} \label{proofLemmaMax}
+Let us present $\delta\sim N(\hat{\delta}+ s,\omega_{\delta})$ equivalently as $\delta=\hat{\delta}+ s+\epsilon$ with $\epsilon\sim N(0,\omega_{\delta})$. Then, squaring \eqref{etahat_b}, we have
+\begin{align}
+\hat{ s}^{2}&=\xi^{2}\left(\gamma^{2}x^{2}+2\gamma x\left(\gamma u+(1-\gamma)(\delta-\hat{\delta})\right)
++\left(\gamma u +(1-\gamma)(\delta-\hat{\delta})\right)^{2}\right)\nonumber\\
+&=\xi^{2}\left(\begin{array}{c}\gamma^{2}x^{2}+2\gamma^{2}xu+2\gamma(1-\gamma)( s+\epsilon)x\\
++\gamma^{2}u^{2}+2\gamma(1-\gamma)( s+\epsilon)u+(1-\gamma)^{2}( s+\epsilon)^{2}\end{array}\right).\label{etahat2app}
+\end{align}
+Taking the expectation of \eqref{etahat2app} from the trader's perspective,
+\begin{equation}
+\mathrm{E}[\hat{ s}^{2}| s]=\xi^{2}\left(\gamma^{2}x^{2}+2\gamma(1-\gamma) s x+A\right),\label{E_etahat2}
+\end{equation}
+where
+\begin{equation}
+A\equiv\gamma^{2}\omega_{u}+(1-\gamma)^{2}( s^{2}+\omega_{\delta})
+\end{equation}
+is the term that the trader is unable to influence by her choice of $x$. We can omit $A$ in the maximization problem below.
+Using \eqref{E_etahat2}, the trader's problem \eqref{max_prob} is rewritten as
+\begin{equation}
+\max_{x}\ \mathrm{E}\left[(\delta-p)x| s\right]+\theta\mathrm{E}[\hat{ s}^{2}| s]\nonumber
+\end{equation}
+\begin{equation}
+\Rightarrow\ \max_{x}\ \mathrm{E}\left[\left(\hat{\delta}+ s+\epsilon-\left(\hat{\delta}+\lambda(x+u)\right)\right)x\Big| s\right]+\theta\mathrm{E}[\hat{ s}^{2}| s]\nonumber
+\end{equation}
+\begin{equation}
+\Rightarrow \max_{x}\  s x-\lambda x^{2}+\theta\xi^{2}\left(\gamma^{2}x^{2}+2\gamma(1-\gamma) s x\right).\qed\label{max_prob_b}
+\end{equation}
+
+
+%*==*==*==*==*==*==*==*==*==*==*==*
+\section{Proof of Lemma \ref{eqmPer1}} \label{proofEqmPer1}
+At the beginning of $t=1$, the trader does not have reputation concerns anymore. Her problem is just to choose $x_{1}$ to maximize the expected trading profit, that is,
+\begin{equation}
+\max_{x_{1}\in(-\infty,\infty)}\mathrm{E}[(\delta_{1}-p_{1})x_{1}| s].\label{max1_app}
+\end{equation}
+We conjecture and later verify that the trader's equilibrium order in $t=1$ is
+\begin{equation}
+x_{1}=\beta_{1} s,\label{x1_conj}
+\end{equation}
+where $\beta_{1}>0$ is a constant to be determined.
+Given \eqref{x1_conj}, the market maker sets the price
+\begin{align}
+p_{1}=&\mathrm{E}\left[\delta_{1}|x_{1}+u_{1}\right]\nonumber\\
+=&\mathrm{E}[\mathrm{E}[\delta_{1}|x_{1}+u_{1}, s]|x_{1}+u_{1}]\nonumber\\
+=&\mathrm{E}[\hat{\delta}_{1}+ s|x_{1}+u_{1}]\nonumber\\
+	=&\hat{\delta}_{1}+\frac{\mathrm{Cov}[ s,x_{1}+u_{1}]}{\mathrm{Var}[x_{1}+u_{1}]}\left(x_{1}+u_{1}-\mathrm{E}[x_{1}+u_{1}]\right)\nonumber\\
+	=&\hat{\delta_{1}}+\frac{\mathrm{Cov}[ s,\beta_{1} s+u_{1}]}{\mathrm{Var}[\beta_{1} s+u_{1}]}\left(x_{1}+u_{1}-\mathrm{E}[\beta_{1} s+u_{1}]\right)\nonumber\\
+	=&\hat{\delta}_{1}+\lambda_{1}\left(x_{1}+u_{1}\right),\label{p1_app}
+\end{align}
+where
+\begin{equation}
+\lambda_{1}\equiv \frac{\beta_{1}\omega_{s}}{\beta_{1}^{2}\omega_{s}+\omega_{u,1}}.\label{lambda1a_app}
+\end{equation}
+Given \eqref{p1_app}, the trader's problem \eqref{max1_app} is rewritten as
+\begin{equation}
+\max_{x_{1}}\ \mathrm{E}\left[\left(\delta_{1}-\left(\hat{\delta}_{1}+\lambda_{1}(x_{1}+u_{1})\right)\right)x_{1}\Big| s\right]\ \Rightarrow\ \max_{x_{1}}\  s x_{1}-\lambda_{1}x_{1}^{2}.
+\end{equation}
+The FOC for $x_{1}$ is $ s-2\lambda_{1}x_{1}=0$, which determines the trader's optimal action:
+\begin{equation}
+x_{1}=\frac{1}{2\lambda_{1}} s.\label{x1_app}
+\end{equation}
+For the other agents' belief \eqref{x1_conj} to be consistent with \eqref{x1_app}, we need
+\begin{equation}
+\beta_{1}=\frac{1}{2\lambda_{1}}\ \iff\ \beta_{1}=\sqrt{\frac{\omega_{u,1}}{\omega_{s}}},\label{beta1_app}
+\end{equation}
+which implies
+\begin{equation}
+\lambda_{1}=\frac{1}{2}\sqrt{\frac{\omega_{s}}{\omega_{u,1}}}.\label{lambda1b_app}\qed
+\end{equation}
+
+%*==*==*==*==*==*==*==*==*==*==*==*
+\section{Proof of Lemma \ref{salary}} \label{proofSalary}
+Let us present $\delta_{1}\sim N(\hat{\delta}_{1}+ s,\omega_{\delta})$ equivalently as $\delta_{1}=\hat{\delta}_{1}+ s+\epsilon_{1}$ with $\epsilon_{1}\sim N(0,\omega_{\delta})$. Then the trader's trading profit in $t=1$ is
+\begin{align}
+\pi_{1}&=(\delta_{1}-p_{1})x_{1}\nonumber\\
+    &=\left(\hat{\delta}_{1}+ s+\epsilon_{1}-\left(\hat{\delta}_{1}+\lambda_{1}\left(\beta_{1} s+u_{1}\right)\right)\right)\beta_{1} s\nonumber\\
+	&=\left(\hat{\delta}_{1}+ s+\epsilon_{1}-\left(\hat{\delta}_{1}+\frac{1}{2}\sqrt{\frac{\omega_{s}}{\omega_{u,1}}}\left(\sqrt{\frac{\omega_{u,1}}{\omega_{s}}} s+u_{1}\right)\right)\right)\sqrt{\frac{\omega_{u,1}}{\omega_{s}}} s\nonumber\\
+	&=\frac{1}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}} s^{2}+\left(\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}\epsilon_{1}-\frac{u_{1}}{2}\right) s.\label{pi1_app}
+\end{align}
+Taking the expectation of \eqref{pi1_app} from the recruiter's perspective, we obtain the trader's salary:
+\begin{align}
+w&=\mathrm{E}[\pi_{1}|p_{0},\delta_{0}]\nonumber\\
+&=\frac{1}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}\mathrm{E}[ s^{2}|p_{0},\delta_{0}]\nonumber\\
+&=\frac{1}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}\left(\mathrm{E}[ s|p_{0},\delta_{0}]^{2}+\mathrm{Var}[ s|p_{0},\delta_{0}]\right)\nonumber\\
+&=\frac{1}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}\left(\hat{ s}^{2}+\hat{\omega}_{s}\right),\label{w_app}
+\end{align}
+where $\hat{\omega_{s}}$ is the posterior variance of $s$, which is a constant.\qed
+%*==*==*==*==*==*==*==*==*==*==*==*
+
+
+\section{Proof of Propositions \ref{prop:eqm} and \ref{prop:endogenous}} \label{proofendogenous}
+\input{OtherFiles/proof_multieqm}
+
+\section{Proof of Lemma \ref{lem:MB_beta} and Proposition \ref{prop:skill_inef}}
+\input{OtherFiles/proof_betaHL}

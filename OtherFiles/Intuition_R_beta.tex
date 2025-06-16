@@ -1,0 +1,56 @@
+%% At the skill-acquisition stage, we find that the marginal benefit of increasing the skill potential, denoted as $R$, is decreasing in $\beta$ (with the belief about the skill potential, $s$, being fixed). Intuition is as follows.
+
+Given $\eta,s,\beta$, the objective function of the trader at the first trading stage ($t=0$) is 
+\begin{equation}
+V(\eta,x_{0}) = \mathrm{E}\left[T(\lambda_{0},x_{0},\eta) + W_{x}(\gamma,\xi,x_{0},\eta) + W_{0}(\gamma,\xi,\eta)|x_{0},\eta   \right].
+\end{equation}
+$T$ is the trading profit, $W_{x}$ is the part of the wage (the reputation benefit) that directly depends on $x_{0}$ (as the recruiter estimates the future trading profit by using the price, which in turn depends on $x_{0}$), and $W_{0}$ is the part of the wage that does not depend on $x_{0}$.
+
+Note that these terms depend on $\beta$ via two channels. First, the market maker and the recruiter's make their inference based on (their belief about) $\beta$, so that $\lambda_{0}, \gamma$, and $\xi$ are functions of $\beta$. This is because the market maker responds to the order flow in setting the price, and the recruiter use the price information to estimate the skill. Second, the first two terms, $T$ and $W_{x}$, depends on $\beta$ via the trading activity chosen by the trader, $x_{0}$. 
+
+Incorporating $x_{0} = \beta\eta$, we rewrite the above function as
+\begin{equation}
+V(\eta,\beta) = \bar{T}(\lambda_{0},\beta)\eta^2 + \bar{W}_{x}(\gamma,\xi,\beta)\eta^2 + \bar{W}_{0}(\gamma,\xi)\eta^2.
+\end{equation}
+The impact of $\beta$ on each term via $x_{0}$ is made explicit as the element of the function. 
+
+Note that all terms are proportional to the realized skill, $\eta^2$: it provides a larger informational advantage to the trader, enhancing the expected trading profits, and helps establish high reputation, increasing the wage. Therefore, at the skill acquisition stage, the marginal benefit of increasing $s$ is given by 
+\begin{equation}
+B(\beta) = \bar{T}(\lambda_{0},\beta) + \bar{W}_{x}(\gamma,\xi,\beta) + \bar{W}_{0}(\gamma,\xi).
+\end{equation}
+We have shown that $B(\beta_{H})<B(\beta_{L})$ (or generally, it is a decreasing in $\beta$). 
+
+Intuition is as follows. Due to the optimization of the trader with respect to $x_{0}$, the envelope theorem indicates that changes in $\beta$ have no impact on the first two terms via $x_{0}$. Therefore, we can focus on the impact of $\beta$ on three terms via  $\lambda_{0}, \gamma$, and $\xi$. 
+
+Firstly, $\bar{T}$ is decreasing in $\beta$, as the price impact becomes strong, and the trading profit declines. 
+Secondly, we have the following expression for the last two terms. The updating coefficients are
+\begin{align*}
+\xi & =\frac{s (\beta\sigma_{\delta}^{2}+\sigma_{u,0}^{2})}{\sigma_{u,0}^{2}(\sigma_{\delta}^{2}+s)+\beta^{2}s\sigma_{\delta}^{2}},\\
+\gamma & =\frac{\beta\sigma_{\delta}^{2}}{\beta\sigma_{\delta}^{2}+\sigma_{u,0}^{2}}.
+\end{align*}
+Hence, by denoting $a \equiv \frac{\sigma_{u,0}^{2}}{s}$  and $b \equiv \frac{\sigma_{u,0}^{2}}{\sigma_{\delta}^{2}}$, we have
+\[
+\xi^{2}\gamma^{2}=\left(\frac{\beta}{a+b+\beta^{2}}\right)^{2},
+\]
+\[
+\xi^{2}\gamma(1-\gamma)=\left(\frac{1}{a+b+\beta^{2}}\right)^{2}b\beta,
+\]
+\[
+\xi^{2}(1-\gamma)^{2}=\left(\frac{b}{a+b+\beta^{2}}\right)^{2}.
+\]
+By representing the impact of  $\beta$ via $x_{0}$ as $\beta_{x}$, the last two terms related to the wage are   
+\begin{align}
+    B_{w} &= \bar{W}_{x}(\gamma,\xi,\beta) + \bar{W}_{0}(\gamma,\xi)\\
+ & = \xi^{2}\left(\gamma^{2}\beta_{x}^{2} + 2\gamma(1-\gamma) \beta_{x}+  (1-\gamma)^2 \right)\\
+ & = \beta_{x}^2 \left(\frac{\beta}{a+b+\beta^{2}}\right)^{2} + 2\left(\frac{1}{a+b+\beta^{2}}\right)^{2}b\beta\beta_{x} + \left(\frac{b}{a+b+\beta^{2}}\right)^{2}.
+\end{align}
+Note that we are interested in the partial derivative of $B_{w}$ with respect to $\beta$, evaluated at $\beta = \beta_{x}$:
+\begin{align*}
+\frac{\partial B_{w}}{\partial \beta} & = 2\beta^{3}\frac{a+b-\beta^{2}}{(a+b+\beta^{2})^{3}} + 2b\beta\frac{a+b-3\beta^{2}}{(a+b+\beta^{2})^{3}} - 4b^{2}\frac{\beta}{(a+b+\beta^{2})^{3}}\\
+& \sim \beta^{2}(a+b-\beta^{2}) + (a+b-3\beta^{2})b - 2b^{2}.
+\end{align*}
+ When $\beta^{2} > a$, which is satisfied in the equilibrium (see the proof), the partial derivative above is negative, meaning that the wage-related terms in the marginal benefit decline when $\beta$ is large.
+
+ Intuitively, XXX
+
+
