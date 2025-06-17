@@ -38,6 +38,9 @@
 \harvarditem[Chung et~al.]{Chung, Sensoy, Stern, and Weisbach}{2012}{chung2012pay}
 \textbf{Chung, Ji-Woong, Berk~A Sensoy, Lea Stern, and Michael~S Weisbach.} 2012. ``Pay for performance from future fund flows: The case of private equity.'' \textit{The Review of Financial Studies} 25 (11):   3259--3304.
 
+\harvarditem[Cooper and Ross]{Cooper and Ross}{1998}{cooper1998bank}
+\textbf{Cooper, Russell, and Thomas~W Ross.} 1998. ``Bank runs: Liquidity costs and investment distortions.'' \textit{Journal of Monetary Economics} 41 (1):   27--38.
+
 \harvarditem[Daniel and Moskowitz]{Daniel and Moskowitz}{2016}{daniel2016momentum}
 \textbf{Daniel, Kent, and Tobias~J Moskowitz.} 2016. ``Momentum crashes.'' \textit{Journal of Financial Economics} 122 (2):   221--247.
 
@@ -47,11 +50,17 @@
 \harvarditem[Dasgupta]{Dasgupta}{2006}{dasgupta2006financial}
 \textbf{Dasgupta, Amiland Andrea~Prat.} 2006. ``Financial equilibrium with career concerns.'' \textit{Theoretical Economics} 1 (1):   67--93.
 
+\harvarditem[Diamond and Dybvig]{Diamond and Dybvig}{1983}{diamond1983bank}
+\textbf{Diamond, Douglas, and Philip Dybvig.} 1983. ``Bank Runs, Deposit Insurance, and Liquidity.'' \textit{Journal of Political Economy} 91 (3):   401--419.
+
 \harvarditem[DiMaggio]{DiMaggio}{2015}{di2015fake}
 \textbf{DiMaggio, Marco.} 2015. ``Fake alphas, tail risk and reputation traps.'' \textit{Columbia Business School Research Paper} (14-4): .
 
 \harvarditem[Froot et~al.]{Froot, Scharfstein, and Stein}{1992}{froot1992herd}
 \textbf{Froot, Kenneth~A, David~S Scharfstein, and Jeremy~C Stein.} 1992. ``Herd on the street: Informational inefficiencies in a market with short-term speculation.'' \textit{The Journal of Finance} 47 (4):   1461--1484.
+
+\harvarditem[Fuller and Raman]{Fuller and Raman}{2017}{fuller2017dismiss}
+\textbf{Fuller, Joseph~B., and Manjari Raman.} 2017. ``Dismissed by degrees.'' Accenture, Grads of Life, Harvard Business School, Octover.
 
 \harvarditem[G{\^a}rleanu and Pedersen]{G{\^a}rleanu and Pedersen}{2018}{garleanu2018efficiently}
 \textbf{G{\^a}rleanu, Nicolae, and Lasse~Heje Pedersen.} 2018. ``Efficiently inefficient markets for assets and asset management.'' \textit{The Journal of Finance} 73 (4):   1663--1712.
@@ -100,5 +109,8 @@
 
 \harvarditem[Wermers]{Wermers}{2000}{wermers2000mutual}
 \textbf{Wermers, Russ.} 2000. ``Mutual fund performance: An empirical decomposition into stock-picking talent, style, transactions costs, and expenses.'' \textit{The Journal of Finance} 55 (4):   1655--1695.
+
+\harvarditem[Xiong and Yang]{Xiong and Yang}{2023}{xiong2023secret}
+\textbf{Xiong, Yan, and Liyan Yang.} 2023. ``Secret and Overt Information Acquisition in Financial Markets.'' \textit{Review of Financial Studies} 36 (9):   3643--3692.
 
 \end{thebibliography}
