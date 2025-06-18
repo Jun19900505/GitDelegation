@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  18 JUN 2025 17:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JUN 2025 21:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
-(/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
+**/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
+(/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -814,10 +814,16 @@ LaTeX Warning: Reference `lem:theta_s' on page 20 undefined on input line 95.
 
 LaTeX Warning: Reference `proofendogenous' on page 20 undefined on input line 95.
 
-[20] [21] [22]
-File: Figures/fig_we_vs_beta.png Graphic file (type bmp)
-<Figures/fig_we_vs_beta.png>
- [23] [24]
+[20] [21] [22] (./Figures/fig_opacity_beta_2
+File: ./Figures/fig_opacitybeta.png Graphic file (type bmp)
+<./Figures/fig_opacitybeta.png>
+File: ./Figures/fig_opacitybeta_unique.png Graphic file (type bmp)
+<./Figures/fig_opacitybeta_unique.png>
+)
+
+LaTeX Warning: Reference `fig:opacity_beta' on page 23 undefined on input line 143.
+
+[23] [24]
 File: ./Figures/RelativeWages3.png Graphic file (type bmp)
 <./Figures/RelativeWages3.png>
  [25]
@@ -857,7 +863,7 @@ LaTeX Warning: Reference `etahat_b' on page 32 undefined on input line 113.
 [32] [33]
 File: ./Figures/skillpotential.png Graphic file (type bmp)
 <./Figures/skillpotential.png>
- [34] [35] [36] [37] [38]) (./00_Document.bbl [39] [40] [41] [42]) [43] (./00_Document.aux)
+ [34] [35] [36] [37]) [38] (./00_Document.bbl [39] [40] [41]) [42] (./00_Document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -870,12 +876,12 @@ Package rerunfilecheck Info: File `00_Document.out' has not changed.
 (rerunfilecheck)             Checksum: CDC40466DFC4148C3F3269D4C7A29D35;3772.
  ) 
 Here is how much of TeX's memory you used:
- 24538 strings out of 474773
- 456389 string characters out of 5757723
+ 24554 strings out of 474773
+ 457031 string characters out of 5757724
  1934839 words of memory out of 5000000
- 46219 multiletter control sequences out of 15000+600000
+ 46231 multiletter control sequences out of 15000+600000
  575358 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,15n,90p,2039b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,90p,2060b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 00_Document.pdf (43 pages).
+Output written on 00_Document.pdf (42 pages).

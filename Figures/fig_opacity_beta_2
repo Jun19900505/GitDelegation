@@ -1,0 +1,10 @@
+\begin{figure}
+    \centering
+    \subfigure[High flow-performance sensitivity]{%
+        \includegraphics[height=57mm]{./Figures/fig_opacitybeta.png}}%
+    \hspace{1mm}
+    \subfigure[Low flow-performance sensitivity]{%
+        \includegraphics[height=57mm]{./Figures/fig_opacitybeta_unique.png}}%
+    \caption{Fund Opacity and Trading Intensity}
+    \label{fig:opacitybeta}
+    \end{figure}
