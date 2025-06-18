@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JUN 2025 12:25
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JUN 2025 12:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -855,9 +855,6 @@ L3 programming layer <2024-02-20>
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `00_Document.out' has not changed.
 (rerunfilecheck)             Checksum: CDC40466DFC4148C3F3269D4C7A29D35;3772.
