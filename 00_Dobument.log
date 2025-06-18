@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JUN 2025 00:13
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JUN 2025 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -653,11 +653,7 @@ File: l3backend-xetex.def 2024-02-20 L3 backend support: XeTeX
 \g__pdf_backend_object_int=\count345
 \g__pdf_backend_annotation_int=\count346
 \g__pdf_backend_link_int=\count347
-) (./00_Dobument.aux
-
-LaTeX Warning: Label `high' multiply defined.
-
-)
+) (./00_Dobument.aux)
 \openout1 = `00_Dobument.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -815,12 +811,7 @@ LaTeX Warning: Reference `lem:theta_s' on page 20 undefined on input line 89.
 
 LaTeX Warning: Reference `proofendogenous' on page 20 undefined on input line 89.
 
-[20] [21] [22]
-Overfull \hbox (1.46301pt too wide) in paragraph at lines 132--133
-\TU/lmr/m/n/12 tends to generate equilibrium multiplicity though a hightened flow-performance
- []
-
-[23]
+[20] [21] [22] [23]
 File: ./Figures/RelativeWages3.png Graphic file (type bmp)
 <./Figures/RelativeWages3.png>
  [24] [25]
@@ -830,10 +821,10 @@ File: ./Figures/Performance_s.png Graphic file (type bmp)
 
 LaTeX Warning: Reference `max_prob' on page 30 undefined on input line 69.
 
+
+LaTeX Warning: Reference `max_prob' on page 30 undefined on input line 81.
+
 [30]
-
-LaTeX Warning: Reference `max_prob' on page 31 undefined on input line 81.
-
 File: ./Figures/fig_omegas_theta2.png Graphic file (type bmp)
 <./Figures/fig_omegas_theta2.png>
 File: ./Figures/fig_omegas_theta3.png Graphic file (type bmp)
@@ -849,14 +840,14 @@ LaTeX Warning: Reference `eq:varphi*' on page 31 undefined on input line 115.
 
 LaTeX Warning: Reference `proofendogenous' on page 31 undefined on input line 115.
 
-[31] [32] [33]
+[31] [32]
 
-LaTeX Warning: Reference `etahat_b' on page 34 undefined on input line 144.
+LaTeX Warning: Reference `etahat_b' on page 33 undefined on input line 144.
 
-[34] [35]
+[33] [34]
 File: ./Figures/skillpotential.png Graphic file (type bmp)
 <./Figures/skillpotential.png>
- [36] [37] [38] [39]) (./00_Dobument.bbl [40] [41] [42] [43]) [44] (./00_Dobument.aux)
+ [35] [36] [37] [38] [39]) (./00_Dobument.bbl [40] [41] [42] [43]) [44] (./00_Dobument.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -865,17 +856,14 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `00_Dobument.out' has not changed.
-(rerunfilecheck)             Checksum: 8D7A61F7E282D1C8383E4D1D68F9CCA1;3805.
+(rerunfilecheck)             Checksum: 10E831F8D77F877B109F7129D64A0533;3767.
  ) 
 Here is how much of TeX's memory you used:
- 24598 strings out of 474773
- 457850 string characters out of 5757724
+ 24602 strings out of 474773
+ 457923 string characters out of 5757724
  1934839 words of memory out of 5000000
- 46278 multiletter control sequences out of 15000+600000
+ 46282 multiletter control sequences out of 15000+600000
  575358 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,15n,90p,2265b,678s stack positions out of 10000i,1000n,20000p,200000b,200000s
