@@ -1,40 +1,9 @@
 \section{Strategic Opacity}\label{sec:endogenousopacity}
 
-This section analyzes endogenous opacity by allowing the manager to control $\omega_{e}$. We find that she strategically chooses opacity as a commitment device to restrict herself from taking excessive risk. The result  
+This section analyzes endogenous opacity by allowing the manager to control $\omega_{e}$. We find that she strategically chooses opacity as a commitment device to restrict herself from taking excessive risk. 
 
 \subsection{Setup} \label{sec:setupEndog}
-There are two periods, $t=0,1$. In each period, the trader with skill $|s|$ picks an asset that yields a payoff $\delta_{t}\sim N(\hat{\delta}_{t}+s,\omega_{\delta})$ at the end of the period, where $\hat{\delta}_{t}$ is the market maker's prior expectation about $\delta_{t}$. Each asset lives only for one period. Although the trader picks different assets in $t=0$ and $t=1$, both of them are characterized by the same $s$ because $s$ represents her time-invariant skill. In other words, her skill allows her to {\it systematically} pick an asset such that the market maker's prior expectation about $\delta_{t}$ is biased by $|s|$. %this means that each trader has her own pool of assets to pick from; not sure this is clear from the formulation.
-We assume that the market is anonymous, meaning that the market maker cannot track which trader selects which assets, while the recruiter can. This assumption, combined with the existence of a continuum of traders with various $s$, implies that market makers at $t=1$ cannot update their estimate of each trader’s $s$, whereas the recruiter can.\footnote{This assumption is justified by the anonymity of the market. Each market maker trades with a different trader in each period and cannot track or identify which traders have traded which assets in the past. Hence, he cannot update traders' skills based on past information. Conversely, recruiters may keep track of traders via direct and individual communications.} This distinction is critical: it is the market makers' inability to update the estimate of $s$ that allows the recruiter---who can update it---to potentially make profits by recruiting traders.
-
-\paragraph{\normalfont{\it{Timing.}}}
-The model unfolds as follows. \vspace*{-0.2cm}
-	\begin{enumerate}
-		\item At the beginning of $t=0$, each trader draws $s$ independently from $N(0,\omega_{s})$, which is her private information. She selects an asset and submits market order $x_{0}$ to the market maker for that asset, and liquidity investors' demand $u_{0}\sim N(0,\omega_{u,0})$ is realized. The market maker sets a price using order-flow information, $p_{0}=\mathrm{E}\left[\delta_{0}|x_{0}+u_{0}\right]$.
-		\item At the end of $t=0$, the asset's payoff $\delta_{0}$ is realized, and the trader earns the profit, $\pi_{0}=(\delta_{0}-p_{0})x_{0}$.
-		\item At the beginning of $t=1$, each trader meets the recruiter with probability $\varphi$. The recruiter observes the past execution price ($p_{0}$) and the realized payoff ($\delta_{0}$) of the asset that the trader has picked in $t=0$. The trader's $x_{0}$ and $\pi_{0}$ are not disclosed. %Need more discussion: why the trader does not reveal eta directly?
-  The recruiter updates his estimate of the trader's $s$, obtaining the posterior mean $\hat{s}=\mathrm{E}\left[s|p_{0},\delta_{0}\right]$. The recruiter then employs the trader for a competitive salary:
-			\begin{equation}
-				w=\mathrm{E}[\pi_{1}|p_{0},\delta_{0}],
-			\end{equation}
-		where $\pi_{1}=(\delta_{1}-p_{1})x_{1}$ is the trading profit in $t=1$. Note that $w$ is determined by the recruiter's expectation about $\pi_{1}$.\footnote{An implicit assumption is that the trader encounters a recruiter upon losing her current job. Consequently, she always accepts the salary offered. A trader might find herself in such a situation due to the closure of a trading desk or the discontinuation of a fund, as described by eFinancialCareers (“\href{https://www.efinancialcareers.com/news/2014/05/investment-banks-now-poaching-floundering-hedge-funds}{How Investment Banks are Now Poaching from Floundering Hedge Funds},'' May 2014). Also, parameter $\varphi$ can incorporate labor mobility in the finance industry. For example, non-compete clauses and garden leave may reduce $\varphi$.} This is why the trader cares about the recruiter's perception of her $|s|$, leading to the endogenous reputation benefit. With probability $1-\varphi$, the trader does not meet the recruiter and remains with her current employer.\footnote{Alternatively, we could introduce the following setting. In the current firm's compensation, the proportion $\alpha$ is paid as a fixed wage, and the remaining portion is paid based on performance, $\pi_{t}$, while the recruiter's firm pays the $\alpha'$ portion as the fixed wage. The fixed wage paid by the current firm, $\bar{w}$, is already fixed, so that the trader's expected utility is written as $\mathrm{E}\left[\alpha\bar{w} + (1-\alpha)\pi_{0} + (1-\varphi)(\alpha\bar{w} + (1-\alpha)\pi_{1}) + \varphi(\alpha' w + (1-\alpha')\pi_{1})\right]$. Appropriately scaling and rewriting the coefficients of this utility, we obtain a maximization problem virtually identical to equation (\ref{max0a}), which yields all the results presented in this section.}  The trader submits market order $x_{1}$ to the market maker. Liquidity investors' demand $u_{1}\sim N(0,\omega_{u,1})$ is realized ($\omega_{u,1}$ and $\omega_{u,0}$ can be different). The market maker sets the price $p_{1}=\mathrm{E}\left[\delta_{1}|x_{1}+u_{1}\right]$.
-		\item At the end of $t=1$, $\delta_{1}$ is realized and $\pi_{1}$ is determined.
-	\end{enumerate}
-	The trader's problem at the beginning of $t=0$ is
-	\begin{equation}
-		\max_{x_{0}}\ \mathrm{E}\left[\pi_{0}+\varphi w+(1-\varphi)\pi_{1}|s\right].\label{max0a}
-	\end{equation}
-
-
-%\footnote{Alternatively, we could introduce the following setting. Both in the current firm and the recruiter's firm, the proportion $\alpha$ of the compensation is paid as a fixed wage, while the remaining portion is paid based on performance, $\pi_{t}$. The fixed wage in the current compensation is already fixed at some constant, $\bar{w}$, so that the recruiter's expected utility is written as $\mathrm{E}\left[\alpha\bar{w} + (1-\alpha)\pi_{0} + (1-\varphi)(\alpha\bar{w} + (1-\alpha)\pi_{0}) + \varphi(\alpha w + (1-\alpha)\pi_{1})\right]$. Appropriately scaling and rewriting the coefficients of this utility, we obtain the same result as presented in equation (\ref{max0a}).}
-
-%[Y: I don't understand this footnote.]
-%\footnote{We assume that a trader always accepts the competitive salary. For reasons outside the model, she has to sell her know-how. The trader's trading decisions are independent absent the $\varphi$-event, such that the results are the same whether we assume that the trader exits all financial markets or trades on her own account if not meeting a recruiter.}
-
-%Figure \ref{fig:timeline} summarizes the timing of the two-period model.
-
-%\bigskip
-%\centerline{\bf [Place Figure~\ref{fig:timeline} about here]}
-%\bigskip
+Before the fund manager decides on the investment strategy in the fundraising stage ($t=0$), she chooses the fund opacity by controling $\omega_{e}$. 
 
 %===========================================
 \subsection{Equilibrium} \label{ss:eqm_endog}

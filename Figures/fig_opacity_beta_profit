@@ -1,0 +1,11 @@
+\begin{figure}
+\centering
+
+\subfigure[Opacity and Trading Intensity]{\includegraphics[width=67mm]{./Figures/fig_we_vs_beta.png}
+\label{low}}\quad
+\subfigure[Opacity and Performance]{\includegraphics[width=60mm]{./Figures/fig_opacityprofit.png}\label{high}}
+
+\caption{Opacity, Trading Intensit, and Performance}
+\caption*{\footnotesize{Note: The figure plots $F(\beta)$ for different values of $\theta$. The equilibrium values of $\beta$ are determined at the fixed points of $F(\cdot)$.  The parameter values used in the figures are $\omega_{s}=50$, $\omega_{\delta}=1$, and $\omega_{u}=0.1$.}}
+\label{fig:opacity_beta_pi}
+\end{figure}
