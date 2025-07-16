@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JUN 2025 21:35
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  16 JUL 2025 14:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
-(/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
+**/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
+(/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -795,7 +795,7 @@ LaTeX Warning: Hyper reference `app:appendix' on page 7 undefined on input line 
 
 ) (./02_MainBody/022_Baseline.tex [7] [8] [9]
 
-LaTeX Warning: Hyper reference `app:appendix' on page 10 undefined on input line 43.
+LaTeX Warning: Hyper reference `app:appendix' on page 10 undefined on input line 47.
 
 [10] [11] [12] [13]) (./02_MainBody/023_Opaque.tex [14] [15] [16] (./Figures/Figure_multiple_eqm.tex
 File: ./Figures/fig_exogenous_low.pdf Graphic file (type pdf)
@@ -877,11 +877,11 @@ Package rerunfilecheck Info: File `00_Document.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  24554 strings out of 474773
- 457031 string characters out of 5757724
- 1934839 words of memory out of 5000000
+ 456968 string characters out of 5757723
+ 1935839 words of memory out of 5000000
  46231 multiletter control sequences out of 15000+600000
  575358 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,15n,90p,2060b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,90p,2039b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 00_Document.pdf (42 pages).
