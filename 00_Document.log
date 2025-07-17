@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  17 JUL 2025 11:31
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  17 JUL 2025 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -816,11 +816,7 @@ File: ./Figures/fig_opacitybeta.png Graphic file (type bmp)
 <./Figures/fig_opacitybeta.png>
 File: ./Figures/fig_opacitybeta_unique.png Graphic file (type bmp)
 <./Figures/fig_opacitybeta_unique.png>
-)
-
-LaTeX Warning: Reference `fig:opacity_beta' on page 24 undefined on input line 142.
-
-[24] [25]
+) [24] [25]
 File: ./Figures/RelativeWages3.png Graphic file (type bmp)
 <./Figures/RelativeWages3.png>
  [26]
@@ -923,10 +919,10 @@ Package rerunfilecheck Info: File `00_Document.out' has not changed.
 (rerunfilecheck)             Checksum: F7C30EF583150E13B73114D0693F9F44;4728.
  ) 
 Here is how much of TeX's memory you used:
- 24637 strings out of 474773
- 458509 string characters out of 5757723
+ 24636 strings out of 474773
+ 458491 string characters out of 5757723
  1935839 words of memory out of 5000000
- 46304 multiletter control sequences out of 15000+600000
+ 46303 multiletter control sequences out of 15000+600000
  577827 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,15n,90p,1743b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
