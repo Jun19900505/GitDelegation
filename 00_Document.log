@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  17 JUL 2025 14:46
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  31 JUL 2025 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -826,10 +826,10 @@ File: ./Figures/Performance_s.png Graphic file (type bmp)
 
 LaTeX Warning: Reference `max0a' on page 29 undefined on input line 31.
 
-
-LaTeX Warning: Reference `max_prob' on page 29 undefined on input line 38.
-
 [29]
+
+LaTeX Warning: Reference `max_prob' on page 30 undefined on input line 38.
+
 
 LaTeX Warning: Reference `max_prob' on page 30 undefined on input line 50.
 
@@ -925,6 +925,6 @@ Here is how much of TeX's memory you used:
  46303 multiletter control sequences out of 15000+600000
  577827 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,15n,90p,1743b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,90p,1743b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 00_Document.pdf (58 pages).
