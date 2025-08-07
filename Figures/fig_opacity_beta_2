@@ -1,11 +1,11 @@
 \begin{figure}[t]
     \centering
-    \subfigure[High flow-performance sensitivity]{%
-        \includegraphics[height=57mm]{./Figures/fig_opacitybeta.png}}%
-    \hspace{1mm}
     \subfigure[Low flow-performance sensitivity]{%
         \includegraphics[height=57mm]{./Figures/fig_opacitybeta_unique.png}}%
+    \hspace{1mm}
+    \subfigure[High flow-performance sensitivity]{%
+        \includegraphics[height=57mm]{./Figures/fig_opacitybeta.png}}%
     \caption{Fund Opacity and Trading Intensity}
     \label{fig:opacitybeta}
-    \caption*{\footnotesize{Note: these figures are illustrated by seeting $\omega_{s} = 1.0, \omega_{u} = 2.0, n =5, \phi = 0.02$ (the left panel) and $\phi = 0.08$ (the right panel).}}
+    \caption*{\footnotesize{Note: these figures are illustrated by seeting $\omega_{s} = 1.0, \omega_{u} = 2.0, n =5, \phi = 0.08$ (the left panel) and $\phi = 0.02$ (the right panel).}}
     \end{figure}
