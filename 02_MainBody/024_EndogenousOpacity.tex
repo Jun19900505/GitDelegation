@@ -14,9 +14,17 @@ The fund manager has an incentive to make a false report about the fund proceeds
 \paragraph{\normalfont{\it{Sunspot shock.}}}
 To formalize the optimization problems in $t=0$ in the rational expectations framework, we introduce an equilibrium-selection device in cases of multiple equilibria. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bunk runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, whenever parameters admit multiple equilibria, market participants play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high-$\beta$ equilibrium is realized with probability $\Pr(z=1)=\rho$, where $\rho$ denotes the exogenous probability that a sunspot emerges. We assume that $z$ is realized at the beginning of the trading stage in $t=1$. In what follows, the trading intensity in the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta = \beta_{H}$ and $\beta_{L}$, respectively.
 
+\paragraph{\normalfont{\it{Optimization.}}}
+For each level of $\beta$, equation (\ref{eq:mi_max}) indicates that an investor expects to earn $\frac{1-\phi}{n^2}\mathrm{E}[\pi|f]$ by following the optimal capital allocation in (\ref{eq:symmetricm}).
+the following payoffs by optimally delegating investment:
+\begin{equation}
+     \bar{\pi}(\beta)\equiv\mathrm{E}_{\beta}[\pi] = \frac{\beta \omega_{s}\omega_{u}}{\beta^2 \omega_u + \omega_s},\label{eq:pibeta}
+\end{equation}
+where $\beta = \beta_{H}$ or $\beta_{L}$. 
+
 \subsection{Equilibrium}
 
-We first solve for the participation decisions of clients and pin down the equilibrium size of clientale, $n$, as a function of fund opacity, $\omega_{e}$. Subsequently, the manager chooses the optimal $\omega_{e}$ incorporating the reactions of investors.
+We first solve for the participation decisions of clients and pin down the equilibrium size of clientale, $n$, as a function of fund opacity, $\omega_{e}$. Incorporating this reaction, the manager chooses the optimal $\omega_{e}$.
 
 \paragraph{\normalfont{\it{Fund participation.}}}
 

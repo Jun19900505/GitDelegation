@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  7 AUG 2025 22:14
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  8 AUG 2025 10:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -801,14 +801,7 @@ LaTeX Warning: Reference `sec:endogenous' on page 7 undefined on input line 39.
 
 LaTeX Warning: Reference `sec:skillacquisition' on page 7 undefined on input line 39.
 
-
-LaTeX Warning: Hyper reference `app:appendix' on page 7 undefined on input line 39.
-
-) (./02_MainBody/022_Baseline.tex [7] [8] [9]
-
-LaTeX Warning: Hyper reference `app:appendix' on page 10 undefined on input line 48.
-
-[10] [11] [12] [13]) (./02_MainBody/023_Opaque.tex [14] [15] [16] (./Figures/Figure_multiple_eqm.tex
+) (./02_MainBody/022_Baseline.tex [7] [8] [9] [10] [11] [12] [13]) (./02_MainBody/023_Opaque.tex [14] [15] [16] (./Figures/Figure_multiple_eqm.tex
 File: ./Figures/fig_exogenous_low.pdf Graphic file (type pdf)
 <use ./Figures/fig_exogenous_low.pdf>
 File: ./Figures/fig_exogenous_high.pdf Graphic file (type pdf)
@@ -818,14 +811,7 @@ File: ./Figures/fig_exogenous_multiple.pdf Graphic file (type pdf)
 ) [17] [18] [19]
 File: Figures/fig_eqm.pdf Graphic file (type pdf)
 <use Figures/fig_eqm.pdf>
- [20]
-
-LaTeX Warning: Reference `lem:theta_s' on page 21 undefined on input line 95.
-
-
-LaTeX Warning: Reference `proofendogenous' on page 21 undefined on input line 95.
-
-[21]
+ [20] [21]
 Overfull \hbox (2.58165pt too wide) in paragraph at lines 107--108
 []\TU/lmr/m/it/12 the manager’s expected performance given the realized skill, $\OT1/cmr/m/n/12 E[(\OML/cmm/m/it/12 ^^N \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ] =
  []
@@ -843,38 +829,85 @@ File: ./Figures/Performance_s.png Graphic file (type bmp)
 <./Figures/Performance_s.png>
 ) (./02_MainBody/024_EndogenousOpacity.tex [27] [28] [29] [30] [31]
 
-LaTeX Warning: Reference `max0a' on page 32 undefined on input line 60.
+LaTeX Warning: Reference `max0a' on page 32 undefined on input line 68.
 
 
-LaTeX Warning: Reference `max_prob' on page 32 undefined on input line 67.
+LaTeX Warning: Reference `max_prob' on page 32 undefined on input line 75.
 
 [32]
 
-LaTeX Warning: Reference `max_prob' on page 33 undefined on input line 79.
+LaTeX Warning: Reference `max_prob' on page 33 undefined on input line 87.
 
 File: ./Figures/fig_omegas_theta2.png Graphic file (type bmp)
 <./Figures/fig_omegas_theta2.png>
 File: ./Figures/fig_omegas_theta3.png Graphic file (type bmp)
 <./Figures/fig_omegas_theta3.png>
 
-Overfull \hbox (35.82632pt too wide) in paragraph at lines 97--99
+Overfull \hbox (35.82632pt too wide) in paragraph at lines 105--107
 [][] [][] 
  []
 
+[33] [34] [35]
 
-LaTeX Warning: Reference `eq:varphi*' on page 33 undefined on input line 113.
+LaTeX Warning: Reference `etahat_b' on page 36 undefined on input line 150.
 
-
-LaTeX Warning: Reference `proofendogenous' on page 33 undefined on input line 113.
-
-[33] [34]
-
-LaTeX Warning: Reference `etahat_b' on page 35 undefined on input line 142.
-
-[35] [36]
+[36] [37]
 File: ./Figures/skillpotential.png Graphic file (type bmp)
 <./Figures/skillpotential.png>
- [37] [38] [39] [40] [41]) (./02_MainBody/025_Conclusion.tex [42]) (./00_Document.bbl [43] [44] [45]) [46] (./00_Document.aux)
+ [38] [39] [40] [41]) (./02_MainBody/025_Conclusion.tex [42]) (./00_Document.bbl [43] [44] [45] [46]) [47] (./03_Appendix.tex
+
+LaTeX Warning: Reference `lemma:beliefs' on page 48 undefined on input line 9.
+
+[48]
+
+LaTeX Warning: Reference `lemma:maximization' on page 49 undefined on input line 76.
+
+
+LaTeX Warning: Reference `etahat_b' on page 49 undefined on input line 77.
+
+
+LaTeX Warning: Reference `max_prob' on page 49 undefined on input line 93.
+
+[49] [50] (./OtherFiles/proof_multieqm.tex [51] [52]
+Overfull \hbox (25.16899pt too wide) detected at line 62
+[][][]\OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) + 2\OML/cmm/m/it/12 yJ[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )[] + 2\OML/cmm/m/it/12 y[]:
+ []
+
+[53] [54]
+
+LaTeX Warning: Reference `fn:highlowbeta_def' on page 55 undefined on input line 128.
+
+[55] [56] [57]
+Overfull \hbox (51.78593pt too wide) detected at line 243
+[]
+ []
+
+[58] [59]
+Overfull \hbox (6.30333pt too wide) in paragraph at lines 312--313
+ []\TU/lmr/m/it/12 Proof of Statements (iii) and (iv).[] \TU/lmr/m/n/12 Note that $[][] \OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 y[]$\TU/lmr/m/n/12 , and $\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 ) =
+ []
+
+[60]) (./OtherFiles/proof_betaHL.tex
+Overfull \hbox (63.40735pt too wide) detected at line 8
+[][][]\OT1/cmr/m/n/12 E[][\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ![]; ^^L[]\OT1/cmr/m/n/12 )] = [] \OML/cmm/m/it/12 ^^L[] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 ^^X[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^M\OT1/cmr/m/n/12 )[] + (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12  \OT1/cmr/m/n/12 )[][]\OML/cmm/m/it/12 :
+ []
+
+
+Overfull \hbox (55.60274pt too wide) detected at line 13
+[]
+ []
+
+
+Overfull \hbox (66.57043pt too wide) detected at line 17
+[][][]\OMS/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 ^^L[][][] \OT1/cmr/m/n/10.95 + [] [] \OML/cmm/m/it/10.95 :
+ []
+
+[61]
+Overfull \hbox (12.45912pt too wide) detected at line 22
+[]
+ []
+
+)) [62] (./00_Document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -887,15 +920,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `00_Document.out' has not changed.
-(rerunfilecheck)             Checksum: 4541E522D86B6E1DDADE84B428A21CDF;3972.
+(rerunfilecheck)             Checksum: 5C104768387C9BEE20E87149D3B0ECD3;5016.
  ) 
 Here is how much of TeX's memory you used:
- 24565 strings out of 474773
- 457273 string characters out of 5757724
+ 24648 strings out of 474773
+ 458829 string characters out of 5757724
  1935839 words of memory out of 5000000
- 46239 multiletter control sequences out of 15000+600000
- 575358 words of font info for 115 fonts, out of 8000000 for 9000
+ 46312 multiletter control sequences out of 15000+600000
+ 577827 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,15n,90p,1764b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 00_Document.pdf (46 pages).
+Output written on 00_Document.pdf (62 pages).
