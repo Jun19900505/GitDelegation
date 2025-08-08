@@ -5,42 +5,45 @@ This section analyzes endogenous opacity by allowing the manager to control $\om
 \subsection{Setup} \label{sec:setupEndog}
 We extend the model to a two-stage setting ($t = 0, 1$), assuming that the baseline model analyzed in the previous sections takes place at $t = 1$. 
 
-At the begenning of $t=0$, the fund manager chooses the fund opacity, $\omega_{e}$. Subsequently, but prior to the investment delegation, each investor decides whether to participate in the fund by paying the verification cost $C(\omega_{e})$ with $C(0)=0$ and $C'(\cdot)>0$, which we justify below. The investors' participation decisions collectively determine the size of clientele, $n$. In the end of $t=1$, each client observes the realized asset's payoff and its price, $(\delta,p)$, and receives the payment from the fund according to the manager's report about fund proceeds, denoted as $\tilde{y}$.
+At the begenning of $t=0$, the fund manager chooses the fund opacity, $\omega_{e}$. Subsequently, but prior to the investment delegation, each investor decides whether to participate in the fund by paying the verification cost $C(\omega_{e})$ with $C(0)=0$ and $C'(\cdot)>0$, which we justify below. The investors' participation decisions collectively determine the size of clientele, $n$. At the begenning of $t=1$, the manager realizes her skill, $s$, and the model evolves as specified in Section \ref{sec:Model} In the end of $t=1$, each client observes the realized asset's payoff and its price, $(\delta,p)$, and receives the payment from the fund according to the manager's report about fund proceeds, denoted as $\tilde{y}$.
 
 \paragraph{\normalfont{\it{Misreporting and verification.}}}
 
 The fund manager has an incentive to make a false report about the fund proceeds. Namely, by reporting $\tilde{y}$, she pays out $(1-\phi)\tilde{y}$ to clients and captures $y-(1-\phi)\tilde{y}$ on her own, suggesting that reporting $\tilde{y}=0$ would be optimal.\footnote{Technically, the manager earns an infinite payment by reporting $\tilde{y}=-\infty$, while we assume that clients must receive non-negative payoffs from the fund (i.e., they do not pay additional money), thereby imposing $\tilde{y}\ge0$.} To counteract this intentional misreporting, we assume that a client who paid the verification cost, $C$, observes $x$ in the end of $t=1$ and, together with the market data $(\delta,p)$, she can verify $y=(\delta-p)x+M$, disproving $\tilde{y}\neq y$.\footnote{We implicitly assume that the manager is penalized and incurs a negative large utility if her intentional misreporting is detected.} Otherwise, the manager can intentionally misreport $\tilde{y}=0$, as there are levels of $e$ and $u$ that are consistent with the report, i.e., she claims that the investment was $\tilde{x}=-M/(\delta-p)$, while the noise components in the fund information and order flow were $\tilde{e}=f-\tilde{x}$ and $\tilde{u}=(x+u)-\tilde{x}$, making $f$ and $p$ consistent with $\tilde{y}=0$. The verification cost is increasing in the degree of fund opacity, $C'(\omega_{e})>0$, capturing the fact that analyzing and extracting information about $x$ from $f$ becomes harder as the opacity of fund information increases.
 
 \paragraph{\normalfont{\it{Sunspot shock.}}}
-To formalize the optimization problems in $t=0$ in the rational expectations framework, we introduce an equilibrium-selection device in cases of multiple equilibria. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bunk runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, whenever parameters admit multiple equilibria, market participants play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high-$\beta$ equilibrium is realized with probability $\Pr(z=1)=\rho$, where $\rho$ denotes the exogenous probability that a sunspot emerges. We assume that $z$ is realized at the beginning of the trading stage in $t=1$. In what follows, the trading intensity in the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta = \beta_{H}$ and $\beta_{L}$, respectively.
+To formalize the optimization problems in $t=0$ in the rational expectations framework, we introduce an equilibrium-selection device in cases of multiple equilibria. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bunk runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, whenever parameters admit multiple equilibria, market participants play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high-$\beta$ equilibrium is realized with probability $\rho_{H}\equiv\Pr(z=1)$, while the complementary probability is denoted as $\rho_{L} = 1-\rho_{H}$. We assume that $z$ is realized at the beginning of the trading stage in $t=1$. In what follows, the trading intensity in the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta = \beta_{H}$ and $\beta_{L}$, respectively. Also,  for consistency, we define $\rho_{j} = 1$ for $j=H,L$ when the equilibrium with $\beta = \beta_{j}$ is unique.
 
 \paragraph{\normalfont{\it{Optimization.}}}
-For each level of $\beta$, equation (\ref{eq:mi_max}) indicates that an investor expects to earn $\frac{1-\phi}{n^2}\mathrm{E}[\pi|f]$ by following the optimal capital allocation in (\ref{eq:symmetricm}).
-the following payoffs by optimally delegating investment:
+For each level of $\beta$, equation (\ref{eq:mi_max}) indicates that the optimal capital allocation in (\ref{eq:symmetricm}) leads to the following expected payoffs for an investor:
+
 \begin{equation}
-     \bar{\pi}(\beta)\equiv\mathrm{E}_{\beta}[\pi] = \frac{\beta \omega_{s}\omega_{u}}{\beta^2 \omega_u + \omega_s},\label{eq:pibeta}
+     V_{I}(\beta) \equiv \mathrm{E}\left[\frac{1-\phi}{n}\mathrm{E}[\pi|f] -\phi\frac{\theta}{n}\mathrm{E}[\pi|f] \right] = \frac{1-\phi}{n^2}\frac{\beta \omega_{s}\omega_{u}}{\beta^2 \omega_u + \omega_s},\label{eq:pibeta} \\
+     %&=\mathrm{E}\left[\frac{1-\phi}{n^2}\mathrm{E}[\pi|f]\right] \\
+     %&\nonumber
 \end{equation}
-where $\beta = \beta_{H}$ or $\beta_{L}$. 
+where $\beta = \beta_{H}$ or $\beta_{L}$. The first term in the middle of (\ref{eq:pibeta}) represents the share of the trading profit allocated to the client, and the second term is the cost assosiated with delegation, $\phi m$, in the equilibrium. The last equality arises from the expected trading profit: $\mathrm{E}[\pi] = \frac{\beta \omega_{s}\omega_{u}}{\beta^2 \omega_u + \omega_s}$. Therefore, she is willing to participate in the fund and pays the verification cost if and only if 
+\begin{equation}
+     \bar{V}_I \equiv \sum_{j=H,L} \rho_{j}V_{I}(\beta_{j}) \geq C(\omega_{e}),\label{eq:participation} 
+\end{equation}
+where $\bar{V}_{I}$ represents the investor's \textit{ex-ante} expected payoff, incorporating multiple equilibria. 
+
+Conversely, conditional on the skill, the manager expects to earn $\mathrm{E}[\phi y|s] $
+As shown below, the size of clientele ($n$) increases as long as inequality (\ref{eq:participation}) holds, leading to the equilibrium $n$ and influencing the manager's compensation. For each level of $\beta$, the manager's expected payoff is
+\begin{equation}
+     V_M (\beta) \equiv \mathrm{E}\left[\mathrm{E}\left[\phi \pi + (1-\phi)\frac{n-1}{n}\mathrm{E}[\pi|f]\right]\right] = \phi(1+\theta) \frac{\beta \omega_{s}\omega_{u}}{\beta^2 \omega_u + \omega_s}.\label{eq:VM beta}
+\end{equation}
+Therefore, incorporating the reaction of her clients on fund opacity, the manager solves
+\begin{equation}
+     \max_{\omega_{e}} \sum_{j=H,L} \rho_{j}V_M(\beta_{j}).\label{eq: max manager VM} 
+\end{equation}
+
 
 \subsection{Equilibrium}
 
-We first solve for the participation decisions of clients and pin down the equilibrium size of clientale, $n$, as a function of fund opacity, $\omega_{e}$. Incorporating this reaction, the manager chooses the optimal $\omega_{e}$.
+We first solve for the participation decisions of clients and pin down the equilibrium size of clientale, $n$, as a function of fund opacity, $\omega_{e}$.
 
 \paragraph{\normalfont{\it{Fund participation.}}}
-
-Each investor delegates her capital to the fund if the following inequality holds:
-\begin{equation}
-V_{I}\equiv\frac{1-\phi}{n^{2}}\mathrm{E}[\pi]-C(\omega_{e})\ge 0,\label{eq:VI-C}
-\end{equation}
-where the unconditional expected performance of the fund is further written as
-\begin{equation}
-     \mathrm{E}[\pi] = \begin{cases}
-          \rho\frac{\beta_{H}\omega_{u}\omega_{s}}{\beta_{H}^2\omega_u + \omega_{s}} + (1-\rho)\frac{\beta_{H}\omega_{u}\omega_{s}}{\beta_{}^2\omega_u + \omega_{s}}\ \text{if} XXX\\
-          \frac{\beta_{j}\omega_{u}\omega_{s}}{\beta_{j}^2\omega_u + \omega_{s}}\ \text{if} XXX.
-     \end{cases}
-\end{equation}
-The first term in $V_{I}$ represents the unconditional expected payoffs of investment delegation and is obtained by applying the equilibrium $m$ in equation (XXX) to the client's payoff in (XXX). Since the investor can always earn zero profit by opting out of the fund, she delegate investment if and only if its net payoff is positive.
-
 
 %===========================================
 \subsection{Equilibrium} \label{ss:eqm_endog}
