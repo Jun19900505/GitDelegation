@@ -38,7 +38,7 @@ Conversely, investor $i$ maximizes her return from delegated asset management by
     \max_{m_i}\mathrm{E}\left[\frac{m_i}{M}(1-\phi)y -m_{i}|x+e\right].\label{eq:investorproblem}
 \end{equation}
 
-\paragraph{\normalfont{\it{Definition of equilibrium.}}} Let $p(x+u)$ represent the market maker's pricing strategy, $x(s)$ denote the manager's trading strategy, and $\{m_{i}(x+e)\}_{i=1}^n$ denote investors' fund allocations. An equilibrium consists of $p(\cdot)$, $x(\cdot)$, and $\{m_{i}(\cdot)\}_{i=1}^n$ such that $p(\cdot)$ satisfies \eqref{p} given $x(\cdot)$, $x(\cdot)$ solves (\ref{eq:managerproblem}) given $p(\cdot)$ and $\{m_{i}(\cdot)\}_{i=1}^n$, and each $m_i(\cdot)$ solves (\ref{eq:investorproblem}) given $p(\cdot)$ and $x(\cdot)$.
+\paragraph{\normalfont{\it{Definition of equilibrium.}}} Let $p(x+u)$ represent the market maker's pricing strategy, $x(s)$ denote the manager's trading strategy, and $\{m_{i}(x+e)\}_{i=1}^n$ denote investors' capital allocations. An equilibrium consists of $p(\cdot)$, $x(\cdot)$, and $\{m_{i}(\cdot)\}_{i=1}^n$ such that $p(\cdot)$ satisfies \eqref{p} given $x(\cdot)$, $x(\cdot)$ solves (\ref{eq:managerproblem}) given $p(\cdot)$ and $\{m_{i}(\cdot)\}_{i=1}^n$, and each $m_i(\cdot)$ solves (\ref{eq:investorproblem}) given $p(\cdot)$ and $x(\cdot)$.
 
 %*==*==*==*==*==*==*==*==*==*==*==*==*==*==*
 \section{Equilibrium} \label{sec:eqm}
@@ -81,17 +81,17 @@ We focus on the symmetric equilibrium where all investors provide the same amoun
 \begin{equation}
     m = \frac{n-1}{n^2}\frac{1-\phi}{\phi}\mathrm{E}[\pi|f].\label{eq:symmetricm}
 \end{equation}
-It suggests that the total asset under management (AUM) of the fund is 
+It suggests that the total AUM of the fund is 
 \begin{equation}
     M \equiv nm = \frac{n-1}{n}\frac{1-\phi}{\phi}\mathrm{E}[\pi|f].\label{eq:M}
 \end{equation}
-Individual and the total fund provisions are proportional to the expected trading profits conditional on the fund information, $\mathrm{E}[\pi|f]$. This is a natural consequence of the performance-based fee structure, as it makes the per-unit return of fund delegation proportional to the trading profit. 
+Individual and total fund contributions are proportional to the expected trading profit conditional on the fund information, $\mathrm{E}[\pi|f]$. This naturally follows from the performance-based fee structure, which makes the per-unit return from delegated asset management proportional to the trading profit.
 
 By incorporating the trading strategy in (\ref{x_conj}), each client seeks to back out the realized skill level $|s|$ of the manager from fund information, $f=x+e$, and applies it to compute the expected fund profits. When the fund information is perfectly transparent ($\omega_{e}=0$), clients infer $s = x/\beta$, leading to
 \begin{equation}
       \mathrm{E}\left[\pi|f\right] = (1-\lambda \beta)\beta\mathrm{E}[s^2|s=x/\beta]=\frac{1-\lambda\beta}{\beta}x^2.\label{eq:exp_pi_transparent}
 \end{equation}
-The first equality in (\ref{eq:exp_pi_transparent}) suggests that the fund return, $\pi=(\delta-p)x$, becomes a quadratic function of $s$, as both the fund's trading quantity, $x$, and the profit margin, $\delta-p$, are proportional to the skill level in expectation. Furtheremore, the transparent fund information indicates that $s=x/\beta$, thereby shaping the conditional expected profit into quadratic in $x$ (the second equality in [\ref{eq:exp_pi_transparent}]). This result implies that the delegated fund management may generate an additional incentive for the manager to control her trading strategy, $x$, because it influences the total fund flow by making her \textit{appear} skilled.
+The first equality in (\ref{eq:exp_pi_transparent}) suggests that the fund return, $\pi=(\delta-p)x$, becomes a quadratic function of $s$, as both the fund's trading quantity, $x$, and the profit margin, $\delta-p$, are proportional to the skill level in expectation. Furtheremore, the transparent fund information indicates that $s=x/\beta$, thereby shaping the conditional expected profit into quadratic in $x$ (the second equality in [\ref{eq:exp_pi_transparent}]). This result implies that delegated asset management may generate an additional incentive for the manager to control her trading strategy, $x$, because it affects the total fund flow by making her \textit{appear} skilled.
 
 Finally, equation (\ref{eq:M}) defines the coefficient of fund flow as
 \begin{equation}
