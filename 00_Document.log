@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  16 JAN 2026 20:15
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  17 JAN 2026 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
-(/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
+**/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
+(/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -841,10 +841,10 @@ File: ./Figures/fig_opacity_vs_perform01.png Graphic file (type bmp)
 <./Figures/fig_opacity_vs_perform01.png>
 File: ./Figures/fig_opacity_vs_perform02.png Graphic file (type bmp)
 <./Figures/fig_opacity_vs_perform02.png>
-) [28]
+)
 File: ./Figures/RelativeWages3.png Graphic file (type bmp)
 <./Figures/RelativeWages3.png>
- [29]
+ [28] [29]
 File: ./Figures/Performance_s.png Graphic file (type bmp)
 <./Figures/Performance_s.png>
  [30]) (./02_MainBody/024_EndogenousOpacity.tex [31] [32] [33] [34] [35]
@@ -940,15 +940,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `00_Document.out' has not changed.
-(rerunfilecheck)             Checksum: 9D03EE9DA05EFDB3DFD4389236C3112C;5162.
+(rerunfilecheck)             Checksum: B178F4CA59F15D74600C98B83E65FF27;5205.
  ) 
 Here is how much of TeX's memory you used:
  24687 strings out of 474773
- 460124 string characters out of 5757723
+ 460187 string characters out of 5757724
  1936839 words of memory out of 5000000
  46345 multiletter control sequences out of 15000+600000
  577827 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,15n,90p,1743b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,90p,1764b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 00_Document.pdf (65 pages).

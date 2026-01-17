@@ -1,14 +1,12 @@
 \section{Model}\label{sec:Model}
 %===========================================
 This section presents a one-period trading model
-à la \citet{kyle1985continuous} with delegated asset management. The economy consists of a \textit{fund manager}, a competitive \textit{market maker}, a \textit{noise trader}, and $n\ge2$ \textit{fund clients (investors)}. All players are risk neutral. The manager leverages her skill (defined later) to identify a single risky asset with potential mispricing, raises capital from investors, and allocates it between the risky asset and a risk-free asset with a zero interest rate.\footnote{We abstract away from information acquisition by individual investors. Economies of scale would support this assumption as a natural equilibrium outcome, in which investors do not acquire the necessary skills and information, but rather remain uninformed and invest through a manager. They do not directly participate in the market due to the lack of informational advantages over the market maker (e.g., \citealp{garleanu2018efficiently}).}
+à la \citet{kyle1985continuous} with delegated asset management. The economy consists of a \textit{fund manager}, a competitive \textit{market maker}, a \textit{noise trader}, and $n\ge2$ \textit{fund clients (investors)} indexed by $i=1,2,\cdots, n$. All players are risk neutral. The manager leverages her skill (defined later) to identify a single risky asset with potential mispricing, raises capital from clients, and allocates it between the risky asset and a risk-free asset with a zero interest rate.\footnote{We abstract away from information acquisition by individual clients and assume that they invest through a manager due to the lack of informational advantages. This assumption would be supported by, for example, information- or skill-acquisition costs, where only the fund manager acquires the skill at lower costs due to economies of scale (e.g., \citealp{garleanu2018efficiently}).}
 
 \paragraph{\normalfont{\textit{Skill.}}}
 
 The manager can uncover more information about the asset's payoff than
 the market maker, and we interpret it as her \textit{skill}. At the beginning of the period, the manager draws private information $s$ from a normal distribution with mean zero and variance $\omega_{s}$. Leveraging this information, she identifies an asset with payoff $\delta = \bar{\delta} + s$, where $\bar{\delta}$ is a publicly know mean payoff. Since the market maker does not observe $s$, her prior expectation of the asset's payoff is $\mathrm{E}[\delta]=\bar{\delta}+\mathrm{E}[s]=\bar{\delta}$, which is biased by $s$ from the informed manager's perspective. As the market maker would set a price $p=\mathrm{E}[\delta]=\bar{\delta}$ in the absence of traders, $s$ can be viewed as the asset's ``potential mispricing.''\footnote{$s$ is not the \textit{actual} mispricing because the market maker will take into consideration the presence of the informed manager; thus, $p$ will deviate from $\bar{\delta}$ in equilibrium.} Indeed, as shown later, the manager profits by buying the asset if $s>0$ (underpriced) and selling it if $s<0$ (overpriced); the larger the $|s|$, the larger the profit. In light of this, we measure the manager's asset-selection skill by $|s|$.\footnote{This formalization of skill aligns with findings in the empirical studies that attribute fund managers' performance to stock-picking skills (e.g., \citealp{wermers2000mutual}; \citealp*{kosowski2006can}).}
- %with $|s|$Moreover, the variance $\mathrm{Var}[s]=\omega_{s}$ controls the shape of the underlying distribution of $s$: a large $\omega_{s}$ represents a wider scope, making the manager more likely to identify an asset with a large mispricing, $|s|$. In light of this, $\omega_{s}$ is referred to as the manager's asset-selection \textit{skill} with $|s|$ being its realized value. 
-%In practical terms, $\omega_{s}$ can reflect factors such as the manager's investment in higher education in finance and economics, which broadens the range of information available to her, while $|s|$ captures the realized ability to leverage such investments into superior decision-making in financial markets. In what follows, when there is no risk of confusion, we may refer to $|s|$ simply as ``skill" without explicitly calling it ``realized skill."
 
 \paragraph{\normalfont{\it{Investment.}}}
 \begin{figure}
@@ -17,13 +15,13 @@ the market maker, and we interpret it as her \textit{skill}. At the beginning of
 \caption{Capital Allocation and Investment}\label{fig:model}
 \end{figure}
 
-We model the manager’s capital-raising and trading decisions as a simultaneous game with rational expectations, as Figure \ref{fig:model} illustrates. On the one hand, the manager chooses the allocation between the risky and the safe asset. This action is represented by a market order for $x\in \mathbb{R}$ units of the risky asset, submitted to the market maker in the financial market. The manager decides on her investment strategy by incorporating the reactions of the financial market (i.e., the asset's price) and the capital inflow from her clients. 
+We model the manager’s capital-raising and trading decisions as a simultaneous game with rational expectations, as illustrated in Figure \ref{fig:model}. On the one hand, the manager chooses the allocation between the risky and the safe asset. This action is represented by a market order for $x\in \mathbb{R}$ units of the risky asset, submitted to the market maker in the financial market. The manager decides on her investment strategy by incorporating the reactions of the financial market (i.e., the asset's price) and the capital inflow from her clients. 
 On the other hand, each client chooses how much capital to allocate to the fund manager based on \textit{fund information}. In particular, the manager disseminates a noisy signal about her trading strategy to clients, denoted by $f = x + e$, where $e$ represents a normally distributed noise term with mean zero and variance $\omega_{e}$.\footnote{The fund manager may deviate \textit{ex post} from the strategy initially communicated to clients. Such incentives, as well as the role of monitoring in preventing deviations, are analyzed in Section \ref{sec:endogenousopacity}.}
 This signal is conveyed through private interactions between the manager and her clients and can be interpreted as the fund manager’s practice of communicating her strategy, such as a high-conviction or concentrated risky position, to clients in order to attract capital.\footnote{Such activities are consistent with the empirical evidence and theoretical rationale in \citet*{anton2021best} and \citet{van2010information}.}
-Since the manager chooses her trading strategy $x$ based on the private signal $s$, the fund information $f$ is informative about the manager’s skill and the fund’s return. Thus, fund clients use $f$ to decide their capital allocations. We denote client $i$'s capital allocation to the fund as $m_i$, and the fund’s total assets under management (AUM) as $M \equiv \sum_{i=1}^{n} m_i$. The fund’s fee structure is proportional to total profits: the manager takes a $\phi\in(0,1)$ fraction of the total fund profits, while the remaining $1-\phi$ fraction is distributed to the clients in proportion to their contributions, $m_i / M$.\footnote{Introducing a fixed fee does not change our qualitative results, as long as the performance-based fee also exists, $0 < \phi < 1$.}
+Since the manager chooses her trading strategy $x$ based on the private signal $s$, the fund information $f$ is informative about the manager’s skill and the fund’s return. Thus, fund clients use $f$ to decide their capital allocations. We denote client $i$'s capital allocation to the fund as $m_i\ge0$, and the fund’s total assets under management (AUM) as $M \equiv \sum_{i=1}^{n} m_i$. The fund’s fee structure is proportional to total profits: the manager takes a $\phi\in(0,1)$ fraction of the total fund profits, while the remaining $1-\phi$ fraction is distributed to the clients in proportion to their contributions to the fund, i.e., $m_i / M$.\footnote{Introducing a fixed fee does not change our qualitative results, as long as the performance-based fee also exists, $0 < \phi < 1$.}
 
 \paragraph{\normalfont{\it{Financial market.}}}
-In the financial market, the market maker sets the asset price, $p$, based on the incoming order flow, $x+u$, where $u$ represents a random market order from the noise trader and follows a normal distribution with mean zero and variance $\omega_u$. Due to the competition, the market maker sets a semi-strong efficient price conditional on $x+u$:\footnote{Assume that, on the equilibrium path, one competitive market maker trades the asset. As in \citet{kyle1985continuous}, competitively many market makers exist off the equilibrium path, ensuring a break-even price in the equilibrium.} 
+In the financial market, the market maker sets the asset price, $p$, based on the incoming order flow, $x+u$, where $u$ represents a random market order from the noise trader and follows a normal distribution with mean zero and variance $\omega_u$. Due to competition, the market maker sets a semi-strong efficient price conditional on $x+u$:\footnote{Assume that, on the equilibrium path, one competitive market maker trades the asset. As in \citet{kyle1985continuous}, competitively many market makers exist off the equilibrium path, ensuring a break-even price in the equilibrium.} 
 \begin{equation}
 p=\mathrm{E}[\delta|x+u].\label{p}
 \end{equation}
@@ -44,18 +42,18 @@ Given the realized skill $s$, the fund manager maximizes her expected fee income
 \end{equation}
 Conversely, conditional on the fund information $f$, client $i$ maximizes her expected return from capital allocation to the fund by choosing $m_i$:
 \begin{equation}
-    \max_{m_i}\mathrm{E}\left[\frac{m_i}{M}(1-\phi)y -m_{i}|x+e\right].\label{eq:investorproblem}
+    \max_{m_i}\mathrm{E}\left[\frac{m_i}{M}(1-\phi)y -m_{i}|f\right].\label{eq:investorproblem}
 \end{equation}
 
 \begin{definition}
-    The equilibrium is defined by the market maker's pricing strategy $p$, the fund manager's $\{m_{i}\}_{i=1}^n$, such that, (i) the price $p$ satisfies \eqref{p} given $x+u$, (ii) the manager's trading strategy $x$ solves (\ref{eq:managerproblem}) given $p$ and $\{m_{i}\}_{i=1}^n$, (iii) and each client's capital allocation $m_i$ solves (\ref{eq:investorproblem}) given $p$ and $x+e$.
+    The equilibrium is defined by the market maker's pricing strategy $p$, the fund manager's trading strategy $x$, and clients' capital allocations $\{m_{i}\}_{i=1}^n$, such that, (i) $p$ satisfies \eqref{p} given $x+u$, (ii) $x$ solves (\ref{eq:managerproblem}) given $s$, $p$, and $\{m_{i}\}_{i=1}^n$, and (iii) for each $i=1,\cdots,n$, $m_i$ solves (\ref{eq:investorproblem}) given $p$, $f$, and $\{m_j\}_{j\neq i}$.
 
 \end{definition} 
 %*==*==*==*==*==*==*==*==*==*==*==*==*==*==*
 \section{Equilibrium} \label{sec:eqm}
 
 
-In this section, we search for a linear equilibrium under transparency ($\omega_{e}=0$), in which the manager's market order $x$ is linear in her skill, $s$, while the market maker's pricing strategy, $p$, is also linear in the order flow, $x+u$. Proofs for the analytical results are provided in the \hyperref[app:appendix]{Appendix}.
+In this section, we search for a linear equilibrium under transparency ($\omega_{e}=0$), in which the manager's market order $x$ is linear in her skill $s$, and the market maker's pricing strategy $p$ is also linear in the order flow $x+u$. Proofs for the analytical results are provided in the \hyperref[app:appendix]{Appendix}.
 
 %===========================================
 \subsection{Trading Strategy} \label{ss:conjecture}
@@ -67,7 +65,7 @@ where $\beta>0$ is an endogenous constant determined in the equilibrium. Conject
 
 %===========================================
 \subsection{Execution Price} \label{ss:price}
-The market maker decides on the price of the asset by extracting information about the asset's payoff from the aggregate order flow, $x+u$. Anticipating the trading strategy \eqref{x_conj}, the price in equation \eqref{p} can be rewritten as
+The market maker decides on the price of the asset by extracting information about the asset's payoff from the aggregate order flow $x+u$. Anticipating the trading strategy \eqref{x_conj}, the price in equation \eqref{p} can be rewritten as
 \begin{equation}
 p=\bar{\delta}+\lambda(x+u),\label{eq:p}
 \end{equation}
@@ -75,10 +73,10 @@ where
 \begin{equation}
 \lambda\equiv \frac{\beta \omega_{s}}{\beta^{2} \omega_{s}+\omega_{u}}\label{lambda}
 \end{equation}
-is ``Kyle's lambda,'' a measure of the price impact of order flow.\footnote{From \eqref{p}, we have $p=\mathrm{E}[\delta|x+u]=\mathrm{E}[\mathrm{E}[\delta|x+u,s]|x+u]=\mathrm{E}[\bar{\delta}+s|x+u]$. Since the market maker believes that the manager follows \eqref{x_conj}, $s$ and $x+u$ are both normally distributed from the market maker's perspective. Thus, $p=\bar{\delta}+\mathrm{E}[s]+\frac{\mathrm{Cov}[s,x+u]}{\mathrm{Var}[x+u]}(x+u-\mathrm{E}[x+u])=\bar{\delta}+\frac{\mathrm{Cov}[s,\beta s+u]}{\mathrm{Var}[\beta s+u]}(x+u-\mathrm{E}[\beta s+u])=\bar{\delta}+\frac{\beta \omega_{s}}{\beta^{2} \omega_{s}+\omega_{u}}(x+u)$.} Following the literature, we define a market to be {\it liquid} if $\lambda$ is small.
+is referred to as ``Kyle's lambda,'' a measure of the price impact of order flow.\footnote{From \eqref{p}, we have $p=\mathrm{E}[\delta|x+u]=\mathrm{E}[\mathrm{E}[\delta|x+u,s]|x+u]=\mathrm{E}[\bar{\delta}+s|x+u]$. Since the market maker believes that the manager follows \eqref{x_conj}, $s$ and $x+u$ are both normally distributed from the market maker's perspective. Thus, $p=\bar{\delta}+\mathrm{E}[s]+\frac{\mathrm{Cov}[s,x+u]}{\mathrm{Var}[x+u]}(x+u-\mathrm{E}[x+u])=\bar{\delta}+\frac{\mathrm{Cov}[s,\beta s+u]}{\mathrm{Var}[\beta s+u]}(x+u-\mathrm{E}[\beta s+u])=\bar{\delta}+\frac{\beta \omega_{s}}{\beta^{2} \omega_{s}+\omega_{u}}(x+u)$.} Following the literature, we define a market to be {\it liquid} if $\lambda$ is small.
 
 %===========================================
-\subsection{Delegation Decision} \label{ss:delegation}
+\subsection{Clients' Capital Allocation} \label{ss:delegation}
 By applying the total fund proceeds, $y = \pi + M$, investor $i$'s optimization problem in (\ref{eq:investorproblem}) is rewritten as 
 \begin{equation}
     \max_{m_i} \frac{m_i}{M}(1-\phi)\mathrm{E}\left[\pi|f\right]-\phi m_i.\label{eq:mi_max}
