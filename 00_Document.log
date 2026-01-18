@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JAN 2026 19:40
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JAN 2026 23:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -819,27 +819,27 @@ LaTeX Warning: Float too large for page by 5.8034pt on input line 8.
 File: Figures/fig_eqm.pdf Graphic file (type pdf)
 <use Figures/fig_eqm.pdf>
  [22] [23]
-Overfull \hbox (2.58165pt too wide) in paragraph at lines 107--108
-[]\TU/lmr/m/it/12 the manager’s expected performance given the realized skill, $\OT1/cmr/m/n/12 E[(\OML/cmm/m/it/12 ^^N \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ] =
+Overfull \hbox (26.59265pt too wide) in paragraph at lines 110--111
+[]\TU/lmr/m/it/12 Clients’ estimate of $\OML/cmm/m/it/12 s$ \TU/lmr/m/it/12 is more precise, that is, $[]\OML/cmm/m/it/12 ![] \OT1/cmr/m/n/12 = [][\OML/cmm/m/it/12 s\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 ] = []$\TU/lmr/m/it/12 ,
  []
 
-[24] [25] (./Figures/fig_opacity_beta_2
+[24] [25] [26] (./Figures/fig_opacity_beta_2
 File: ./Figures/fig_opacitybeta_unique.png Graphic file (type bmp)
 <./Figures/fig_opacitybeta_unique.png>
 File: ./Figures/fig_opacitybeta.png Graphic file (type bmp)
 <./Figures/fig_opacitybeta.png>
- [26]) [27] (./Figures/fig_opacity_beta_profit
+) [27] (./Figures/fig_opacity_beta_profit
 File: ./Figures/fig_opacity_vs_perform01.png Graphic file (type bmp)
 <./Figures/fig_opacity_vs_perform01.png>
 File: ./Figures/fig_opacity_vs_perform02.png Graphic file (type bmp)
 <./Figures/fig_opacity_vs_perform02.png>
-)
+) [28]
 File: ./Figures/RelativeWages3.png Graphic file (type bmp)
 <./Figures/RelativeWages3.png>
- [28] [29] [30]
+ [29] [30]
 File: ./Figures/Performance_s.png Graphic file (type bmp)
 <./Figures/Performance_s.png>
-) (./02_MainBody/024_EndogenousOpacity.tex [31] [32] [33] [34] [35]
+ [31]) (./02_MainBody/024_EndogenousOpacity.tex [32] [33] [34] [35]
 
 LaTeX Warning: Reference `max0a' on page 36 undefined on input line 79.
 
@@ -941,6 +941,6 @@ Here is how much of TeX's memory you used:
  46328 multiletter control sequences out of 15000+600000
  577827 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,15n,90p,1764b,568s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,90p,1764b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 00_Document.pdf (66 pages).
