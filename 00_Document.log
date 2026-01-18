@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JAN 2026 23:09
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  18 JAN 2026 23:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -818,12 +818,7 @@ LaTeX Warning: Float too large for page by 5.8034pt on input line 8.
 ) [19] [20] [21]
 File: Figures/fig_eqm.pdf Graphic file (type pdf)
 <use Figures/fig_eqm.pdf>
- [22] [23]
-Overfull \hbox (26.59265pt too wide) in paragraph at lines 110--111
-[]\TU/lmr/m/it/12 Clients’ estimate of $\OML/cmm/m/it/12 s$ \TU/lmr/m/it/12 is more precise, that is, $[]\OML/cmm/m/it/12 ![] \OT1/cmr/m/n/12 = [][\OML/cmm/m/it/12 s\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 ] = []$\TU/lmr/m/it/12 ,
- []
-
-[24] [25] [26] (./Figures/fig_opacity_beta_2
+ [22] [23] [24] [25] [26] (./Figures/fig_opacity_beta_2
 File: ./Figures/fig_opacitybeta_unique.png Graphic file (type bmp)
 <./Figures/fig_opacitybeta_unique.png>
 File: ./Figures/fig_opacitybeta.png Graphic file (type bmp)
