@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.29)  19 JAN 2026 17:22
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.5.29)  19 JAN 2026 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,15 +876,15 @@ File: ./Figures/fig_opacity_vs_perform02.png Graphic file (type bmp)
 )
 
 [28]
-File: ./Figures/RelativeWage.png Graphic file (type bmp)
-<./Figures/RelativeWage.png>
+File: ./Figures/RelativeWages3.png Graphic file (type bmp)
+<./Figures/RelativeWages3.png>
 
 
 [29]
 
 [30]
-File: ./Figures/PerformanceSkillRealized.png Graphic file (type bmp)
-<./Figures/PerformanceSkillRealized.png>
+File: ./Figures/Performance_s.png Graphic file (type bmp)
+<./Figures/Performance_s.png>
 
 
 [31]) (./02_MainBody/024_EndogenousOpacity.tex
@@ -900,11 +900,11 @@ File: ./Figures/PerformanceSkillRealized.png Graphic file (type bmp)
 LaTeX Warning: Reference `max0a' on page 36 undefined on input line 79.
 
 
+LaTeX Warning: Reference `max_prob' on page 36 undefined on input line 86.
+
+
 
 [36]
-
-LaTeX Warning: Reference `max_prob' on page 37 undefined on input line 86.
-
 
 LaTeX Warning: Reference `max_prob' on page 37 undefined on input line 98.
 
@@ -943,11 +943,11 @@ File: ./Figures/skillpotential.png Graphic file (type bmp)
 
 [44]
 
-[45]
+[45]) (./02_MainBody/025_Conclusion.tex
 
-[46]) (./02_MainBody/025_Conclusion.tex
+[46])
 
-[47]) (./00_Document.bbl
+[47] (./00_Document.bbl
 
 [48]
 
@@ -1055,11 +1055,11 @@ Package rerunfilecheck Info: File `00_Document.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  24616 strings out of 473832
- 457837 string characters out of 5729481
+ 457756 string characters out of 5729481
  854830 words of memory out of 5000000
  47196 multiletter control sequences out of 15000+600000
  578595 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,15n,90p,1743b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,15n,90p,1743b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 00_Document.pdf (66 pages).
