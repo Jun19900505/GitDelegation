@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  28 JAN 2026 17:48
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  28 JAN 2026 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -825,10 +825,11 @@ File: ./Figures/RelativeWage.png Graphic file (type bmp)
  [30]
 File: ./Figures/PerformanceSkillRealized.png Graphic file (type bmp)
 <./Figures/PerformanceSkillRealized.png>
- [31]) (./02_MainBody/024_EndogenousOpacity.tex [32] [33] [34] [35]
+ [31]) (./02_MainBody/024_EndogenousOpacity.tex [32] [33] [34]
 
-LaTeX Warning: Reference `max0a' on page 36 undefined on input line 70.
+LaTeX Warning: Reference `max0a' on page 35 undefined on input line 70.
 
+[35]
 
 LaTeX Warning: Reference `max_prob' on page 36 undefined on input line 77.
 
@@ -919,7 +920,7 @@ Package rerunfilecheck Info: File `00_Document.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  24663 strings out of 474773
- 459225 string characters out of 5757723
+ 459228 string characters out of 5757723
  1934839 words of memory out of 5000000
  46326 multiletter control sequences out of 15000+600000
  577827 words of font info for 124 fonts, out of 8000000 for 9000

@@ -13,11 +13,11 @@ In this extended model, the definition of equilibrium augments Definition \ref{d
 
 % introduce an equilibrium-selection device in cases of multiple equilibria. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bunk runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, whenever parameters admit multiple equilibria, market participants play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high-$\beta$ equilibrium is realized with probability $\rho_{H}\equiv\Pr(z=1)$, while the complementary probability is denoted as $\rho_{L} = 1-\rho_{H}$. We assume that $z$ is realized at the beginning of the trading stage in $t=1$. In what follows, the trading intensity in the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta = \beta_{H}$ and $\beta_{L}$, respectively. Also,  for consistency, we define $\rho_{j} = 1$ for $j=H,L$ when the equilibrium with $\beta = \beta_{j}$ is unique.
 \subsection{Opacity as Commitment Device}
-The expected trading profit, $\mathrm{E}[\pi] = \frac{\beta \omega_{s}\omega_{u}}{\beta^2 \omega_u + \omega_s}$. Therefore, an investor is willing to participate in the fund and pays the verification cost if, and only if, 
+Given the trading intensity $\beta$, the unconditional expected trading profit is computed as 
 \begin{equation}
-     \bar{V}_I \equiv \sum_{j=H,L} \rho_{j}V_{I}(\beta_{j}) \geq C(\omega_{e}),\label{eq:participation} 
+     \mathrm{E}[\pi] = \frac{\beta \omega_{u}}{\beta^2 \omega_u + \omega_s}\omega_{s}.\label{eq:unconditional pi}
 \end{equation}
-where $\bar{V}_{I}$ represents the investor's \textit{ex-ante} expected payoff, incorporating multiple equilibria. As formalized below, the size of investorele ($n$) increases as long as inequality (\ref{eq:participation}) holds. It determines the equilibrium $n$ and influences the manager's compensation through the flow-performance sensitivity, $\theta=\frac{n-1}{n}\frac{1-\phi}{\phi}$. 
+As in the standard \citet{kyle1985continuous} framework, the first fraction represents the profit margin for each unit of the informational advantage of the manager, and the second term $\omega_s$ represents the expected size of this advantage arising from the manager's skill.
 
 Conversely, for each level of $\beta$, the manager's expected payoff is expressed as
 \begin{equation}
