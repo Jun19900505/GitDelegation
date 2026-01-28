@@ -74,17 +74,23 @@ For intermediate levels of $\omega_{e}$ (panel [c]), the strategic complementari
 
 The following proposition summarizes the above discussion and provides the analytical characterization of the equilibria.
 
-    % 
-
 \begin{proposition}[Equilibrium characterization]\label{prop:eqm}
-There exists a critical value of the flow-performance sensitivity, $\theta_{0}$.
+There exists a critical value of the flow-performance sensitivity, denoted as $\theta_{0}$.
 \begin{enumerate}[label=(\roman*)]
 	\item If $\theta\le \theta_{0}$, the equilibrium is unique and characterized by a threshold of fund opacity $\omega_{0}$, such that, $\omega_{e}\leq \omega_{0}$ leads to the high-$\beta$ equilibrium and $\omega_{e}\ge\omega_{0}$ leads to the low-$\beta$ equilibrium. 
-	\item If $\theta> \theta_{0}$, there are two thresholds of fund opacity, $\omega_{L}$ and $\omega_{H}(>\omega_{L})$. When $\omega_{e}\leq \omega_{L}$, the high-$\beta$ equilibrium is unique; when $\omega_{e}\ge\omega_{H}$, the low-$\beta$ equilibrium is unique; and when $\omega_{e}\in(\omega_{L},\omega_{H})$, multiple equilibria exist.
+	\item If $\theta> \theta_{0}$, there are two thresholds of fund opacity, $\omega_{L}$ and $\omega_{H}(>\omega_{L})$. When $\omega_{e}\leq \omega_{L}$, the high-$\beta$ equilibrium is unique; when $\omega_{e}\ge\omega_{H}$, the low-$\beta$ equilibrium is unique; and when $\omega_{e}\in(\omega_{L},\omega_{H})$, the high- and low-$\beta$ equilibria coexist.
 \end{enumerate}
 \end{proposition}
 
-Proposition \ref{prop:eqm} indicates that the flow-performance senitivity $\theta$ is also critical in determining the equilibrium. The intuition follows from Lemma \ref{lem:transparent} with transparent fund information: it influences the reaction of the fund flow to changes in the manager's trading strategy, thereby affecting the showing-off motive of the manager. As high levels of $\theta$ strengthen this motive, we obtain the following corollary:
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{Figures/fig_eqm.pdf}
+    \caption{Equilibrium Characterization}
+    \caption*{\footnotesize{Note: This figure illustrates the equilibrium states using the flow-performance sensitivity ($\theta$) and fund opacity ($\omega_{e}$). When $\theta\le \theta_{0}$, the cutoffs of opacity converge to $\omega_H = \omega_L = \omega_{0}$.}}
+    \label{fig:theta}
+    \end{figure}
+    
+Figure \ref{fig:theta} illustrates the result in Proposition \ref{prop:eqm}. It indicates that the flow-performance senitivity $\theta$ is also critical in determining the equilibrium. The intuition follows from Lemma \ref{lem:transparent} with transparent fund information: it influences the reaction of the fund flow to changes in the manager's trading strategy, thereby affecting the showing-off motive of the manager. As high levels of $\theta$ strengthen this motive, we obtain the following corollary:
 \begin{corollary}\label{cor:theta_omega}
     \begin{enumerate}[label=(\roman*)]
         \item When $\theta\le\theta_{0}$, the threshold of fund opacity $\omega_{0}$ is monotonically increasing in $\theta$ with $\lim_{\theta\rightarrow 0}\omega_{0} = 0$.
@@ -92,13 +98,6 @@ Proposition \ref{prop:eqm} indicates that the flow-performance senitivity $\thet
     \end{enumerate}
 \end{corollary}
 
-% \begin{figure}
-%     \centering
-%     \includegraphics[width=0.75\linewidth]{Figures/fig_eqm.pdf}
-%     \caption{Equilibrium Characterization}
-%     \caption*{\footnotesize{Note: This figure illustrates the equilibrium states using the flow-performance sensitivity ($\theta$) and fund opacity ($\omega_{e}$). When $\omega_e\le \omega_{e,0}$, the cutoffs converge to $\theta_H = \theta_L$.}}
-%     \label{fig:theta}
-%     \end{figure}
 For a given value of fund opacity $\omega_{e}$, a weak flow-performance sensitivity supports only the low-$\beta$ equilibrium, as the hiding motive strictly dominates the weak showing-off motive. However, as $\theta$ increases, a high flow-performance sensitivity encourages the manager to show off her skill by trading intensively. Hence, it gives birth to the high-$\beta$ equilibrium, potentially leading to multiple equilibria.  
 
 Overall, the type of equilibrium depends on the combination of $\theta$ and $\omega_{e}$. The tradeoff between the hiding and the showing-off motive tends to balance and generates multiple equilibria when the fund is moderately opaque and fund flows are sensitive to the expected investment performance. Otherwise, one of the conflicting motives dominates the other, making either the Kyle-like equilibrium or the flow-driven equilibrium the unique equilibrium.
