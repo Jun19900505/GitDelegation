@@ -8,5 +8,5 @@
     %     \includegraphics[height=57mm]{./Figures/fig_opacitybeta.png}}%
     \caption{Fund Opacity and Trading Intensity}
     \label{fig:opacitybeta}
-    \caption*{\footnotesize{Note: These figures are illustrated by seeting $\omega_{s} = 1.0, \omega_{u} = 2.0, \phi = 0.08$ (the left panel) and $\phi = 0.02$ (the right panel).}}
+    \caption*{\footnotesize{Note: These figures are illustrated by seeting $\omega_{s} = 1.0, \omega_{u} = 2.0, \theta = 10 (\phi=0.08)$ for the left panel and $\theta = 27 (\phi = 0.02)$ for the right panel.}}
     \end{figure}
