@@ -13,45 +13,45 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--there is no volume, number, and pages in anton2021best
 Warning--there's a number but no volume in di2015fake
-You've used 37 entries,
+You've used 34 entries,
             6828 wiz_defined-function locations,
-            1520 strings with 14891 characters,
-and the built_in function-call counts, 40849 in all, are:
-= -- 6432
-> -- 1367
-< -- 106
-+ -- 447
-- -- 445
-* -- 2384
-:= -- 5119
-add.period$ -- 35
-call.type$ -- 37
-change.case$ -- 272
-chr.to.int$ -- 37
-cite$ -- 39
-duplicate$ -- 1218
-empty$ -- 2146
-format.name$ -- 424
-if$ -- 10641
+            1500 strings with 14498 characters,
+and the built_in function-call counts, 37396 in all, are:
+= -- 5889
+> -- 1244
+< -- 97
++ -- 408
+- -- 406
+* -- 2183
+:= -- 4684
+add.period$ -- 32
+call.type$ -- 34
+change.case$ -- 248
+chr.to.int$ -- 34
+cite$ -- 36
+duplicate$ -- 1116
+empty$ -- 1969
+format.name$ -- 388
+if$ -- 9744
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 119
-num.names$ -- 313
-pop$ -- 451
+newline$ -- 110
+num.names$ -- 286
+pop$ -- 412
 preamble$ -- 1
-purify$ -- 272
+purify$ -- 248
 quote$ -- 0
-skip$ -- 3115
+skip$ -- 2854
 stack$ -- 0
-substring$ -- 3614
-swap$ -- 304
-text.length$ -- 40
+substring$ -- 3311
+swap$ -- 277
+text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 613
+type$ -- 562
 warning$ -- 2
-while$ -- 298
+while$ -- 271
 width$ -- 0
-write$ -- 558
+write$ -- 513
 (There were 2 warnings)

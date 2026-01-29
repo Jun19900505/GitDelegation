@@ -5,15 +5,15 @@ This section analyzes endogenous opacity by allowing the manager to control $\om
 \subsection{Setup} \label{sec:setupEndog}
 Prior to investors' capital allocation and the manager's investment decision, the fund manager chooses the fund opacity $\omega_{e}$, anticipating the equilibrium reactions of investors and the market maker specified in Sections \ref{sec:eqm} and \ref{sec:opaque fund}. The manager seeks to maximize her \textit{ex-ante} expected utility derived from the fee income, that is, $U\equiv \mathrm{E}[\phi y]$. By incorporating the fund flow in equation \eqref{eq:M}, her objective function is specified as follows.\footnote{The law of iterated expectation implies $\mathrm{E}\left[\mathrm{E}[\pi|f]\right] = \mathrm{E}[\pi]$.}
 \begin{equation}
-U = \phi \mathrm{E}[\pi + M] = \phi(1+\theta)\mathrm{E}[\pi] - c \omega_e.\label{eq:U}
+U = \phi \mathrm{E}[\pi + M] = \phi(1+\theta)\mathrm{E}[\pi] - c(\omega_e).\label{eq:U}
 \end{equation}
-To formalize the manager's optimization problem in the rational expectations framework, we assume that, when parameter values support multiple equilibria, all agents in the economy coordinate their beliefs toward the low-$\beta$ equilibrium.\footnote{Alternatively, we may assume that the agents rely on the realization of a sunspot shock to coordinate their beliefs, where they anticipate the low- and the high-$\beta$ equilibria with probability $\rho\in[0,1]$ and $1-\rho$, respectively. Our setting corresponds to $\rho=1$, and this assumption does not affect our qualitative results.}
+To formalize the manager's optimization problem in the rational expectations framework, we assume that, when parameter values support multiple equilibria, all agents in the economy coordinate their beliefs toward the low-$\beta$ equilibrium.\footnote{Alternatively, we may assume that the agents rely on the realization of a sunspot shock to coordinate their beliefs, where they anticipate the low- and the high-$\beta$ equilibria with probability $\rho\in[0,1]$ and $1-\rho$, respectively. Our setting corresponds to $\rho=1$, and this assumption does not affect our qualitative results.} Also, for the sake of tractability, we assume that $c'(\omega_e)$ is sufficiently large, so that the manager's maximization problem satisfies the second-order condition.
 
-In this extended model, the definition of equilibrium augments Definition \ref{def:eqm} of the baseline model by additionally requiring that $\omega_e$ maximizes the manager’s objective $U$ in equation \eqref{eq:U}.
+In this extended model, the definition of equilibrium augments Definition \ref{def:eqm} of the baseline model by additionally requiring that $\omega_e$ maximizes the manager’s objective function $U$ in equation \eqref{eq:U}.
 
 % introduce an equilibrium-selection device in cases of multiple equilibria. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bunk runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, whenever parameters admit multiple equilibria, market participants play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high-$\beta$ equilibrium is realized with probability $\rho_{H}\equiv\Pr(z=1)$, while the complementary probability is denoted as $\rho_{L} = 1-\rho_{H}$. We assume that $z$ is realized at the beginning of the trading stage in $t=1$. In what follows, the trading intensity in the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta = \beta_{H}$ and $\beta_{L}$, respectively. Also,  for consistency, we define $\rho_{j} = 1$ for $j=H,L$ when the equilibrium with $\beta = \beta_{j}$ is unique.
 \subsection{Opacity as Commitment Device}
-Given the trading intensity $\beta$, the unconditional expected trading profit is computed as 
+Given the trading intensity $\beta$, the unconditional expected trading profit in \eqref{eq:U} is computed as 
 \begin{equation}
      \mathrm{E}[\pi] = \frac{\beta \omega_{u}}{\beta^2 \omega_u + \omega_s}\omega_{s}.\label{eq:unconditional pi}
 \end{equation}
@@ -23,200 +23,15 @@ The fund opacity does not directly show up in equation \eqref{eq:unconditional p
 \begin{corollary}
      The expected fund performance, defined by $\mathrm{E}[\pi]$, is monotonically increasing in the fund opacity.
  \end{corollary}
- In our model, $\mathrm{E}[\pi]$ declines with the trading intensity $\beta$. This is due to the presence of the showing-off motive: althrough the performance is maximized at the \citet{kyle1985continuous}'s benchmark with $\theta=0$, the manager seeks to trade more aggressively to attract fund flows. It revelas too much private information to the market maker and lowers the fund performance, while the manager is compensated for this loss by attracting more fund flows. The opacity, conversely, diminishes the showing-off motive and induces the manager to take more profit-driven strategies, bringing $\beta$ closer to the profit-maximizing level. As a consequence, opacity helps improve the expected fund performance.
+ \input{Figures/fig_opacity_beta_profit}
+ Figure \ref{fig:opacity_pi} plots $\mathrm{E}[\pi]$ in relation to the fund opacity $\omega_{e}$, which traces the reactions of $\beta$ in Figure \ref{fig:opacitybeta}. In our model, $\mathrm{E}[\pi]$ declines with the trading intensity $\beta$. This is due to the presence of the showing-off motive: althrough the unconditional expected performance is maximized at the \citet{kyle1985continuous}'s benchmark with $\theta=0$, the manager seeks to trade more aggressively to attract fund flows. It revelas too much private information to the market maker and lowers the fund performance, while the manager is compensated for this loss by attracting more fund flows. The opacity, conversely, diminishes the showing-off motive and induces the manager to take more profit-driven strategies, bringing $\beta$ closer to the profit-maximizing level. As a consequence, opacity helps improve the expected fund performance and, according to the manager's utility \eqref{eq:U}, this effect encourages the manager to make her fund opaque.
+ 
+ However, given that fund flow $M$ increases with the expected performance (see equation [\ref{eq:M}]), the showing-off motive may seem paradoxical: why does the manager trade aggressively to begin with, knowing it harms performance and reduces $M$? This tension arises from a crucial information timing gap. When she decides on the trading strategy $x$, the manager cannot alter the market’s beliefs about her strategy ($\beta$ and $\lambda$ in equations [\ref{eq:cond_pi}]--[\ref{eq:cond_var}]), but she can influence investor perceptions via the signal $f$ by inflating her trading volume $|x|$ to appear more skilled, creating the showing-off motive. Conversely, at the \textit{ex-ante} stage (i.e., before she sends the signal $f$ to investors), the manager recognizes that this future showing-off motive will lead to flashy but inefficient risk-taking that erodes unconditional performance and the expected fund flow $\mathrm{E}[M]$. Consequently, she strategically chooses fund opacity as a commitment device to ``tie her own hands," thereby dampening the investors' future responsiveness to $f$ and forcing her future self to prioritize profit-driven trading over reputation-driven trading.
+ 
+ %Once again, multiple equilibria support somewhat non-trivial impacts of fund opacity to the fund's performance. Namely, given a relatively high fund-performance sensitivity (panel [b]), the market's belief about moderately opaque funds can coordinate on substantially different equilibria, leading similar funds to exhibit divergent performance outcomes. For example, two dots on panel (b) represent funds with the same opacity level, but they substantially differ in terms of the expected performance, depending on whether the market believes the realization of the high-$\beta$ (the lower dot) or the low-$\beta$ equilibrium (the upper dot). This result implies that empirical studies could find weak or even contradictory correlations between fund transparency and returns.
 
-
-\input{Figures/fig_opacity_beta_profit}
-
-Figure \ref{fig:opacity_pi} plots $\mathrm{E}[\pi]$ in relation to the fund opacity $\omega_{e}$, which traces the reactions of $\beta$ in Figure \ref{fig:opacitybeta}. Once again, multiple equilibria support somewhat non-trivial impacts of fund opacity to the fund's performance. Namely, given a relatively high fund-performance sensitivity (panel [b]), the market's belief about moderately opaque funds can coordinate on substantially different equilibria, leading similar funds to exhibit divergent performance outcomes. For example, two dots on panel (b) represent funds with the same opacity level, but they substantially differ in terms of the expected performance, depending on whether the market believes the realization of the high-$\beta$ (the lower dot) or the low-$\beta$ equilibrium (the upper dot). This result implies that empirical studies could find weak or even contradictory correlations between fund transparency and returns.
-
-Conversely, for each level of $\beta$, the manager's expected payoff is expressed as
-\begin{equation}
-     V_M (\beta) \equiv \mathrm{E}\left[\mathrm{E}\left[\phi \pi + (1-\phi)\frac{n-1}{n}\mathrm{E}[\pi|f]\right]\right] = \phi(1+\theta) \frac{\beta \omega_{s}\omega_{u}}{\beta^2 \omega_u + \omega_s}.\label{eq:VM beta}
-\end{equation}
-Incorporating the reaction of her investors ($n$), as well as the possibility of sunspot-driven multiple equilibria, the manager controls  fund opacity ($\omega_{e}$) to maximize the following expected payoff:
-\begin{equation}
-     \max_{\omega_{e}} \sum_{j=H,L} \rho_{j}V_M(\beta_{j}).\label{eq: max manager VM} 
-\end{equation}
-
-\subsection{Equilibrium}
-
-We first solve for the participation decisions of investors and pin down the equilibrium size of investorale, $n$, as a function of fund opacity, $\omega_{e}$.
-
-\paragraph{\normalfont{\it{Fund participation.}}}
-\begin{enumerate}
-     \item The expected profit from delegating fund is monotonically decreasing in $n$. Therefore, the equilibrium size of investorele is determined by the break-even condition: $\bar{V}_{I} = C(\omega_{e})$.
-     \item There is a unique $n=n(\omega_e)$ that satisfies the break-even condition, and it serves as the equilibrium size of investorele. Moreover, $n(\omega_{e})$ depends on opacity: there are two competing effect: the commitment channel and the costly-verification channel. The latter is obvious.
-     \begin{enumerate}
-          \item The former is interesting and related to XXX. 
-     \end{enumerate} 
-     The fund investor size is decreasing function of $\omega_{e}$ as long as the marginal verification cost is sufficiently large. Surprisingly, when the verification cost is small, $n(\omega_{e})$ is increasing in $\omega_{e}$, suggesting that opaque funds attract more investors than transparent funds. 
-     \item As long as the commitment channel is dominant, the manager has an incentive to make her fund opaque: it forces her to limit the trading intensity and increases her payoffs both from the trading and the fund flows. However, as the opacity increases, the costly-verification channel kicks in, and the size of investors start decreasing. 
-     \item So, when $\omega_{e}$ is low, the benefit from opacity is large: the trading profit is increasing not only due to the reduced $\beta$ but also due to the commitment channel which increases $n$. However, as $\omega_{e}$ becomes large, the costly-verification channel becomes significant, thereby reducing the investors size. Although the profit is still increasing, this decline becomes the cost for the manager.
-     
-\end{enumerate}
-%===========================================
-\subsection{Equilibrium} \label{ss:eqm_endog}
-%\textit{Definition} [\textbf{?}]%An equilibrium --- subperfect bayesian eqm? see how to define.
-
-We first solve the problems in $t=1$ and obtain the salary, $w$, which is shown to be a quadratic function of the perceived skill, $|\hat{s}|$. Subsequently, we solve the problems in $t=0$, which are similar to those of Section \ref{sec:Model}.
-
-%-------------------------------------------
-\subsubsection{Period 1} \label{sss:period1}
-In $t=1$, each trader has no reputation concerns. Hence, she simply chooses $x_{1}$ to maximize $\pi_{1}$, resulting in the standard \citet{kyle1985continuous} equilibrium.
-\begin{lemma}[Equilibrium in $t=1$]\label{eqmPer1}
-In $t=1$, each trader's trading strategy is characterized by $x_{1} =\beta_{1}s$, and the market maker sets the execution price according to $p_{1}=\hat{\delta}_{1}+\lambda_{1}\left(x_{1}+u_{1}\right)$, where $\beta_{1}\equiv\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}$ and $\lambda_{1}\equiv\frac{1}{2}\sqrt{\frac{\omega_{s}}{\omega_{u,1}}}$.
-\end{lemma}
-Lemma \ref{eqmPer1} yields the trader's profit, $\pi_{1}$. Then, the \textit{recruiter's} expectation about $\pi_{1}$ determines the trader's salary when she meets the recruiter. 
-\begin{lemma}[Trader's salary]\label{salary}
-Let $\hat{s}$ and $\hat{\omega}_{s}$ be the posterior mean and variance of $s$ from the recruiter's point of view. The salary he offers to the trader is
-\begin{equation}
-w=\frac{\beta_{1}}{2}\left(\hat{s}^{2}+\hat{\omega}_{s}\right).\label{w}
-\end{equation}
-\end{lemma}
-Lemma \ref{salary} gives the competitive wage, $w$, as a quadratic function of $\hat{s}$, providing a microfoundation for the reputation benefit assumed in Section \ref{sec:Model}. 
-
-%-------------------------------------------
-\subsubsection{Period 0} \label{sss:period0}
-In $t=0$, the trader knows that she will potentially obtain $w$ in the form of \eqref{w}. Hence, plugging \eqref{w} into \eqref{max0a}, her objective function in $t=0$ is
-\begin{equation}
-\mathrm{E}\left[\pi_{0}+\frac{\varphi\beta_{1}}{2}\left(\hat{s}^{2}+\hat{\omega}_{s}\right)+(1-\varphi)\pi_{1}\Big|s\right].\label{max0a2}
-\end{equation}
-Since $\pi_{1}$ and $\hat{\omega}_{s}$ are independent of $x_{0}$, her optimization problem in $t=0$ is characterized by (\ref{max0b}) in the following proposition.
-
-\begin{proposition}[Endogenous reputation]\label{prop:endogenous_reputation}
-In $t=0$, each trader's maximization problem is identical to \eqref{max_prob} of Section \ref{sec:Model}, that is,
-\begin{equation}
-\max_{x_{0}}\mathrm{E}\left[\pi_{0}+\theta\hat{s}^{2}\big|s\right], \label{max0b}
-\end{equation}
-where parameter $\theta$ for reputation concerns is given by
-\begin{equation}
- \theta\equiv\frac{\varphi}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}}. \label{eq:theta}
-\end{equation}
-\end{proposition}
-
-Proposition \ref{prop:endogenous_reputation} provides a microfoundation to the quadratic form of the reputation benefit in Section \ref{sec:Model}. Moreover, $\theta$ is endogeneized as a composite parameter \eqref{eq:theta}. Not surprisingly, it is increasing in $\varphi$. It decreases with the trader's skill potential, $\omega_{s}$, suggesting that a high-potential trader is less concerned about her reputation. This is due to the {\it future} trading intensity $\beta_{1}$ and the price impact $\lambda_{1}$: a high-potential trader is likely to possess a high skill, which induces a large price impact in the future as well. Since it is difficult for the trader to exploit her skill in $t=1$, the competitive wage becomes less responsive to $|s|$, weakening the reputation concern.
-
-As problem \eqref{max0b} is effectively the same as \eqref{max_prob}, the equilibrium outcomes resemble Proposition \ref{prop:eqm}. However, unlike Proposition \ref{prop:eqm}, the impact of the skill potential $\omega_{s}$ on the equilibrium characterization is generalized due to the dependence of $\theta$ on $\omega_{s}$. This is summarized by the following proposition, which is graphically presented in Figure \ref{fig:theta_end}.
-
-\begin{proposition}[Equilibrium in $t=0$]\label{prop:endogenous}
-The equilibrium at $t=0$ is characterized as follows.
-\begin{enumerate}[topsep=2.5pt]
-\item If $\varphi$ is large enough, there are two thresholds for the skill potential, denoted as $\ubar{\omega}_{s}>0$ and $\bar{\omega}_{s}$ $(\geq \ubar{\omega}_{s})$, such that
- \begin{enumerate}[topsep=2.5pt, label=(\roman*)]
-\item for $\omega_{s} \geq \bar{\omega}_{s}$, the low-$\beta$ equilibrium is uniquely realized;
-\item for $\omega_{s} \in (\ubar{\omega}_{s}, \bar{\omega}_{s})$, both the high- and low-$\beta$ equilibria arise;
-\item for $\omega_{s} \leq \ubar{\omega}_{s}$, the high-$\beta$ equilibrium is uniquely realized.
-\end{enumerate}
-\item If $\varphi$ is small enough, there is a unique equilibrium. For small $\omega_{s}$, the high-$\beta$ equilibrium is realized, while for large $\omega_{s}$, the low-$\beta$ equilibrium is realized.
-\end{enumerate}
-\end{proposition}
-
-%\input{./Figures/tikz_theta_cutoff_endogenous.tex}\vspace*{0.2cm}
- \begin{figure}[t]
- \subfigure[Large $\varphi$]{\includegraphics[width=75mm]{./Figures/fig_omegas_theta2.png}
- \label{fig_large_varphi}}
- \subfigure [Small $\varphi$]{\includegraphics[width=75mm]{./Figures/fig_omegas_theta3.png}\label{fig_small_varphi}}
- \caption{Equilibrium Characterization with Endogenous $\theta$}
- \caption*{\footnotesize{Note: These figures illustrate the equilibrium states using the reputation concern, $\theta$, and the skill potential, $\omega_{s}$. The curves represented by $\theta_{H}$ and $\theta_{L}$ are identical to those in Figure \ref{fig:theta}} and Proposition \ref{prop:eqm}, while $\theta$ is endogenous and decreasing in $\omega_{s}$ as equation (\ref{eq:theta}) suggests.}
-     \label{fig:theta_end}
-\end{figure}
-
-%\begin{proposition}[Equilibrium in $t=0$]\label{prop:endogenous}
-%In $t=0$, there are two thresholds of the skill potential, denoted as $\ubar{\omega}_{s}>0$ and $\bar{\omega}_{s} (\geq \ubar{\omega}_{s})$, such that,
-% \begin{enumerate}[label=(\roman*)]
-%\item If $\omega_{s} \geq \bar{\omega}_{s}$, then the low-$\beta$ equilibrium uniquely realizes.
-%\item If $\omega_{s} \in (\ubar{\omega}_{s}, \bar{\omega}_{s})$, then both the high- and low-$\beta$ equilibria arise.
-%\item If $\omega_{s} \leq \ubar{\omega}_{s}$, then the high-$\beta$ equilibrium uniquely realizes.
-%\end{enumerate}
-%\end{proposition}
-
-Since the trader's reputation concern $\theta$ is endogeneized as \eqref{eq:theta}, which is a decreasing function of $\omega_{s}$, Figure \ref{fig:theta_end} is obtained by overlaying \eqref{eq:theta} on Figure \ref{fig:theta}. The first and the second parts of Proposition \ref{prop:endogenous} correspond to panels (a) and (b) of Figure \ref{fig:theta_end}, respectively. Proposition \ref{prop:endogenous} states that multiple equilibria may arise only when labor mobility is sufficiently high ($\varphi$ is large), i.e., only when the traders have a large reputation concern, $\theta$.\footnote{Equation (\ref{eq:varphi*}) in Online Appendix \ref{proofendogenous} provides the definition of the boundary value of $\varphi$ that classifies cases 1 and 2 in Proposition \ref{prop:endogenous}.} Since the case in panel (a) yields richer implications, while panel (b) is qualitatively similar to \citet{kyle1985continuous}, we focus on the case in panel (a), which arises when $\varphi$ is relatively large.
-
-Panel (a) of Figure \ref{fig:theta_end} shows that, as a result of endogeneizing $\theta$ as a function of $\omega_{s}$, the conditions characterizing the equilibrium types simplify to a single condition solely on $\omega_{s}$: a large $\omega_{s}$ yields a unique low-$\beta$ equilibrium, an intermediate $\omega$ generates multiple equilibria, and a small $\omega_{s}$ leads to a unique high-$\beta$ equilibrium.
-
-%As the trader's reputation concern ($\theta$) decreases with the skill potential, Proposition \ref{prop:eqm} in the baseline model is generalized, and multiple equilibria show up when $\omega_{s}$ is intermediate.\footnote{Numerically, multiple equilibria arise, and three graphs in Figure \ref{fig:exog}  can be replicated when the parameter values are, for example, $\omega_{s}=50$, $\omega_{\delta}=1$, $\omega_{u,0}=0.1$, and $\omega_{u,1}=60$.} Accordingly, Figure \ref{fig:theta_end}, which illustrates Proposition \ref{prop:endogenous}, is obtained by overlaying the downward-sloping curve of $\theta$ defined by equation (\ref{eq:theta}) on Figure \ref{fig:theta}.
-
-
-The intuition is as follows. When the skill potential is high ($\omega_{s}\geq\bar{\omega}_{s}$), the trader is more likely to have a large informational advantage
-over the market maker. This leads to a strong price impact, making it costly to inflate the trading strategy to receive high reputation.
-Consequently, she is more inclined to adopt profit-seeking strategies, and the Kyle-like equilibrium is uniquely realized. As the skill potential decreases, however, the trader's informational advantage and the price impact tend to diminish, making it easier to prioritize her reputation concerns. Therefore, for intermediate levels of $\omega_{s} \in(\ubar{\omega}_{s},\bar{\omega}_{s})$, the reputation-driven equilibrium arises and coexists with the Kyle-like equilibrium. If the skill potential declines further ($\omega_{s} \leq \ubar{\omega}_{s}$), the reputation becomes the dominant factor, and the Kyle-like equilibrium disappears.
-
-\subsection{Setup}
-Before the trading stage in $t=0$, each trader makes a costly investment to improve her skill potential. This investment could include pursuing an advanced degree in finance, studying for professional exams, or engaging in specialized training to expand her expertise. The trader selects her skill potential, denoted as $\omega_{s}^{*}$, by paying the skill-acquisition cost, $C(\omega_{s}^*) = c\omega_{s}^{*}$ with a positive marginal cost $c>0$.\footnote{The following analysis does not hinge on the functional form of the cost, as long as it is weakly increasing in $\omega_{s}^{*}$.} We assume that $\omega_{s}^{*}$ is not observable to the market makers and the recruiter. Instead, they form a belief about it, denoted by $\omega_{s}$, and the equilibrium in the trading stage is determined by $\omega_{s}$ following Proposition \ref{prop:endogenous}. On the equilibrium path, the belief must be consistent with the actual skill potential, $\omega_{s}^{*} = \omega_{s}$. However, at the skill-acquisition stage, the trader cannot influence $\omega_{s}$, as she does not have a commitment device.\footnote{This setting follows the literature on private information acquisition with an unobservable quality (precision) of the private signal. See, for example, \citet{xiong2023secret}.}
-
-\paragraph{\normalfont{\it{Expected utility of a trader.}}}
-Given the realized equilibrium in the first trading stage (i.e., $\beta_{0}$), the \textit{ex-ante} expected utility of a trader is characterized by the following lemma:
-\begin{lemma}\label{lem:expU_skill}
-For each $\beta_{0}$, the expected utility of a trader at the skill-acquisition stage is given by
-\begin{equation}
- V(\omega_{s}^{*},\omega_{s},\beta_{0}) = v(\omega_{s},\beta_{0})\omega_{s}^{*} + \bar{v}, \label{eq:exanteV}
-\end{equation}
-where $\bar{v}$ summarizes constant terms unrelated to $\omega_{s}^{*}$,\footnote{The formal expression is given by $\bar{v} =\frac{\psi}{4\lambda_{1}}\left[{\xi}^{2}\gamma^{2}\omega_{u,0}+\xi^{2}(1-\gamma)^{2}\omega_{\delta}+\omega_{u,0}\frac{\gamma\xi}{\beta_{0}}\right]$} and $v(\omega_{s},\beta_{0})$ is
-\begin{align}
-     v(\omega_{s},\beta_{0})\equiv&(1-\lambda_{0}\beta_{0})\beta_{0}   +(1-\psi)\frac{1}{2}\sqrt{\frac{\omega_{u,1}}{\omega_{s}}} \nonumber \\
-     & +\theta \xi^2 \left[\gamma^2 \beta_{0}^2 + 2\gamma(1-\gamma)\beta_{0}+ (1-\gamma)^2\right].\label{eq:v_sbeta}
-\end{align}
-\end{lemma}
-
-Equation (\ref{eq:exanteV}) indicates that, for each unit of the selected skill potential ($\omega_{s}^{*}$), the trader earns the marginal utility of $v(\omega_{s},\beta_{0})$.
-The marginal utility in equation (\ref{eq:v_sbeta}), in turn, consists of three factors. The first two terms represent the maximized trading profit in $t=0$ and that in $t=1$ when she does not meet the recruiter. In the first trading round, the equilibrium profit margin of the skill potential is $(1-\lambda_{0}\beta_{0})\beta_{0}$, while the profit margin in the second trading round is identical to that in the standard \cite{kyle1985continuous} model.\footnote{In the standard \citet{kyle1985continuous} model, the optimal trading intensity is $\beta_{0} = \frac{1}{2\lambda_{0}}$, so that the equilibrium profit margin of the information advantage (i.e., the skill in our model) is directly captured by $\frac{\beta_{0}}{2}$. Our model does not have this feature, as the trading intensity is set by incorporating both the price impact and the reputation concern.} The third term is the reaction of the reputation benefit to an increase in the selected skill potential, which emanates from the reputation concerns, $\theta$, and the magnitude of the recruiter's belief updating (see equations [\ref{etahat_b}] and [\ref{w}]).  
-
-Importantly, $v(\omega_{s},\beta_{0})$ is characterized by the market's belief about the trader's skill potential ($\omega_{s}$), as $\omega_{s}^{*}$ is unobservable to the market. The trader cannot influence $\omega_{s}$ by controlling $\omega_{s}^{*}$ due to limited commitment. Consequently, the optimality condition for the skill acquisition is characterized by $\omega_{s}$, as the following discussion elaborates.
-
-\paragraph{\normalfont{\it{Sunspot shock.}}}
-To formalize the skill-acquisitiom problem based on Lemma \ref{lem:expU_skill}, we introduce an equilibrium-selection device. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bunk runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, when $\omega_{s}\in (\ubar{\omega}_{s},\bar{\omega}_{s})$, they play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high-$\beta$ equilibrium is realized with probability $\Pr(z=1)=\rho$, where $\rho$ denotes the exogenous probability of a sunspot. We assume that $z$ is realized at the beginning of the trading stage in $t=0$, meaning that a trader acquires her skill potential before $z$ is realized. In what follows, the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta_{0} = \beta_{H}$ and $\beta_{L}$, respectively.
-
-By incorporating the equilibrium multiplicity stipulated in Proposition \ref{prop:endogenous}, the trader's \textit{ex-ante} expected utility from acquiring $\omega_{s}^{*}$ in equation (\ref{eq:exanteV}) is rewritten as follows:\footnote{We omit the constant term, $\bar{v}$, in the following discussion, as it does not affect the optimal skill potential.}
-\begin{equation}
-\mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})]\omega_{s}^{*}  = 
-\begin{cases}
-v(\omega_{s},\beta_{L}) \omega_{s}^{*} & \text{if } \omega_{s} \geq \bar{\omega}_{s}, \\
-\left[\rho v(\omega_{s},\beta_{H}) + (1-\rho) v(\omega_{s},\beta_{L})\right]\omega_{s}^{*} & \text{if } \omega_{s} \in (\ubar{\omega}_{s}, \bar{\omega}_{s}), \\
-v(\omega_{s},\beta_{H}) \omega_{s}^{*} & \text{if } \omega_{s} \leq \ubar{\omega}_{s}.
-\end{cases}
-\label{eq:barV_2}
-\end{equation}
-$\mathrm{E}_{\beta}$ denotes the expectation over  $\beta_{0} = \beta_{H}$ and $\beta_{L}$ in cases of multiple equilibria and incorporates the sunspot shock with $\rho = \Pr(z=1) = \Pr(\beta_{0}=\beta_{H})$. 
-
-\subsection{Equilibrium}
-
-Prior to the trading game, each trader solves the following problem by controlling her skill potential:
-\begin{equation}
-\max_{\omega_{s}^{*}} \mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})]\omega_{s}^{*} - C(\omega_{s}^{*}), \label{eq:skillacquisition}
-\end{equation}
-where $\mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})]\omega_{s}^{*}$ is given by equation (\ref{eq:barV_2}). As the trader cannot control $\omega_{s}$, she takes the marginal benefit in (\ref{eq:barV_2}) as given. 
-
-In the equilibrium, the marginal benefit balances the marginal cost of skill acquisition, as equation (\ref{eq:FOC_SA}) below illustrates. Otherwise, the trader has an incentive to increase or decrease $\omega_{s}^{*}$. Together with the belief-consistency condition, the optimal skill potential $\omega_{s}^{*}$ is derived as solutions to the following optimality condition with respect to $\omega_{s}$:
-\begin{equation}
-\mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})] = c.\label{eq:FOC_SA}
-\end{equation}
-
-\begin{figure}[t]
-\centering
-{\includegraphics[width=99mm]{./Figures/skillpotential.png}}\\[10pt]
-\caption{Marginal Benefit and Cost of Skill Acquisition}
-\caption*{\footnotesize{Note: The figure plots the marginal benefit of skill acquisition, given by $\mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})]$, and its marginal cost $c$ against the belief about the skill potential, $\omega_{s}$. The parameter values are $\omega_{\delta}=1$, $\omega_{u,0}=0.1$, $\omega_{u,1}=60$, $\theta=\frac{\varphi\beta_1}{2}\approx0.33$ ($\varphi=0.6$), and $\rho = 0.5$.}}\label{fig:skill_potential}
-\end{figure}
-
-Figure \ref{fig:skill_potential} plots the marginal benefit (the LHS of [\ref{eq:FOC_SA}]) in relation to the market's belief about the skill potential, $\omega_{s}$. Although it is orthogonal to the actual skill potential, $\omega_{s}$ and $\omega_{s}^{*}$ on the equilibrium path are determined by the intersections of the marginal benefit and the marginal cost curves in Figure \ref{fig:skill_potential}. 
-
-%The marginal benefit of skill acquisition globally diminishes as $\omega_{s}$ increases. Intuitively, when the market maker believes that the trader has acquired a high skill potential, the price impact grows, and the trading intensity diminishes in both trading rounds at $t=0$ and $t=1$, thereby reducing the value of the skill. Conversely, when $\omega_{s}$ is high, the recruiter faces higher prior uncertainty in estimating the realized skill ($|s|$), and the wage becomes more reliant on the price information ($p_{0}$) and the asset payoff in $t=0$ ($\delta_{0}$). Hence, the wage becomes more sensitive to the trader's skill, making it more valuable for the trader to acquire a higher skill potential. Although the second channel encourages the trader to increase $\omega_{s}^{*}$, the first negative effect is dominant, forming the downward-sloping marginal benefit curve in Figure \ref{fig:skill_potential}.
-
-The marginal benefit of skill acquisition globally diminishes as $\omega_{s}$ increases. This result is not obvious because there are two channels through which $\omega_{s}$ affects its marginal benefit. In the first channel, when the market maker believes that the trader has acquired a high $\omega_{s}$, the price impact grows, and the trading intensity diminishes in both trading rounds at $t=0$ and $t=1$, thereby reducing the benefit of increasing $\omega_{s}^{\ast}$. Conversely, in the second channel, when $\omega_{s}$ is high, the recruiter faces higher prior uncertainty in estimating the realized skill ($|s|$), and the wage becomes more reliant on the price information ($p_{0}$) and the asset payoff in $t=0$ ($\delta_{0}$). Hence, the wage becomes more sensitive to the trader's skill, making it more valuable for the trader to acquire a higher skill potential $\omega_{s}^{\ast}$. Although the second channel encourages the trader to increase $\omega_{s}^{*}$, the negative effect in the first channel is dominant, forming the downward-sloping marginal benefit curve in Figure \ref{fig:skill_potential}.
-
-Notably, the marginal benefit curve in the skill-acquisition stage has discontinuities due to the multiple equilibria in the trading stage. When the (belief of) skill potential is sufficiently high or low ($\omega_{s}\geq \bar{\omega}_{s}$ or $\omega_{s}\leq \ubar{\omega}_{s}$), $\beta_{0}$ in the trading stage is uniquely determined. However, when the skill potential turns to intermediate levels, the trader starts incorporating the possibility of multiple equilibria in the trading stage, generating jumps in the marginal benefit of skill acquisition. By focusing on the intermediate levels of $\omega_{s}\in(\ubar{\omega}_{s},\bar{\omega}_{s})$, we obtain the following result.
-\begin{lemma}\label{lem:MB_beta}
-With $\omega_{s}$ being fixed, the marginal benefit of increasing the skill potential is smaller in the high-$\beta$ equilibrium than in the low-$\beta$ equilibrium. Therefore, the following inequalities hold, and the marginal benefit curve has discontinuities at $\omega_{s}=\ubar{\omega}_{s}$ and $\omega_{s}=\bar{\omega}_{s}$:
-\begin{equation}
-v(\omega_{s},\beta_{H}) < \mathrm{E}_{\beta}[v(\omega_{s},\beta_{0})] < v(\omega_{s},\beta_{L}). \label{eq:v_beta}
-\end{equation}
-\end{lemma}
-
-Intuitively, the trader in the high-$\beta$ equilibrium excessively reveals information to the market
-maker by trading aggressively. Although the recruiter estimates the trader's skill more precisely and increases the wage's sensitivity to the skill potential, it is dominated by the negative impact of a reduction in the trading profit margin. Therefore, the marginal benefit of increasing the skill potential becomes smaller in the high-$\beta$ equilibrium than in the low-$\beta$ equilibrium, leading to inequalities (\ref{eq:v_beta}). In what follows, we elaborate on the discontinuities and derive their implications for skill acquisition. 
-
-\subsubsection{Middling Skill Acquisition}
+\subsection{Implications}
+\subsubsection{Skill, Opacity, and Fragility}
 We first propose ``middling" skill acquisition due to the multiple trading-stage equilibria by focusing on $\omega_{s}\in (\ubar{\omega}_{s},\bar{\omega}_{s})$. We refer to it as middling because the acquired skill level is either higher or lower than what she would acquire if she knew which type of equilibrium would be realized. On the equilibrium path, both the selected skill potential ($\omega_{s}^{*}$) and the market's belief about it ($\omega_{s}$) fall in this region if the marginal skill-acquisition cost is intermediate. In this region, the trading stage involves multiple equilibria (i.e., $\beta_{0} = \beta_{H}$ or $\beta_{L}$), whereas the trader at the skill-acquisition stage cannot influence the equilibrium selection.
 %\footnote{The equilibrium realization in the trading stage is governed by the market's belief about the skill potential, $\omega_{s}$, as illustrated in Proposition \ref{prop:endogenous}, whereas the trader cannot influence it by selecting $\omega_{s}^{*}$ due to the lack of a commitment device.} 
 Consequently, she determines her skill potential by anticipating the sunspot shock, which leads to the skill acquisition as follows. 

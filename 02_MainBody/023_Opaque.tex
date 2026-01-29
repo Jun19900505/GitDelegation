@@ -8,7 +8,7 @@ The analysis of an opaque fund largely follows the benchmark case in Sections \r
 \begin{lemma}\label{lem:reputation}
 	Upon observing the fund information $f=x+e$, investors update their expectation about the trading profit as
 	\begin{equation}
-         \mathrm{E}\left[\pi|f\right] = (1-\lambda \beta)\beta\left(\hat{s}^2 + \hat{\omega}_{s}\right),
+         \mathrm{E}\left[\pi|f\right] = (1-\lambda \beta)\beta\left(\hat{s}^2 + \hat{\omega}_{s}\right),\label{eq:cond_pi}
      \end{equation}
      where the posterior expectation of the (signed) realized skill is
      \begin{equation}
@@ -20,7 +20,7 @@ The analysis of an opaque fund largely follows the benchmark case in Sections \r
 	 \end{equation}
 	 and the posterior of the skill variance is
      \begin{equation}
-         \hat{\omega}_{s} = \mathrm{Var}[s|f] = \frac{\omega_{s}\omega_{e}}{\beta^2 \omega_{s} + \omega_{e}}.
+         \hat{\omega}_{s} = \mathrm{Var}[s|f] = \frac{\omega_{s}\omega_{e}}{\beta^2 \omega_{s} + \omega_{e}}.\label{eq:cond_var}
      \end{equation}
  \end{lemma}
  Equation (\ref{eq:hats}) describes how investors update their belief about the manager's skill using $f=x+e$, where $\hat{s}$ is referred to as the \textit{reputation} in the following discussion. According to equation (\ref{eq:hats}), $\xi$ measures how much investors rely on $f$ in updating their belief and governs the sensitivity of the reputation to the fund's trading strategy $x$. Holding $\beta$ constant, $\xi$ is large when investors' prior is unreliable ($\omega_{s}$ is large) and the fund information is transparent ($\omega_{e}$ is small). More importantly, $\xi$ itself also depends on the trading strategy $\beta$, as a more intensive trading strategy makes $f$ more informative about $s$.
