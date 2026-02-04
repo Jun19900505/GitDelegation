@@ -89,65 +89,68 @@ By incorporating the fund proceeds $y = \pi + M$, investor $i$'s optimization pr
 \begin{equation}
     \max_{m_i\ge 0} \frac{m_i}{M}(1-\phi)\mathrm{E}\left[\pi|f\right]-\phi m_i.\label{eq:mi_max}
 \end{equation}
-She solves the above problem by incorporating the impact of her choice ($m_i$) on the total fund flow ($M$), while taking other investors' behavior ($\sum_{j\neq i} m_j$) as given. 
-Therefore, the investor's objective function is linear in $m_i$, while the marginal benefit of fund participation is diminishing in $M$, as the fund's proceeds are allocated to investors on a pro-rata basis. This structure pins down the optimal capital allocation by investor $i$ as follows:
+Investor $i$ solves this problem by incorporating the impact of her choice ($m_i$) on the total fund flow ($M$), while taking other investors' behavior ($\sum_{j\neq i} m_j$) as given. As she allocates a larger amount of capital, its marginal return diminishes due to the pro-rata allocation of the fund's proceeds, while the cost of capital linearly increases. This structure ensures the second-order condition of problem \eqref{eq:mi_max}, and the first-order condition pins down the optimal capital allocation as follows:
 \begin{equation}
-    m_{i}=\begin{cases}
-        1 & \text{if }\frac{1}{M}(1-\phi)\mathrm{E}[\pi|f]>\phi+C,\\
-        \in\{0,1\} & \text{if }\frac{1}{M}(1-\phi)\mathrm{E}[\pi|f]=\phi+C,\\
-        0 & \text{otherwise},
-        \end{cases}\label{eq:mi}
+    m_{i}= \left(\frac{1-\phi}{\phi}\mathrm{E}[\pi|f]\sum_{j\neq i}m_j\right)^{\frac{1}{2}} -\sum_{j\neq i}m_j.
+    \label{eq:mi}
 \end{equation}
-where the middle case indicates that the investor is indifferent between investing and not. We focus on the equilibrium where the total fund flow $M$ satisfies this indifference (or the free-entry) condition, meaning that all investors break even. This value of $M$ is stable: as long as $M$ is smaller than this critical value, the additional investor would earn strictly positive returns by delegating capital management, meaning that the fund attracts larger fund flows and $M$ keeps growing, while once it exceeds the critical value, the delegated asset management leads to negative returns, triggering capital withdrawal and a decline in $M$. In this equilibrium, the total fund flow is determined by 
+We focus on the symmetric equilibrium where all investors take the same action, $m_i = m$ for all $i=1,2,\cdots,n$. In this equilibrium, equation \eqref{eq:mi} reduces to 
 \begin{equation}
-    M  = \theta\mathrm{E}[\pi|f] - \frac{c(\omega_e)}{\phi},\label{eq:M}
+    m = \frac{n-1}{n^2}\frac{1-\phi}{\phi}\mathrm{E}[\pi|f],\label{eq:m_sym}
 \end{equation}
-where $\theta \equiv (1-\phi)/\phi$.
-It is linearly increasing in the expected trading profit conditional on the fund information, $\mathrm{E}[\pi|f]$, while the verification cost discourages investors from investing into the fund. The fund flow positively depends on $\mathrm{E}[\pi|f]$ due to the performance-based fee structure, which makes the per-unit return from delegated asset management increasing in the trading profit. Also, equation (\ref{eq:M}) specifies the coefficient of fund flow by $\theta$, which we refer to as the \textit{flow-performance sensitivity}. It governs the reaction of the fund flow to the expected fund performance and is increasing in the fee rate ($\phi$), as high $\phi$ raises the cost of delegation and discourages investment. 
-
-To compute the expected fund profits, each investor seeks to back out the realized skill level of the manager $|s|$ from fund information $f=x+e$. When the fund information is perfectly transparent (i.e., $\omega_{e}=0$), investors rationally use the trading strategy in \eqref{x_conj} and infer $s = x/\beta$, leading to\footnote{Given the linear pricing rule in \eqref{eq:p}, it holds that $\pi = (\delta - p)x = (s-\lambda \beta x)x$. Adopting trading strategy $x=\beta s$ leads to equation \eqref{eq:exp_pi_transparent}.}
+and the total fund flow becomes
 \begin{equation}
-      \mathrm{E}\left[\pi|f\right] = (1-\lambda \beta)\beta\mathrm{E}[s^2|s=x/\beta]=\left(\frac{1}{\beta}-\lambda\right)x^2.\label{eq:exp_pi_transparent}
+    M \equiv n m = \theta \mathrm{E}[\pi|f],\label{eq:M_sym}
 \end{equation}
-The first equality in (\ref{eq:exp_pi_transparent}) suggests that the fund return, $\pi=(\delta-p)x$, becomes a quadratic function of $s$, as both the manager's trading quantity $x$ and the profit margin, $\delta-p$, are proportional to the skill level in expectation. Furtheremore, the transparent fund information indicates that $s=x/\beta$, thereby shaping the conditional expected profit into quadratic in $x$, as the second equality in \eqref{eq:exp_pi_transparent} attests. 
+where $\theta \equiv \frac{n-1}{n}\frac{1-\phi}{\phi}$ represents the \textit{flow-performance sensitivity}.  
+Both the individual capital allocation and the total fund flow are linearly increasing in the expected trading profit conditional on the fund information, $\mathrm{E}[\pi|f]$. This is due to the performance-based fee structure, which makes the per-unit return from delegated asset management increasing in the trading profit. Also, equation (\ref{eq:M_sym}) specifies the flow-performance sensitivity $\theta$, which governs the reaction of the fund flow to the expected fund performance. The fund flow becomes less sensitive to the expected performance when the fee rate ($\phi$) is high, as high $\phi$ raises the cost of delegation and discourages investment, while it becomes more sensitive when the fund has a large clientele ($n$), as it attracts capital from a larger number of  investors.
 
-%This result implies that, on top of the maximizing profits, delegated asset management generates an additional incentive for the manager to control her trading strategy $x$, as it affects the total fund flow $M$ by influencing the investors' expectation about fund's returns.
+\subsection{Reputation}
+In determining the capital callocation in \eqref{eq:m_sym}, each investor seeks to compute the expected fund profits $\mathrm{E}[\pi|f]$. This process, in turn, requires the investor to back out the realized skill level of the manager $|s|$ from fund information $f=x+e$. 
+
+% When the fund information is perfectly transparent (i.e., $\omega_{e}=0$), investors rationally use the trading strategy in \eqref{x_conj} and infer $s = x/\beta$, leading to\footnote{Given the linear pricing rule in \eqref{eq:p}, it holds that $\pi = (\delta - p)x = (s-\lambda \beta x)x$. Adopting trading strategy $x=\beta s$ leads to equation \eqref{eq:exp_pi_transparent}.}
+% \begin{equation}
+%       \mathrm{E}\left[\pi|f\right] = (1-\lambda \beta)\beta\mathrm{E}[s^2|s=x/\beta]=\left(\frac{1}{\beta}-\lambda\right)x^2.\label{eq:exp_pi_transparent}
+% \end{equation}
+% The first equality in (\ref{eq:exp_pi_transparent}) suggests that the fund return, $\pi=(\delta-p)x$, becomes a quadratic function of $s$, as both the manager's trading quantity $x$ and the profit margin, $\delta-p$, are proportional to the skill level in expectation. Furtheremore, the transparent fund information indicates that $s=x/\beta$, thereby shaping the conditional expected profit into quadratic in $x$, as the second equality in \eqref{eq:exp_pi_transparent} attests. 
+
+% %This result implies that, on top of the maximizing profits, delegated asset management generates an additional incentive for the manager to control her trading strategy $x$, as it affects the total fund flow $M$ by influencing the investors' expectation about fund's returns.
 
 
 
 
 
-%===========================================
-\subsection{Manager's Optimization} \label{ss:optimization}
-By incorporating the total fund flow ([\ref{eq:M}] and [\ref{eq:exp_pi_transparent}]), the manager's problem in (\ref{eq:managerproblem}) is re-written as
-\begin{equation}
-    \max_{x} \phi\left(sx - \lambda x^2   + \theta\left(\frac{1}{\beta}-\lambda\right)x^2\right).\label{eq:managerproblem_transparent}
-\end{equation}
-The first two terms represent the fee income from the trading profit and are essentially identical to the trading profit in the original \citet{kyle1985continuous} model. The third term arises due to the fund inflow and, as equation (\ref{eq:exp_pi_transparent}) demonstrates, is determined by the quadratic size of risky investments. The optimal trading strategy solves \eqref{eq:managerproblem_transparent}, leading to
-\begin{equation}
-    x = \frac{1}{2}\frac{\beta}{\lambda\beta - \theta(1-\lambda\beta)}s.\label{eq:x=Fbeta}
-\end{equation}
-It is consistent with our guess in (\ref{x_conj}) when: 
-\begin{equation}
-    \beta = \frac{1}{2}\frac{\beta}{\lambda\beta - \theta(1-\lambda\beta)}.\label{eq:fixedpoint-transparent}
-\end{equation}
-By solving $\lambda$ and $\beta$ in equations (\ref{lambda}) and \eqref{eq:fixedpoint-transparent}, the trading strategy and the asset price are uniquely determined:
-\begin{lemma}\label{lem:transparent}
-    When the fund information is transparent ($\omega_{e}=0$), the manager's trading strategy and the asset price are specified by \eqref{x_conj} and \eqref{eq:p} with 
-    \begin{equation}
-        \beta = \sqrt{(1+2\theta)\frac{\omega_{u}}{\omega_{s}}},\label{eq:eqm_trade_transparent}
-    \end{equation}
-    and
-    \begin{equation}
-        \lambda = \frac{1}{2(1+\theta)}\sqrt{(1+2\theta)\frac{\omega_{s}}{\omega_{u}}}.\label{eq:eqm_lambda_transparent}
-    \end{equation}
-\end{lemma}
-%As is evident from problem (\ref{eq:managerproblem_transparent}), the flow-performance sensitivity, $\theta$, captures the manager's additional incentive to inflate her risky investment. 
-In the absence of delegated asset management ($\theta\rightarrow0$), the equilibrium is identical to the original \citet{kyle1985continuous} model, where $\beta$ is determined to maximize the expected trading profits. On one hand, the manager seeks to exploit her informational advantage by trading more intensively. On the other hand, it reveals information to the market maker and raises the price impact, cutting into the trading profit. The equilibrium $\beta$ balances these competing effects.
+% %===========================================
+% \subsection{Manager's Optimization} \label{ss:optimization}
+% By incorporating the total fund flow ([\ref{eq:M}] and [\ref{eq:exp_pi_transparent}]), the manager's problem in (\ref{eq:managerproblem}) is re-written as
+% \begin{equation}
+%     \max_{x} \phi\left(sx - \lambda x^2   + \theta\left(\frac{1}{\beta}-\lambda\right)x^2\right).\label{eq:managerproblem_transparent}
+% \end{equation}
+% The first two terms represent the fee income from the trading profit and are essentially identical to the trading profit in the original \citet{kyle1985continuous} model. The third term arises due to the fund inflow and, as equation (\ref{eq:exp_pi_transparent}) demonstrates, is determined by the quadratic size of risky investments. The optimal trading strategy solves \eqref{eq:managerproblem_transparent}, leading to
+% \begin{equation}
+%     x = \frac{1}{2}\frac{\beta}{\lambda\beta - \theta(1-\lambda\beta)}s.\label{eq:x=Fbeta}
+% \end{equation}
+% It is consistent with our guess in (\ref{x_conj}) when: 
+% \begin{equation}
+%     \beta = \frac{1}{2}\frac{\beta}{\lambda\beta - \theta(1-\lambda\beta)}.\label{eq:fixedpoint-transparent}
+% \end{equation}
+% By solving $\lambda$ and $\beta$ in equations (\ref{lambda}) and \eqref{eq:fixedpoint-transparent}, the trading strategy and the asset price are uniquely determined:
+% \begin{lemma}\label{lem:transparent}
+%     When the fund information is transparent ($\omega_{e}=0$), the manager's trading strategy and the asset price are specified by \eqref{x_conj} and \eqref{eq:p} with 
+%     \begin{equation}
+%         \beta = \sqrt{(1+2\theta)\frac{\omega_{u}}{\omega_{s}}},\label{eq:eqm_trade_transparent}
+%     \end{equation}
+%     and
+%     \begin{equation}
+%         \lambda = \frac{1}{2(1+\theta)}\sqrt{(1+2\theta)\frac{\omega_{s}}{\omega_{u}}}.\label{eq:eqm_lambda_transparent}
+%     \end{equation}
+% \end{lemma}
+% %As is evident from problem (\ref{eq:managerproblem_transparent}), the flow-performance sensitivity, $\theta$, captures the manager's additional incentive to inflate her risky investment. 
+% In the absence of delegated asset management ($\theta\rightarrow0$), the equilibrium is identical to the original \citet{kyle1985continuous} model, where $\beta$ is determined to maximize the expected trading profits. On one hand, the manager seeks to exploit her informational advantage by trading more intensively. On the other hand, it reveals information to the market maker and raises the price impact, cutting into the trading profit. The equilibrium $\beta$ balances these competing effects.
 
-Delegated asset management ($\theta>0$) brings about the additional risk-taking incentive, because inflating $x$ benefits the manager by making her appear highly skilled and inducing a larger fund flow (see equations [\ref{eq:M}] and [\ref{eq:exp_pi_transparent}]). We refer to this incentive as the ``showing-off'' motive. Since $\theta$ governs the flow-performance sensitivity, this motivation becomes stronger when $\theta$ is large, shaping equilibrium $\beta$ into an increasing function of $\theta$.
+% Delegated asset management ($\theta>0$) brings about the additional risk-taking incentive, because inflating $x$ benefits the manager by making her appear highly skilled and inducing a larger fund flow (see equations [\ref{eq:M}] and [\ref{eq:exp_pi_transparent}]). We refer to this incentive as the ``showing-off'' motive. Since $\theta$ governs the flow-performance sensitivity, this motivation becomes stronger when $\theta$ is large, shaping equilibrium $\beta$ into an increasing function of $\theta$.
 
-Equation \eqref{eq:eqm_lambda_transparent} shows that the price impact $\lambda$ decreases with $\theta$. This is because the information is exaggerated in that the order size is too large relative to the true $|s|$ due to the showing-off motive. Thus, the market maker attempts to partially undo the manager's information revelation by incorporating less of it into the price, resulting in a weaker price impact.\footnotemark
-\footnotetext{\label{fn:footnote}$\lambda$ represents the price's reaction to the order flow $x+u$, rather than its reaction to the manager's private information $s$. The price impounds $s$ with coefficient $\beta\lambda$, which is monotonically increasing in $\theta$.}
+% Equation \eqref{eq:eqm_lambda_transparent} shows that the price impact $\lambda$ decreases with $\theta$. This is because the information is exaggerated in that the order size is too large relative to the true $|s|$ due to the showing-off motive. Thus, the market maker attempts to partially undo the manager's information revelation by incorporating less of it into the price, resulting in a weaker price impact.\footnotemark
+% \footnotetext{\label{fn:footnote}$\lambda$ represents the price's reaction to the order flow $x+u$, rather than its reaction to the manager's private information $s$. The price impounds $s$ with coefficient $\beta\lambda$, which is monotonically increasing in $\theta$.}
 
-Our benchmark result in Lemma \ref{lem:transparent} isolates the fundamental mechanism through which delegated asset management enhances the manager’s risk taking behavior. The tendency of fund managers to show off their skill to attract capital is well discussed in the literature (e.g., \citealp{metrick2010economics}; \citealp*{chung2012pay}; \citealp{barber2017interim}), raising regulatory concerns that fund managers have incentives to exaggerate the performance or quality of their funds. In our model, however, a skilled manager may also have incentives to conceal her skill from the market maker, as emphasized by \citet{kyle1985continuous}. The next section explores how the fundamental tension between the showing off and the hiding motives shapes the equilibrium when the fund information becomes harder to interpret for investors due to opacity.
+% Our benchmark result in Lemma \ref{lem:transparent} isolates the fundamental mechanism through which delegated asset management enhances the manager’s risk taking behavior. The tendency of fund managers to show off their skill to attract capital is well discussed in the literature (e.g., \citealp{metrick2010economics}; \citealp*{chung2012pay}; \citealp{barber2017interim}), raising regulatory concerns that fund managers have incentives to exaggerate the performance or quality of their funds. In our model, however, a skilled manager may also have incentives to conceal her skill from the market maker, as emphasized by \citet{kyle1985continuous}. The next section explores how the fundamental tension between the showing off and the hiding motives shapes the equilibrium when the fund information becomes harder to interpret for investors due to opacity.
