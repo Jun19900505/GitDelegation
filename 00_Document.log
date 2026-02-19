@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  7 FEB 2026 13:58
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.10)  19 FEB 2026 15:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
-(/Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
+**/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document
+(/Users/junaoyagi/Dropbox/Reputation/GitDelegation/6825e26759ced42dba694fbd/00_Document.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -158,9 +158,18 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen151
 \Gm@layoutvoffset=\dimen152
 \Gm@dimlist=\toks18
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epigraph/epigraph.sty
+Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/nextpage/nextpage.sty
+Package: nextpage 2009/09/03 v1.1a additional page commands
+)
+\beforeepigraphskip=\skip53
+\afterepigraphskip=\skip54
+\epigraphwidth=\skip55
+\epigraphrule=\skip56
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip53
+\@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -217,8 +226,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen160
 \lineht@=\dimen161
 \@envbody=\toks22
-\multlinegap=\skip54
-\multlinetaggap=\skip55
+\multlinegap=\skip58
+\multlinetaggap=\skip59
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -231,12 +240,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip56
-\subfigcapskip=\skip57
+\subfigtopskip=\skip60
+\subfigcapskip=\skip61
 \subfigcaptopadj=\dimen162
-\subfigbottomskip=\skip58
+\subfigbottomskip=\skip62
 \subfigcapmargin=\dimen163
-\subfiglabelskip=\skip59
+\subfiglabelskip=\skip63
 \c@subfigure=\count288
 \c@lofdepth=\count289
 \c@subtable=\count290
@@ -246,8 +255,8 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip60
-\subfig@bottom=\skip61
+\subfig@top=\skip64
+\subfig@bottom=\skip65
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty
@@ -295,9 +304,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks27
 \thm@notefont=\toks28
 \thm@headpunct=\toks29
-\thm@preskip=\skip62
-\thm@postskip=\skip63
-\thm@headsep=\skip64
+\thm@preskip=\skip66
+\thm@postskip=\skip67
+\thm@headsep=\skip68
 \dth@everypar=\toks30
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2023/05/20 line numbers on paragraphs v5.3
@@ -358,7 +367,7 @@ Package csquotes Info: ... configuration file loaded successfully.
 File: csquotes.cfg 
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip65
+\labelindent=\skip69
 \enit@outerparindent=\dimen173
 \enit@toks=\toks33
 \enit@inbox=\box55
@@ -721,4 +730,232 @@ Package hyperref Info: Link coloring ON on input line 35.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: threeparttable package is load
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 37--37
+ [][] 
+ []
+
+[1
+
+
+] [2]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(108.405pt, 397.485pt, 108.405pt)
+* v-part:(T,H,B)=(108.405pt, 578.15999pt, 108.405pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=397.485pt
+* \textheight=578.15999pt
+* \oddsidemargin=36.13501pt
+* \evensidemargin=36.13501pt
+* \topmargin=-0.86499pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (./02_MainBody/021_Introduction.tex [3
+
+]
+
+LaTeX Warning: Reference `sec:endogenous' on page 4 undefined on input line 21.
+
+[4] [5]
+Overfull \hbox (3.78304pt too wide) in paragraph at lines 33--34
+[]\TU/lmr/m/n/12 The aggressive trade in the reputation-driven equilibrium also causes traders
+ []
+
+
+LaTeX Warning: Reference `sec:skillacquisition' on page 6 undefined on input line 35.
+
+[6] [7]
+
+LaTeX Warning: Reference `sec:endogenous' on page 8 undefined on input line 45.
+
+
+LaTeX Warning: Reference `sec:skillacquisition' on page 8 undefined on input line 45.
+
+) (./02_MainBody/022_Baseline.tex [8]
+File: ./Figures/Fig_model.pdf Graphic file (type pdf)
+<use ./Figures/Fig_model.pdf>
+ [9] [10] [11] [12] [13] [14]) (./02_MainBody/023_Opaque.tex [15] [16] (./Figures/Figure_multiple_eqm.tex
+File: ./Figures/DF_multiple.pdf Graphic file (type pdf)
+<use ./Figures/DF_multiple.pdf>
+
+Overfull \hbox (39.75092pt too wide) in paragraph at lines 4--5
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 5.8034pt on input line 8.
+
+) [17] [18] [19] [20]
+File: Figures/fig_eqm.pdf Graphic file (type pdf)
+<use Figures/fig_eqm.pdf>
+ [21] [22] [23] [24] (./Figures/fig_opacity_beta_2
+File: ./Figures/fig_beta_opacity.png Graphic file (type bmp)
+<./Figures/fig_beta_opacity.png>
+) [25] [26]
+File: ./Figures/RelativeWage.png Graphic file (type bmp)
+<./Figures/RelativeWage.png>
+ [27]
+File: ./Figures/PerformanceSkillRealized.png Graphic file (type bmp)
+<./Figures/PerformanceSkillRealized.png>
+ [28]) (./02_MainBody/024_EndogenousOpacity.tex [29] [30] (./Figures/fig_opacity_beta_profit
+File: ./Figures/fig_performance.png Graphic file (type bmp)
+<./Figures/fig_performance.png>
+) [31] [32] [33]
+
+LaTeX Warning: Reference `fig:skill_potential' on page 34 undefined on input line 74.
+
+[34]
+
+LaTeX Warning: Reference `lem:MB_beta' on page 35 undefined on input line 83.
+
+
+LaTeX Warning: Reference `eq:skillacquisition' on page 35 undefined on input line 83.
+
+
+LaTeX Warning: Reference `prop:endogenous' on page 35 undefined on input line 83.
+
+
+LaTeX Warning: Reference `eq:FOC_SA' on page 35 undefined on input line 83.
+
+
+LaTeX Warning: Reference `fig:skill_potential' on page 35 undefined on input line 85.
+
+[35]) (./02_MainBody/025_Conclusion.tex [36]) (./00_Document.bbl [37] [38] [39]) [40] (./03_Appendix.tex
+
+LaTeX Warning: Reference `lemma:beliefs' on page 41 undefined on input line 9.
+
+[41]
+
+LaTeX Warning: Reference `lemma:maximization' on page 42 undefined on input line 76.
+
+
+LaTeX Warning: Reference `etahat_b' on page 42 undefined on input line 77.
+
+
+LaTeX Warning: Reference `max_prob' on page 42 undefined on input line 93.
+
+
+LaTeX Warning: Reference `eqmPer1' on page 42 undefined on input line 106.
+
+[42] [43]
+
+LaTeX Warning: Reference `salary' on page 44 undefined on input line 147.
+
+
+LaTeX Warning: Reference `prop:endogenous' on page 44 undefined on input line 166.
+
+(./OtherFiles/proof_multieqm.tex [44] [45]
+Overfull \hbox (25.16899pt too wide) detected at line 62
+[][][]\OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) + 2\OML/cmm/m/it/12 yJ[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )[] + 2\OML/cmm/m/it/12 y[]:
+ []
+
+[46] [47]
+
+LaTeX Warning: Reference `fn:highlowbeta_def' on page 48 undefined on input line 128.
+
+[48] [49]
+
+LaTeX Warning: Reference `prop:endogenous' on page 50 undefined on input line 222.
+
+[50]
+Overfull \hbox (51.78593pt too wide) detected at line 243
+[]
+ []
+
+[51] [52]
+Overfull \hbox (6.30333pt too wide) in paragraph at lines 312--313
+ []\TU/lmr/m/it/12 Proof of Statements (iii) and (iv).[] \TU/lmr/m/n/12 Note that $[][] \OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 y[]$\TU/lmr/m/n/12 , and $\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 ) =
+ []
+
+[53]
+
+LaTeX Warning: Reference `prop:endogenous' on page 54 undefined on input line 331.
+
+
+LaTeX Warning: Reference `eq:theta' on page 54 undefined on input line 331.
+
+)
+
+LaTeX Warning: Reference `lem:MB_beta' on page 54 undefined on input line 169.
+
+(./OtherFiles/proof_betaHL.tex
+Overfull \hbox (63.40735pt too wide) detected at line 8
+[][][]\OT1/cmr/m/n/12 E[][\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ![]; ^^L[]\OT1/cmr/m/n/12 )] = [] \OML/cmm/m/it/12 ^^L[] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 ^^X[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^M\OT1/cmr/m/n/12 )[] + (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12  \OT1/cmr/m/n/12 )[][]\OML/cmm/m/it/12 :
+ []
+
+
+Overfull \hbox (55.60274pt too wide) detected at line 13
+[]
+ []
+
+
+Overfull \hbox (66.57043pt too wide) detected at line 17
+[][][]\OMS/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 ^^L[][][] \OT1/cmr/m/n/10.95 + [] [] \OML/cmm/m/it/10.95 :
+ []
+
+[54]
+Overfull \hbox (12.45912pt too wide) detected at line 22
+[]
+ []
+
+
+LaTeX Warning: Reference `lem:MB_beta' on page 55 undefined on input line 27.
+
+
+LaTeX Warning: Reference `lem:MB_beta' on page 55 undefined on input line 27.
+
+
+LaTeX Warning: Reference `eq:FOC_SA' on page 55 undefined on input line 27.
+
+)) [55] (./00_Document.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `00_Document.out' has not changed.
+(rerunfilecheck)             Checksum: BBE5E899E9443BF815DE0D25CFEE8F10;5257.
+ ) 
+Here is how much of TeX's memory you used:
+ 24660 strings out of 474773
+ 458538 string characters out of 5757723
+ 1934839 words of memory out of 5000000
+ 46319 multiletter control sequences out of 15000+600000
+ 577835 words of font info for 125 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 89i,14n,90p,2025b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on 00_Document.pdf (55 pages).
