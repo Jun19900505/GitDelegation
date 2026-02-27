@@ -5,6 +5,9 @@
 
 \begin{thebibliography}{xxx}
 
+\harvarditem[Badoera et~al.]{Badoera, Costellob, and Jamesc}{2020}{badoera2020icansee}
+\textbf{Badoera, Dominique, Charles Costellob, and Christopher Jamesc.} 2020. ``I can see clearly now: The impact of disclosure requirements on 401(k) fees.'' \textit{Journal of Financial Economics} 136 (3):   471--489.
+
 \harvarditem[Berk and Green]{Berk and Green}{2004}{berk2004mutual}
 \textbf{Berk, Jonathan~B, and Richard~C Green.} 2004. ``Mutual fund flows and performance in rational markets.'' \textit{Journal of Political Economy} 112 (6):   1269--1295.
 
@@ -19,6 +22,12 @@
 
 \harvarditem[Busse et~al.]{Busse, Goyal, and Wahal}{2010}{busse2010performance}
 \textbf{Busse, Jeffrey~A, Amit Goyal, and Sunil Wahal.} 2010. ``Performance and persistence in institutional investment management.'' \textit{The Journal of Finance} 65 (2):   765--790.
+
+\harvarditem[Carlin]{Carlin}{2009}{carlin2009strategic}
+\textbf{Carlin, Bruce.} 2009. ``Strategic price complexity in retail financial markets.'' \textit{Journal of Financial Economics} 91 (3):   278--287.
+
+\harvarditem[Carlin and Manso]{Carlin and Manso}{2010}{carlin2010obfuscation}
+\textbf{Carlin, Bruce, and Gustavo Manso.} 2010. ``Obfuscation, Learning, and the Evolution of Investor Sophistication.'' \textit{Journal of Financial Economics} 24 (3):   754--785.
 
 \harvarditem[C{\'e}l{\'e}rier and Vall{\'e}e]{C{\'e}l{\'e}rier and Vall{\'e}e}{2019}{celerier2019returns}
 \textbf{C{\'e}l{\'e}rier, Claire, and Boris Vall{\'e}e.} 2019. ``Returns to talent and the finance wage premium.'' \textit{The Review of Financial Studies} 32 (10):   4005--4040.
@@ -56,6 +65,12 @@
 \harvarditem[DiMaggio]{DiMaggio}{2015}{di2015fake}
 \textbf{DiMaggio, Marco.} 2015. ``Fake alphas, tail risk and reputation traps.'' \textit{Columbia Business School Research Paper} (14-4): .
 
+\harvarditem[Edelen et~al.]{Edelen, Evans, and Kadlecc}{2012}{edelen2012disclosure}
+\textbf{Edelen, Roger~M., Richard Evans, and Gregory Kadlecc.} 2012. ``Disclosure and agency conflict: Evidence from mutual fund commission bundling.'' \textit{Journal of Financial Economics} 103 (3):   308--326.
+
+\harvarditem[Ellison and Ellison]{Ellison and Ellison}{2009}{ellison2009search}
+\textbf{Ellison, Glenn, and Sara~Fisher Ellison.} 2009. ``Search, Obfuscation, and Price Elasticities on the Internet.'' \textit{Econometrica} 77 (2):   427--452.
+
 \harvarditem[Froot et~al.]{Froot, Scharfstein, and Stein}{1992}{froot1992herd}
 \textbf{Froot, Kenneth~A, David~S Scharfstein, and Jeremy~C Stein.} 1992. ``Herd on the street: Informational inefficiencies in a market with short-term speculation.'' \textit{The Journal of Finance} 47 (4):   1461--1484.
 
@@ -83,6 +98,12 @@
 \harvarditem[Guerrieri and Kondor]{Guerrieri and Kondor}{2012}{guerrieri2012fund}
 \textbf{Guerrieri, Veronica, and P{\'e}ter Kondor.} 2012. ``Fund managers, career concerns, and asset price volatility.'' \textit{American Economic Review} 102 (5):   1986--2017.
 
+\harvarditem[Huberman and Kandel]{Huberman and Kandel}{1993}{Huberman1993ontheincentives}
+\textbf{Huberman, Gur, and Shmuel Kandel.} 1993. ``On the incentives for money managers: A signalling approach.'' \textit{European Economic Review} 37 (5):   1065--1081.
+
+\harvarditem[Huddart]{Huddart}{1999}{huddart1999reputation}
+\textbf{Huddart, Steven.} 1999. ``Reputation and performance fee effects on portfolio choice by investment advisers.'' \textit{Journal of Financial Markets} 2 (3):   227--271.
+
 \harvarditem[Jensen]{Jensen}{1967}{jensen1967performance}
 \textbf{Jensen, Michael.} 1967. ``The performance of mutual funds in the period 1945-1964.'' \textit{The Journal of Finance} 23  389--416.
 
@@ -100,6 +121,12 @@
 
 \harvarditem[Philippon and Reshef]{Philippon and Reshef}{2012}{philippon2012wages}
 \textbf{Philippon, Thomas, and Ariell Reshef.} 2012. ``Wages and human capital in the US finance industry: 1909--2006.'' \textit{The Quarterly Journal of Economics} 127 (4):   1551--1609.
+
+\harvarditem[Prat]{Prat}{2005}{prat2005wrong}
+\textbf{Prat, Andrea.} 2005. ``The Wrong Kind of Transparency.'' \textit{American Economic Review} 95 (3):   862--877.
+
+\harvarditem[Sato]{Sato}{2014}{sato2014opacity}
+\textbf{Sato, Yuki.} 2014. ``Opacity in Financial Markets.'' \textit{The Review of Financial Studies} 27 (12):   3502--3546.
 
 \harvarditem[Schwager]{Schwager}{2012}{schwager2012hedge}
 \textbf{Schwager, Jack~D.} 2012.  \textit{Hedge fund market wizards: How winning traders win}. John Wiley and Sons.
