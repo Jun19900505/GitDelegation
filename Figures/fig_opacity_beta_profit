@@ -2,6 +2,6 @@
 \centering
 \includegraphics[width=0.98\linewidth]{./Figures/fig_performance.png}
 \caption{Fund Opacity and Expected Performance}
-\caption*{\footnotesize{Note: The figure plots the unconditional expected performance of the fund $\mathrm{E}[\pi]$ against fund opacity $\omega_e$ with different values of the flow-performance sensitivity: $\theta = 10$ (the left panel) and $\theta = 27$ (the right panel). The value of other parameters are $\omega_{s}=1.5$ and $\omega_{u}=3$.}}
+\caption*{\footnotesize{Note: The figure plots the unconditional expected performance of the fund $\mathrm{E}[\pi]$ against fund opacity $\omega_{\eta}$ with different values of the flow-performance sensitivity: $\theta = 10$ (the left panel) and $\theta = 27$ (the right panel). The value of other parameters are $\omega_{s}=1.5$ and $\omega_{u}=3$.}}
 \label{fig:opacity_pi}
 \end{figure}
