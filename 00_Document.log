@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  4 MAR 2026 23:17
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  5 MAR 2026 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,6 +690,7 @@ LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 Package hyperref Info: Link coloring ON on input line 35.
+ (./00_Document.out) (./00_Document.out)
 \@outlinefile=\write4
 \openout4 = `00_Document.out'.
 
@@ -821,7 +822,7 @@ File: ./Figures/fig_performance.png Graphic file (type bmp)
 File: ./Figures/fig_skill_optimal_opacity.png Graphic file (type bmp)
 <./Figures/fig_skill_optimal_opacity.png>
 
-Overfull \hbox (11.29817pt too wide) in paragraph at lines 48--49
+Overfull \hbox (11.29817pt too wide) in paragraph at lines 47--48
  []| [] 
  []
 
@@ -928,15 +929,15 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `00_Document.out' has not changed.
-(rerunfilecheck)             Checksum: <no file>.
+(rerunfilecheck)             Checksum: 81EC8DD9D87476AB271902037891AADD;5050.
  ) 
 Here is how much of TeX's memory you used:
- 24687 strings out of 474773
- 459664 string characters out of 5757724
+ 24699 strings out of 474773
+ 459839 string characters out of 5757724
  1932839 words of memory out of 5000000
- 46350 multiletter control sequences out of 15000+600000
+ 46358 multiletter control sequences out of 15000+600000
  577827 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,14n,90p,1967b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,14n,90p,1967b,564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on 00_Document.pdf (54 pages).
