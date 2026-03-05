@@ -90,7 +90,10 @@ equilibrium.  While opacity is commonly viewed as a driver of financial
 instability, our model delivers a sharply different message: the most opaque
 funds are not the source of fragility; it is funds with \emph{intermediate}
 opacity, operated by managers of intermediate skill, that contribute to
-systemic fragility.
+systemic fragility. This result is broadly consistent with anecdotal evidence that 
+certain highly opaque funds maintained stable and 
+profitable trading during the 2008 financial crisis, while many 
+other funds experienced severe instability \citep{zuckerman2019}.
 
 This non-monotone relationship also carries a direct policy implication.  A
 regulatory mandate that raises the cost of obfuscation---for example, through
@@ -101,3 +104,40 @@ optimally reduce their opacity to near or below $\omega_{H}$, entering the
 fragile multiple-equilibria region.  In other words, a transparency mandate
 can inadvertently push skilled, performance-driven managers into the very
 region of fragility it aims to suppress, meaning that transparency backfires.
+
+\subsubsection{Discontinuity and Constant Obfuscation}
+A salient feature of Figure~\ref{fig:optimal_opacity} is that $\omega_{\eta}^{*}$
+does not increase smoothly in $\omega_s$, but instead exhibits two upward jumps,
+along with a region of constant opacity between them.  The jumps arise because the
+manager's utility function is discontinuous at the equilibrium thresholds $\omega_L$
+and $\omega_H$.  At $\omega_{\eta} = \omega_L$, the equilibrium transitions from
+unique high-$\beta$ to multiple equilibria: the profitable low-$\beta$ equilibrium
+may now be realized with probability $\rho_L$, generating a discrete upward jump
+in the manager's expected utility. The same logic applies at $\omega_H$: entering the unique
+low-$\beta$ region eliminates the possibility of inefficient high-$\beta$
+trading.  As these jumps in utility are discontinuous while the obfuscation cost $C(\omega_{\eta})$
+is smooth, optimal opacity responds to marginal increases in $\omega_s$
+with a discrete upward jump.
+
+The numerical results further reveal a region in which $\omega_\eta^*$ is
+pinned at $\omega_H$ and is entirely unresponsive to the expected skill.  This arises from a trade-off specific
+to the boundary of the unique low-$\beta$ region.  A manager in the
+multiple-equilibria region can capture a discrete utility gain by pushing
+opacity exactly to $\omega_H$, eliminating the probability of
+high-$\beta$ trading.  Once at $\omega_H$, however, the associated marginal benefit of additional obfuscation (a smooth decline in $\beta$) may not outweigh its marginal cost $C'(\omega_{\eta})$. For managers whose skill is not high enough to justify this
+incremental cost, optimal opacity is pinned at $\omega_H$: they
+capture the discrete gain from escaping the multiple-equilibria region but
+do not obfuscate further.  As skill rises sufficiently, the marginal benefit of
+opacity eventually dominates, and $\omega_\eta^*$ begins increasing again above
+$\omega_H$.
+
+These features carry concrete implications for the testable relationship
+between skill and opacity.  First, while opacity and skill are positively
+correlated in general, the cross-sectional distribution of fund opacity should
+exhibit discrete mass points (i.e., clusters of funds) around the thresholds for multiple equilibria, rather than following a smooth unimodal distribution.
+Second, the constant-opacity region implies that skill is
+uninformative about opacity for a non-trivial range of managers: funds with
+meaningfully different skill levels optimally choose identical opacity levels.
+Within this region, however, fund performance should still be positively
+correlated with skill even after controlling for opacity, providing a testable
+prediction that disentangles the two dimensions.
