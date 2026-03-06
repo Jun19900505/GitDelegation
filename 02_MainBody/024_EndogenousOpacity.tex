@@ -41,7 +41,7 @@ Fund opacity $\omega_{\eta}$ does not directly show up in equation \eqref{eq:unc
  so that her expected utility is proportional to the fund's unconditional expected performance. Thus, Corollary \ref{cor:opacity_performance} implies that even investors prefer opaque fund from the \textit{ex-ante} perspective. This result may appear paradoxical in light of the showing-off motive: why does the manager trade aggressively and deviate from the performance-maximizing strategy, despite knowing that such behavior lowers performance and reduces both her own and investors' expected utility? This tension arises from a crucial difference in timing. When she decides on the trading strategy $x$, the manager cannot alter the market’s beliefs about her strategy ($\beta$ and $\lambda$ in equations [\ref{eq:cond_pi}]--[\ref{eq:cond_var}]), meaning that she optimizes over $x$ by taking the investors' belief-updating rule as given. Since she can influence investor perceptions only through the content of fund information $f$, she is inclined to inflate her trading volume $|x|$ to appear more skilled, as captured by the showing-off motive. Conversely, at the \textit{ex-ante} stage (i.e., before she sends the fund information to investors), the manager recognizes that this future showing-off motive will lead to flashy but inefficient risk-taking that erodes unconditional performance and the expected fund flow. Consequently, she strategically chooses fund opacity as a commitment device to ``tie her own hands," thereby dampening the investors' future responsiveness to $f$ and inducing her future self to prioritize profit-driven trading over flow-driven trading.
 
 \subsection{Equilibrium Opacity}
-
+We now solve for the manager's optimal opacity $\omega_{\eta}^*$ and characterize how it varies with skill.
 \begin{figure}
     \centering
     \hspace*{-1cm}\includegraphics[width=1.1\linewidth]{./Figures/fig_skill_optimal_opacity.png}
@@ -83,25 +83,17 @@ funds with intermediate opacity ($\omega_{L} \le \omega_{\eta} \le
 \omega_{H}$) support multiple equilibria, and opaque funds ($\omega_{\eta} >
 \omega_{H}$) yield only the low-$\beta$ equilibrium.  Because optimal opacity
 is increasing in skill, this induces a systematic mapping from skill to
-fragility, such that managers with intermediate skill optimally choose intermediate opacity
-in $\omega_{\eta}\in[\omega_{L}, \omega_{H}]$, placing them in the multiple-equilibria region
-and making them a source of financial fragility.  In contrast, high-skill
-managers operating under high opacity secure the efficient unique low-$\beta$
-equilibrium.  While opacity is commonly viewed as a driver of financial
-instability, our model delivers a sharply different message: the most opaque
-funds are not the source of fragility; it is funds with \emph{intermediate}
+fragility, such that managers with intermediate skill optimally choose intermediate opacity in $\omega_{\eta}\in[\omega_{L}, \omega_{H}]$, placing them in the multiple-equilibria region and making them a source of financial fragility.  In contrast, high-skill
+managers operating under high opacity secure the unique low-$\beta$ equilibrium with superior trading performance. Low-skill managers, for whom the marginal benefit of obfuscation is small, optimally choose low opacity and remain in the unique flow-driven equilibrium, avoiding fragility but at the cost of poor trading performance. While opacity is commonly viewed as a driver of financial instability, our model delivers a sharply different message: the most opaque funds are not the source of fragility; it is funds with \emph{intermediate}
 opacity, operated by managers of intermediate skill, that contribute to
-systemic fragility. This result is broadly consistent with anecdotal evidence that 
-certain highly opaque funds maintained stable and 
-profitable trading during the 2008 financial crisis, while many 
-other funds experienced severe instability \citep{zuckerman2019}.
+systemic fragility. This result is broadly consistent with the observation in \citet{zuckerman2019} that certain highly opaque funds maintained stable, profitable operations during the 2008 financial crisis, while many 
+other funds experienced severe instability.
 
-This non-monotone relationship also carries a direct policy implication.  A
-regulatory mandate that raises the cost of obfuscation---for example, through
+This non-monotone relationship also carries a direct policy implication.  A regulatory mandate that raises the cost of obfuscation---for example, through
 stricter disclosure requirements---shifts the optimal-opacity schedule
 downward.  Managers who previously operated in the unique low-$\beta$ region
 may find it no longer worth incurring the higher cost of obfuscation, and
-optimally reduce their opacity to near or below $\omega_{H}$, entering the
+optimally reduce their opacity below $\omega_{H}$, entering the
 fragile multiple-equilibria region.  In other words, a transparency mandate
 can inadvertently push skilled, performance-driven managers into the very
 region of fragility it aims to suppress, meaning that transparency backfires.
@@ -121,24 +113,14 @@ is smooth, optimal opacity responds to marginal increases in $\omega_s$
 with a discrete upward jump.
 
 The numerical results further reveal a region in which $\omega_\eta^*$ is
-pinned at $\omega_H$ and is entirely unresponsive to the expected skill.  This arises from a trade-off specific
-to the boundary of the unique low-$\beta$ region.  A manager in the
+pinned at $\omega_H$ and is entirely unresponsive to the expected skill.  This arises from a trade-off that arises at the boundary of the unique low-$\beta$ region.  A manager in the
 multiple-equilibria region can capture a discrete utility gain by pushing
 opacity exactly to $\omega_H$, eliminating the probability of
-high-$\beta$ trading.  Once at $\omega_H$, however, the associated marginal benefit of additional obfuscation (a smooth decline in $\beta$) may not outweigh its marginal cost $C'(\omega_{\eta})$. For managers whose skill is not high enough to justify this
+high-$\beta$ trading.  Once at $\omega_H$, however, the associated marginal benefit of additional obfuscation may not outweigh its marginal cost $C'(\omega_{\eta})$. For managers whose skill is not high enough to justify this
 incremental cost, optimal opacity is pinned at $\omega_H$: they
 capture the discrete gain from escaping the multiple-equilibria region but
 do not obfuscate further.  As skill rises sufficiently, the marginal benefit of
 opacity eventually dominates, and $\omega_\eta^*$ begins increasing again above
 $\omega_H$.
 
-These features carry concrete implications for the testable relationship
-between skill and opacity.  First, while opacity and skill are positively
-correlated in general, the cross-sectional distribution of fund opacity should
-exhibit discrete mass points (i.e., clusters of funds) around the thresholds for multiple equilibria, rather than following a smooth unimodal distribution.
-Second, the constant-opacity region implies that skill is
-uninformative about opacity for a non-trivial range of managers: funds with
-meaningfully different skill levels optimally choose identical opacity levels.
-Within this region, however, fund performance should still be positively
-correlated with skill even after controlling for opacity, providing a testable
-prediction that disentangles the two dimensions.
+These features carry concrete implications for the testable relationship between skill and opacity.  First, while opacity and skill are positively correlated in general, the cross-sectional distribution of fund opacity should exhibit discrete mass points (i.e., clusters of funds) around the thresholds for multiple equilibria, rather than following a smooth unimodal distribution. Second, the constant-opacity region implies that skill is uninformative about opacity for a non-trivial range of managers: funds with meaningfully different skill levels optimally choose identical opacity levels. Within this region, however, fund performance should still be positively correlated with skill even after controlling for opacity, providing a testable prediction that disentangles the effects of skill and opacity.
