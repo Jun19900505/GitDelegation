@@ -26,7 +26,7 @@ We model the manager’s portfolio choice and investors' capital allocation as a
 Upon discovering the mispricing in the asset ($s$), the fund manager chooses the portfolio allocation between the risky and the safe asset. This action is represented by a market order for $x\in \mathbb{R}$ units of the risky asset, submitted to the market maker in the financial market. The manager decides on $x$ by incorporating the reactions of the financial market (i.e., the asset price) and the capital inflow from her investors, as described in the following.
 
 \paragraph{\normalfont{\it{Investors' capital allocation.}}}
-Upon observing fund information $f$, each investor chooses the amount of capital to invest into the fund. Investor $i$'s capital allocation is denoted by $m_i \ge 0$, and the total fund flow or the asset under management (AUM) of the fund is defined by $M \equiv \sum_{i=1}^{n}m_{i}$. The fund’s fee structure is proportional to the total fund proceeds: the manager takes a $\phi\in(0,1)$ fraction of the proceeds, while the remaining $1-\phi$ fraction is distributed to investors in proportion to their contribution to the fund, that is, $m_i / M$.\footnote{Introducing a fixed fee does not change our qualitative results, as long as the performance-based fee also exists, $0 < \phi < 1$.}
+Upon observing fund information $f$, each investor chooses the amount of capital to invest into the fund. Investor $i$'s capital allocation is denoted by $m_i \ge 0$, and the total fund flow or the asset under management (AUM) of the fund is defined by $M \equiv \sum_{i=1}^{n}m_{i}$. The fund’s fee structure is proportional to the total fund proceeds: the manager takes a $\phi\in(0,1)$ fraction of the proceeds, while the remaining $1-\phi$ fraction is distributed to investors in proportion to their contribution to the fund, that is, $m_i / M$.\footnote{Introducing a fixed fee does not change our qualitative results, as long as the performance-based fee also exists. More generally, a common fee structure in the hedge fund industry (``2-and-20''-style) with separate performance fee $\phi_{\pi}$ on $\pi$ and management fee $\phi_{M}$ on $M$ can be incorporated into our model, as it only modifies the flow-performance sensitivity (defined below) and the fund-flow weight in the manager's objective, leaving all qualitative results unchanged.}
 
 \paragraph{\normalfont{\it{Financial market.}}}
 In the financial market, the market maker sets the asset price, $p$, based on the incoming order flow, $x+u$, where $u$ represents a random market order from the noise trader and follows a normal distribution with mean zero and variance $\omega_u$. Due to competition, the market maker sets a semi-strong efficient price conditional on $x+u$:\footnote{Assume that, on the equilibrium path, one competitive market maker trades the asset. As in \citet{kyle1985continuous}, competitively many market makers exist off the equilibrium path, ensuring a break-even price in the equilibrium.} 
@@ -43,7 +43,7 @@ Since the manager chooses her trading strategy $x$ based on the private signal $
 %\subsubsection{Misreporting and Verification.}
 %\paragraph{\normalfont{\it{}}}
 \subsubsection{Maximization Problems and Equilibrium}
-The fund's profit from the risky investment is represented by $\pi\equiv(\delta-p)x$, so that the total fund proceeds, including those from the safe asset, are
+The fund's payoff from the risky investment is $\delta x$, while it allocates $M-px$ to the risk-free asset. Hence, by denoting the return from the risky investment by $\pi=(\delta -p) x$, the total fund proceeds are represented as
 \begin{equation}
     y=\pi+M.
 \end{equation}
@@ -63,5 +63,3 @@ Note that the first term represents the expected payment from the fund, and the 
 
 \end{definition} 
 %*==*==*==*==*==*==*==*==*==*==*==*==*==*==*
-
-In determining the capital allocation in \eqref{eq:m_sym}, each investor seeks to compute the expected fund profits $\mathrm{E}[\pi|f]$. This process, in turn, requires the investor to back out the realized skill level of the manager $|s|$ from fund information $f=x+\eta$. 
