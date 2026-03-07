@@ -43,20 +43,20 @@ Since the manager chooses her trading strategy $x$ based on the private signal $
 %\subsubsection{Misreporting and Verification.}
 %\paragraph{\normalfont{\it{}}}
 \subsubsection{Maximization Problems and Equilibrium}
-The fund's payoff from the risky investment is $\delta x$, while it allocates $M-px$ to the risk-free asset. Hence, by denoting the return from the risky investment by $\pi=(\delta -p) x$, the total fund proceeds are represented as
+The fund's payoff from the risky investment is $\delta x$, while it allocates $M-px$ to the risk-free asset. Hence, by denoting the return from the risky investment as $\pi=(\delta -p) x$, the total fund proceeds are represented as
 \begin{equation}
     y=\pi+M.
 \end{equation}
  %\paragraph{\normalfont{\it{Maximization problem.}}} 
-Therefore, given the realized skill $s$, the fund manager maximizes her expected fee income by controlling her investment strategy $x$:
+Given the realized skill $s$, the fund manager maximizes her expected fee income by controlling her investment strategy $x$:
 \begin{equation}
     \max_{x} \mathrm{E}\left[\phi y |s\right].\label{eq:managerproblem}
 \end{equation}
 Conversely, conditional on the fund information $f$, investor $i$ maximizes her expected return from delegating capital management:\footnote{The fund manager may have an incentive to make a false report about $y$ to her investors. Namely, by reporting $\tilde{y}$, she pays out $(1-\phi)\tilde{y}$ to investors and captures $y-(1-\phi)\tilde{y}$ on her own. To prevent this intentional misreporting, we assume that each investor can verify $x$ after the trading stage. Alternatively, we may assume costly verification: investors collectively pay the verification cost $C$ to back out $x$ from the fund information in the end of the trading period. As long as $C$ positively depends on the degree of fund opacity $\omega_{\eta}$, our qualitative results remain the same.}
 \begin{equation}
-    \max_{m_i\ge 0}\mathrm{E}\left[\frac{m_i}{M}(1-\phi)y -m_{i}|f\right].\label{eq:investorproblem}
+    \max_{m_i\ge 0}\mathrm{E}\left[\frac{m_i}{M}(1-\phi)y -m_{i}|f\right],\label{eq:investorproblem}
 \end{equation}
-Note that the first term represents the expected payment from the fund, and the second term is the cost of capital.
+where the first term represents the expected payment from the fund, and the second term is the cost of capital.
 
 \begin{definition}\label{def:eqm}
     The equilibrium is defined by the market maker's pricing strategy $p$, the fund manager's trading strategy $x$, and investors' capital allocations $\{m_{i}\}_{i=1}^{n}$, such that, (i) $p$ satisfies \eqref{p} given $x+u$, (ii) $x$ solves (\ref{eq:managerproblem}) given $s$, $p$, and $\{m_{i}\}_{i=1}^{n}$, and (iii) for all $i$, $m_i$ solves (\ref{eq:investorproblem}) given $p$, $f$, and $\{m_j\}_{j\neq i}$.
