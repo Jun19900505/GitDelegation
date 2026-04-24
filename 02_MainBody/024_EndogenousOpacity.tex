@@ -11,36 +11,40 @@ To formalize the manager's optimization problem in the rational expectations fra
 %In what follows, the trading intensity in the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta = \beta_{H}$ and $\beta_{L}$, respectively. Also,  for consistency, we define $\rho_{j} = 1$ for $j=H,L$ when the equilibrium with $\beta = \beta_{j}$ is unique.
 
 \paragraph{\normalfont{\textit{Manager's expected utility.}}}
-The manager controls $\omega_{\eta}$ to maximize her \textit{ex-ante} expected utility derived from the fee income $\mathrm{E}[\phi y]$, net of the obfuscation cost $C$. As the fund flow is given by equation \eqref{eq:M_sym}, her objective function is specified as follows.\footnote{The law of iterated expectation implies $\mathrm{E}[M] = \theta\mathrm{E}\left[\mathrm{E}[\pi|f]\right] = \theta\mathrm{E}[\pi]$.}
+The manager controls $\omega_{\eta}$ to maximize her \textit{ex-ante} expected utility derived from the fee income, net of the obfuscation cost $C$.
 \begin{equation}
-U = \phi \mathrm{E}[\pi + M] - C(\omega_{\eta}) = \phi(1+\theta)\mathrm{E}[\pi] - C(\omega_{\eta}),\label{eq:U}
+U = \mathrm{E}[\phi y] - C(\omega_{\eta}),\label{eq:U}
 \end{equation}
 where the expectation operator incorporates the sunspot shock together with all other random variables introduced so far.
 
 \paragraph{\normalfont{\textit{Equilibrium.}}}
 In this extended model, the definition of equilibrium augments Definition \ref{def:eqm} of the baseline model by additionally requiring that $\omega_{\eta}$ maximizes the manager’s objective function $U$ in equation \eqref{eq:U}.
 
-\subsection{Opacity as Commitment Device}
-Before solving problem \eqref{eq:U}, consider the manager's obfuscation incentive. Given the trading intensity $\beta$, the unconditional expectation of fund performance in \eqref{eq:U} is computed as 
-\begin{equation}
-     \mathrm{E}[\pi] = \frac{\beta \omega_{u}}{\beta^2 \omega_{s} + \omega_{u}}\omega_{s}.\label{eq:unconditional pi}
-\end{equation}
-As in the standard \citet{kyle1985continuous} framework, the first fraction represents the profit margin that each unit of informational advantage would earn, and the second term $\omega_s$ represents the average magnitude squared of the informational advantage.
+% ======================================================== %
+% ======================================================== %
+% \subsection{Opacity as Commitment Device}
+% Before solving problem \eqref{eq:U}, consider the manager's obfuscation incentive. Given the trading intensity $\beta$, the unconditional expectation of fund performance in \eqref{eq:U} is computed as 
+% \begin{equation}
+%      \mathrm{E}[\pi] = \frac{\beta \omega_{u}}{\beta^2 \omega_{s} + \omega_{u}}\omega_{s}.\label{eq:unconditional pi}
+% \end{equation}
+% As in the standard \citet{kyle1985continuous} framework, the first fraction represents the profit margin that each unit of informational advantage would earn, and the second term $\omega_s$ represents the average magnitude squared of the informational advantage.
 
-Fund opacity $\omega_{\eta}$ does not directly show up in equation \eqref{eq:unconditional pi}, but it influences the expected performance through the equilibrium trading intensity $\beta$, as Corollary \ref{cor:beta opacity} demonstrates.
-\begin{corollary}\label{cor:opacity_performance}
-     Both in the low- and high-$\beta$ equilibria, the expected fund performance $\mathrm{E}[\pi]$ is monotonically increasing in fund opacity $\omega_{\eta}$.
- \end{corollary}
- \input{Figures/fig_opacity_beta_profit}
- Figure \ref{fig:opacity_pi} plots $\mathrm{E}[\pi]$ in relation to  $\omega_{\eta}$, which traces the reactions of $\beta$ in Figure \ref{fig:opacitybeta}. In our model, holding other parameters fixed, $\mathrm{E}[\pi]$ declines with the trading intensity $\beta$. This arises from the presence of the showing-off motive. Although unconditional expected performance is maximized at the Kyle benchmark, which is driven solely by the hiding motive, the manager in our model trades more aggressively in order to attract fund flows. It reveals too much private information to the market maker and lowers the fund performance, while the manager is willing to deviate from the profit-maximizing strategy because the fund flow compensates for this loss. Fund opacity, conversely, diminishes the showing-off motive and induces the manager to pursue more profit-driven strategies, bringing $\beta$ closer to the profit-maximizing level. As a consequence, opacity helps improve the expected fund performance and, according to the manager's utility \eqref{eq:U}, this effect encourages the manager to obfuscate fund information.
+% Fund opacity $\omega_{\eta}$ does not directly show up in equation \eqref{eq:unconditional pi}, but it influences the expected performance through the equilibrium trading intensity $\beta$, as Corollary \ref{cor:beta opacity} demonstrates.
+% \begin{corollary}\label{cor:opacity_performance}
+%      Both in the low- and high-$\beta$ equilibria, the expected fund performance $\mathrm{E}[\pi]$ is monotonically increasing in fund opacity $\omega_{\eta}$.
+%  \end{corollary}
+%  \input{Figures/fig_opacity_beta_profit}
+%  Figure \ref{fig:opacity_pi} plots $\mathrm{E}[\pi]$ in relation to  $\omega_{\eta}$, which traces the reactions of $\beta$ in Figure \ref{fig:opacitybeta}. In our model, holding other parameters fixed, $\mathrm{E}[\pi]$ declines with the trading intensity $\beta$. This arises from the presence of the showing-off motive. Although unconditional expected performance is maximized at the Kyle benchmark, which is driven solely by the hiding motive, the manager in our model trades more aggressively in order to attract fund flows. It reveals too much private information to the market maker and lowers the fund performance, while the manager is willing to deviate from the profit-maximizing strategy because the fund flow compensates for this loss. Fund opacity, conversely, diminishes the showing-off motive and induces the manager to pursue more profit-driven strategies, bringing $\beta$ closer to the profit-maximizing level. As a consequence, opacity helps improve the expected fund performance and, according to the manager's utility \eqref{eq:U}, this effect encourages the manager to obfuscate fund information.
  
- Interestingly, investors' \textit{ex-ante} expected utility is also increasing in fund opacity. According to equation \eqref{eq:m_sym}, each investor expects to obtain
- \begin{equation}
-     U_{i} \equiv \frac{1-\phi(1+\theta)}{n}\mathrm{E}[\pi],\label{eq:investor utility}
- \end{equation}
- so that her expected utility is proportional to the fund's unconditional expected performance. Thus, Corollary \ref{cor:opacity_performance} implies that even investors prefer opaque fund from the \textit{ex-ante} perspective. This result may appear paradoxical in light of the showing-off motive: why does the manager trade aggressively and deviate from the performance-maximizing strategy, despite knowing that such behavior lowers performance and reduces both her own and investors' expected utility? This tension arises from a crucial difference in timing. When she decides on the trading strategy $x$, the manager cannot alter the market’s beliefs about her strategy ($\beta$ and $\lambda$ in equations [\ref{eq:cond_pi}]--[\ref{eq:cond_var}]), meaning that she optimizes over $x$ by taking the investors' belief-updating rule as given. Since she can influence investor perceptions only through the content of fund information $f$, she is inclined to inflate her trading volume $|x|$ to appear more skilled, as captured by the showing-off motive. Conversely, at the \textit{ex-ante} stage (i.e., before she sends the fund information to investors), the manager recognizes that this future showing-off motive will lead to flashy but inefficient risk-taking that erodes unconditional performance and the expected fund flow. Consequently, she strategically chooses fund opacity as a commitment device to ``tie her own hands," thereby dampening the investors' future responsiveness to $f$ and inducing her future self to prioritize profit-driven trading over reputation-driven trading.
+%  Interestingly, investors' \textit{ex-ante} expected utility is also increasing in fund opacity. According to equation \eqref{eq:m_sym}, each investor expects to obtain
+%  \begin{equation}
+%      U_{i} \equiv \frac{1-\phi(1+\theta)}{n}\mathrm{E}[\pi],\label{eq:investor utility}
+%  \end{equation}
+%  so that her expected utility is proportional to the fund's unconditional expected performance. Thus, Corollary \ref{cor:opacity_performance} implies that even investors prefer opaque fund from the \textit{ex-ante} perspective. This result may appear paradoxical in light of the showing-off motive: why does the manager trade aggressively and deviate from the performance-maximizing strategy, despite knowing that such behavior lowers performance and reduces both her own and investors' expected utility? This tension arises from a crucial difference in timing. When she decides on the trading strategy $x$, the manager cannot alter the market’s beliefs about her strategy ($\beta$ and $\lambda$ in equations [\ref{eq:cond_pi}]--[\ref{eq:cond_var}]), meaning that she optimizes over $x$ by taking the investors' belief-updating rule as given. Since she can influence investor perceptions only through the content of fund information $f$, she is inclined to inflate her trading volume $|x|$ to appear more skilled, as captured by the showing-off motive. Conversely, at the \textit{ex-ante} stage (i.e., before she sends the fund information to investors), the manager recognizes that this future showing-off motive will lead to flashy but inefficient risk-taking that erodes unconditional performance and the expected fund flow. Consequently, she strategically chooses fund opacity as a commitment device to ``tie her own hands," thereby dampening the investors' future responsiveness to $f$ and inducing her future self to prioritize profit-driven trading over reputation-driven trading.
 
-\subsection{Equilibrium Opacity}
+\subsection{Equilibrium Obfuscation}
+Equation \eqref{eq:U} shows that the manager's expected utility depends on opacity only through the unconditional expected performance $\mathrm{E}[\pi]$ and the obfuscation cost $C(\omega_{\eta})$. From Corollary \ref{cor:opacity_performance} in Subsection \ref{sss:opacity_style_perf}, opacity raises $\mathrm{E}[\pi]$ by operating as a commitment device that mitigates the showing-off motive. The manager's optimal opacity therefore balances this commitment benefit against the cost of obfuscation.
+
 We now solve for the manager's optimal opacity, $\omega_{\eta}^*$, that maximizes $U$ in \eqref{eq:U} and characterize how it varies with skill.
 
 \begin{proposition}\label{prop:optimal_opacity}
@@ -89,8 +93,7 @@ funds with intermediate opacity ($\omega_{L} \le \omega_{\eta} \le
 \omega_{H}$) yield only the low-$\beta$ equilibrium.  Because optimal opacity
 is increasing in skill, this induces a systematic mapping from skill to
 fragility, such that managers with intermediate skill optimally choose intermediate opacity in $\omega_{\eta}\in[\omega_{L}, \omega_{H}]$, placing them in the multiple-equilibria region and making them a source of financial fragility.  In contrast, high-skill
-managers operating under high opacity secure the unique low-$\beta$ equilibrium with superior trading performance. Low-skill managers, for whom the marginal benefit of obfuscation is small, optimally choose low opacity and remain in the unique reputation-driven equilibrium, avoiding fragility but at the cost of poor trading performance. While opacity is commonly viewed as a driver of financial instability, our model delivers a sharply different message: the most opaque funds are not the source of fragility; it is funds with \emph{intermediate}
-opacity, operated by managers of intermediate skill, that contribute to
+managers operating under high opacity secure the unique low-$\beta$ equilibrium with superior trading performance. Low-skill managers, for whom the marginal benefit of obfuscation is small, optimally choose low opacity and remain in the unique reputation-driven equilibrium, avoiding fragility but at the cost of poor trading performance. While opacity is commonly viewed as a driver of financial instability, our model delivers a sharply different message: the most opaque funds may not be a primary source of fragility; rather, it is funds with \emph{intermediate} opacity, operated by managers of intermediate skill, that contribute to
 systemic fragility. This result is broadly consistent with the observation in \citet{zuckerman2019} that certain highly opaque funds maintained stable, profitable operations during the 2008 financial crisis, while many 
 other funds experienced severe instability.
 
@@ -101,7 +104,7 @@ may find it no longer worth incurring the higher cost of obfuscation, and
 optimally reduce their opacity below $\omega_{H}$, entering the
 fragile multiple-equilibria region.  In other words, a transparency mandate
 can inadvertently push skilled, performance-driven managers into the very
-region of fragility it aims to suppress, meaning that transparency backfires.
+region of fragility it aims to suppress. Transparency thus can backfire not only by lowering fund performance and investor welfare (Subsection \ref{sss:opacity_style_perf}) but also by inducing financial fragility.
 
 \subsubsection{Discontinuity and Constant Obfuscation}
 A salient feature of Figure~\ref{fig:optimal_opacity} is that $\omega_{\eta}^{*}$
@@ -119,7 +122,7 @@ with a discrete upward jump.
 The numerical results further reveal a region in which $\omega_\eta^*$ is
 pinned at $\omega_H$ and is unresponsive to the expected skill.  This is due to a trade-off that arises at the boundary of the unique low-$\beta$ region: a manager in the
 multiple-equilibria region can capture a discrete utility gain by pushing
-opacity exactly to $\omega_H$, eliminating the probability of
+opacity exactly to $\omega_H$, eliminating the possibility of
 high-$\beta$ trading.  Once at $\omega_H$, however, the associated marginal benefit of additional obfuscation may not outweigh its marginal cost $C'(\omega_{\eta})$. For managers whose skill is not high enough to justify this
 incremental cost, optimal opacity is pinned at $\omega_H$.  As skill rises sufficiently, the marginal benefit of
 opacity eventually dominates, and $\omega_\eta^*$ begins increasing again above
