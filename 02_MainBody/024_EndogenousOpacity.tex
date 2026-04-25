@@ -1,13 +1,13 @@
 \section{Strategic Obfuscation}\label{sec:endogenousopacity}
-This section analyzes endogenous fund opacity $\omega_{\eta}$. Our results shed light on why managers obfuscate and which types of managers contribute to financial fragility.
+This section analyzes endogenous obfuscation. Our results shed light on why managers obfuscate and which types of managers contribute to financial fragility.
 
 \subsection{Setup} \label{sec:setupEndog}
 \paragraph{\normalfont{\textit{Obfuscating fund information.}}}
-Prior to investors' capital allocation and the manager's investment decision, the fund manager chooses the fund opacity $\omega_{\eta}$, anticipating the equilibrium reactions of investors and the market maker specified in Section \ref{sec:eqm}. For example, in many mutual funds, managers provide information about their strategies to investors in accordance with regulatory requirements. However, they strategically design the way this information is presented and convey a deliberately uninformative description even when the underlying holdings are simple.
-We assume that such practices entail costs: the manager pays the obfuscation cost, $C(\omega_{\eta})$ with $C'(\cdot)>0$ and $C(0)=C'(0)=0$, to increase the degree of opacity of fund information. This cost can be interpreted as pecuniary costs arising from investments in communication and marketing resources to design abstract narratives and vague labels that replace direct descriptions of risky portfolios. It may also reflect non-pecuniary effort that managers expend in carefully structuring disclosure documents to maintain opacity while following regulatory compliance.
+Prior to investors' capital allocation and the manager's investment decision, the fund manager chooses the degree of obfuscation $\omega_{\eta}$, anticipating the equilibrium reactions of investors and the market maker specified in Section \ref{sec:eqm}. For example, in many mutual funds, managers provide information about their strategies to investors in accordance with regulatory requirements. However, they strategically design the way this information is presented and convey a deliberately uninformative description even when the underlying holdings are simple.
+We assume that such practices entail costs: the manager pays the obfuscation cost, $C(\omega_{\eta})$ with $C'(\cdot)>0$ and $C(0)=C'(0)=0$, to increase $\omega_{\eta}$. This cost can be interpreted as pecuniary costs arising from investments in communication and marketing resources to design abstract narratives and vague labels that replace direct descriptions of risky portfolios. It may also reflect non-pecuniary effort that managers expend in carefully structuring disclosure documents to maintain opacity while complying with regulations.
 
 \paragraph{\normalfont{\textit{Sunspot shock.}}}
-To formalize the manager's optimization problem in the rational expectations framework, we introduce an equilibrium-selection device in cases of multiple equilibria. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bank runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, whenever parameters support multiple equilibria, market participants play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high- and low-$\beta$ equilibria are realized with probability $\rho_{H}\equiv\Pr(z=1)$ and $\rho_{L} = 1-\rho_{H}$, respectively. The shock is realized after the fund manager sets fund opacity but prior to the fund-raising stage. 
+To formalize the manager's optimization problem in the rational expectations framework, we introduce an equilibrium-selection device in cases of multiple equilibria. In particular, following the most common approach, we assume that market participants condition their actions on the realization of an exogenous \textit{sunspot} shock, characterized by the binary random variable $z\in\{0,1\}$.\footnote{The sunspot equilibrium is proposed by \citet{diamond1983bank} as an equilibrium selection device in the context of bank runs and formalized in the equilibrium analyses by the subsequent studies, such as \citet{cooper1998bank}.} Namely, whenever parameters support multiple equilibria, market participants play the high-$\beta$ equilibrium if a spot appears on the sun ($z=1$), whereas the low-$\beta$ equilibrium is realized if no spots are observed ($z=0$). Accordingly, the high- and low-$\beta$ equilibria are realized with probability $\rho_{H}=\Pr(z=1)$ and $\rho_{L} = 1-\rho_{H}$, respectively. The shock is realized after the fund manager sets the obfuscation level but prior to the fund-raising stage. 
 %In what follows, the trading intensity in the high-$\beta$ and low-$\beta$ equilibria are denoted as $\beta = \beta_{H}$ and $\beta_{L}$, respectively. Also,  for consistency, we define $\rho_{j} = 1$ for $j=H,L$ when the equilibrium with $\beta = \beta_{j}$ is unique.
 
 \paragraph{\normalfont{\textit{Manager's expected utility.}}}
@@ -43,12 +43,12 @@ In this extended model, the definition of equilibrium augments Definition \ref{d
 %  so that her expected utility is proportional to the fund's unconditional expected performance. Thus, Corollary \ref{cor:opacity_performance} implies that even investors prefer opaque fund from the \textit{ex-ante} perspective. This result may appear paradoxical in light of the showing-off motive: why does the manager trade aggressively and deviate from the performance-maximizing strategy, despite knowing that such behavior lowers performance and reduces both her own and investors' expected utility? This tension arises from a crucial difference in timing. When she decides on the trading strategy $x$, the manager cannot alter the market’s beliefs about her strategy ($\beta$ and $\lambda$ in equations [\ref{eq:cond_pi}]--[\ref{eq:cond_var}]), meaning that she optimizes over $x$ by taking the investors' belief-updating rule as given. Since she can influence investor perceptions only through the content of fund information $f$, she is inclined to inflate her trading volume $|x|$ to appear more skilled, as captured by the showing-off motive. Conversely, at the \textit{ex-ante} stage (i.e., before she sends the fund information to investors), the manager recognizes that this future showing-off motive will lead to flashy but inefficient risk-taking that erodes unconditional performance and the expected fund flow. Consequently, she strategically chooses fund opacity as a commitment device to ``tie her own hands," thereby dampening the investors' future responsiveness to $f$ and inducing her future self to prioritize profit-driven trading over reputation-driven trading.
 
 \subsection{Equilibrium Obfuscation}
-Equation \eqref{eq:U} shows that the manager's expected utility depends on opacity only through the unconditional expected performance $\mathrm{E}[\pi]$ and the obfuscation cost $C(\omega_{\eta})$. From Corollary \ref{cor:opacity_performance} in Subsection \ref{sss:opacity_style_perf}, opacity raises $\mathrm{E}[\pi]$ by operating as a commitment device that mitigates the showing-off motive. The manager's optimal opacity therefore balances this commitment benefit against the cost of obfuscation.
+Equation \eqref{eq:U} shows that the manager's expected utility depends on $\omega_{\eta}$ only through the unconditional expected performance $\mathrm{E}[\pi]$ and the obfuscation cost $C(\omega_{\eta})$. From Corollary \ref{cor:opacity_performance} in Subsection \ref{sss:opacity_style_perf}, obfuscation raises $\mathrm{E}[\pi]$ by operating as a commitment device that mitigates the showing-off motive. The manager's optimal obfuscation therefore balances this commitment benefit against the cost of obfuscation.
 
-We now solve for the manager's optimal opacity, $\omega_{\eta}^*$, that maximizes $U$ in \eqref{eq:U} and characterize how it varies with skill.
+We now solve for the manager's optimal obfuscation, $\omega_{\eta}^*$, that maximizes $U$ in \eqref{eq:U} and characterize how it varies with skill.
 
 \begin{proposition}\label{prop:optimal_opacity}
-    The optimal opacity $\omega_{\eta}^{*}$ is positive for all $\omega_{s}>0$ and non-decreasing in $\omega_{s}$. Moreover, it is strictly increasing in $\omega_{s}$ whenever the solution is interior to each equilibrium regime.
+    The optimal obfuscation $\omega_{\eta}^{*}$ is positive for all levels of the expected skill $\omega_{s}>0$ and non-decreasing in $\omega_{s}$. Moreover, $\omega_{\eta}^{*}$ is strictly increasing in $\omega_{s}$ whenever $\omega_{\eta}^{*}$ is interior to each equilibrium regime.
 \end{proposition}
 
 Figure~\ref{fig:optimal_opacity} presents a numerical illustration of Proposition~\ref{prop:optimal_opacity}, additionally revealing the discontinuous structure arising from equilibrium regime switches at $\omega_{H}$ and $\omega_{L}$.
@@ -57,7 +57,7 @@ Figure~\ref{fig:optimal_opacity} presents a numerical illustration of Propositio
     \centering
     \hspace*{-1cm}\includegraphics[width=1.1\linewidth]{./Figures/fig_skill_optimal_opacity.png}
     \caption{Average Skill and Optimal Obfuscation}
-    \caption*{\footnotesize{Note: The figure plots the optimal degree of fund opacity $\omega_{\eta}^{*}$ against the manager's expected (average) skill $\omega_{s}$, focusing on three regions that correspond to the equilibrium types. The dashed horizontal lines represent opacity thresholds, $\omega_{L}$ and $\omega_{H}$, defined in Proposition~\ref{prop:eqm}. We use the parameter values $\phi = 0.03, n= 5, \omega_u = 5, \rho_H = 0.10$, and the obfuscation cost is $C = c \omega_{\eta}^{\gamma}$ with $c = 10^{-4}$ and $\gamma = 1.85$. For certain parameter configurations, the increasing region above $\omega_H$ is absent, and optimal opacity is pinned at  $\omega_H$ for all sufficiently high skill levels. The qualitative features of the solution are nonetheless robust across a range of parameter values.}}
+    \caption*{\footnotesize{Note: The figure plots the optimal degree of obfuscation $\omega_{\eta}^{*}$ against the manager's expected (average) skill $\omega_{s}$, focusing on three regions that correspond to the equilibrium types. The dashed horizontal lines represent obfuscation thresholds, $\omega_{L}$ and $\omega_{H}$, defined in Proposition~\ref{prop:eqm}. We use the parameter values $\phi = 0.03, n= 5, \omega_u = 5, \rho_H = 0.10$, and the obfuscation cost is $C = c \omega_{\eta}^{\gamma}$ with $c = 10^{-4}$ and $\gamma = 1.85$. For certain parameter configurations, the increasing region above $\omega_H$ is absent, and the optimal degree of obfuscation is pinned at  $\omega_H$ for all sufficiently high skill levels. The qualitative features of the solution are nonetheless robust across a range of parameter values.}}
     \label{fig:optimal_opacity}
     \end{figure}
 
@@ -70,38 +70,38 @@ Figure~\ref{fig:optimal_opacity} presents a numerical illustration of Propositio
 % \end{enumerate}
 
 % \end{enumerate}
-\subsubsection{Skill, Opacity, and Fragility}
-Proposition~\ref{prop:optimal_opacity} and Figure~\ref{fig:optimal_opacity} show that the manager's optimal opacity $\omega_{\eta}^{*}$ is globally increasing in average skill $\omega_{s}$.
+\subsubsection{Skill, Obfuscation, and Fragility}
+Proposition~\ref{prop:optimal_opacity} and Figure~\ref{fig:optimal_opacity} show that the manager's optimal obfuscation $\omega_{\eta}^{*}$ is globally increasing in the average skill $\omega_{s}$.
 The mechanism follows
-directly from the commitment role of opacity established in
+directly from the commitment role of obfuscation established in
 Corollary~\ref{cor:opacity_performance}.  A manager with higher $\omega_{s}$ expects to obtain a larger
 informational advantage and thus stands to gain more from an improvement in
-her profit margin. Since opacity mitigates the showing-off motive and steers
+her profit margin. Since obfuscation mitigates the showing-off motive and steers
 the manager's strategy toward the profit-maximizing benchmark, the marginal
-benefit of obfuscation rises with $\omega_{s}$. This positive skill--opacity
+benefit of obfuscation rises with $\omega_{s}$. This positive skill--obfuscation
 relationship is consistent with the empirical pattern in which skilled
 managers disproportionately migrate to opaque investment vehicles and
 subsequently deliver superior returns \citep{kostovetsky2017brain}.
 
 Furthermore, the interaction between skill, obfuscation, and equilibrium
-selection generates a non-monotone relationship between opacity and financial
+selection generates a non-monotone relationship between obfuscation and financial
 fragility.  As noted in Section~\ref{sec:eqm}, the equilibrium type is
-determined by the manager's opacity choice: transparent funds
+determined by the manager's obfuscation choice: transparent funds
 ($\omega_{\eta} < \omega_{L}$) support only the high-$\beta$ equilibrium,
-funds with intermediate opacity ($\omega_{L} \le \omega_{\eta} \le
-\omega_{H}$) support multiple equilibria, and opaque funds ($\omega_{\eta} >
-\omega_{H}$) yield only the low-$\beta$ equilibrium.  Because optimal opacity
+funds with intermediate degrees of obfuscation ($\omega_{L} \le \omega_{\eta} \le
+\omega_{H}$) support multiple equilibria, and highly obfuscated funds ($\omega_{\eta} >
+\omega_{H}$) yield only the low-$\beta$ equilibrium.  Because optimal obfuscation
 is increasing in skill, this induces a systematic mapping from skill to
-fragility, such that managers with intermediate skill optimally choose intermediate opacity in $\omega_{\eta}\in[\omega_{L}, \omega_{H}]$, placing them in the multiple-equilibria region and making them a source of financial fragility.  In contrast, high-skill
-managers operating under high opacity secure the unique low-$\beta$ equilibrium with superior trading performance. Low-skill managers, for whom the marginal benefit of obfuscation is small, optimally choose low opacity and remain in the unique reputation-driven equilibrium, avoiding fragility but at the cost of poor trading performance. While opacity is commonly viewed as a driver of financial instability, our model delivers a sharply different message: the most opaque funds may not be a primary source of fragility; rather, it is funds with \emph{intermediate} opacity, operated by managers of intermediate skill, that contribute to
-systemic fragility. This result is broadly consistent with the observation in \citet{zuckerman2019} that certain highly opaque funds maintained stable, profitable operations during the 2008 financial crisis, while many 
+fragility, such that managers with intermediate skill optimally choose intermediate obfuscation in $\omega_{\eta}\in[\omega_{L}, \omega_{H}]$, placing them in the multiple-equilibria region and making them a source of financial fragility.  In contrast, high-skill
+managers heavily obfuscating their funds secure the unique low-$\beta$ equilibrium with superior trading performance. Low-skill managers, for whom the marginal benefit of obfuscation is small, optimally choose transparency and remain in the unique reputation-driven equilibrium, avoiding fragility but at the cost of poor trading performance. While opacity is commonly viewed as a driver of financial instability, our model delivers a sharply different message: the most opaque funds may not be a primary source of fragility; rather, it is funds with \emph{intermediate} degrees of obfuscation, operated by managers of intermediate skill, that contribute to
+systemic fragility. This result is broadly consistent with the observation in \citet{zuckerman2019} that certain highly opaque or obfuscated funds maintained stable, profitable operations during the 2008 financial crisis, while many 
 other funds experienced severe instability.
 
 This non-monotone relationship also carries a direct policy implication.  A regulatory mandate that raises the cost of obfuscation---for example, through
-stricter disclosure requirements---shifts the optimal-opacity schedule
+stricter disclosure requirements---shifts the optimal-obfuscation schedule
 downward.  Managers who previously operated in the unique low-$\beta$ region
 may find it no longer worth incurring the higher cost of obfuscation, and
-optimally reduce their opacity below $\omega_{H}$, entering the
+optimally reduce their $\omega_{\eta}^{*}$ below $\omega_{H}$, entering the
 fragile multiple-equilibria region.  In other words, a transparency mandate
 can inadvertently push skilled, performance-driven managers into the very
 region of fragility it aims to suppress. Transparency thus can backfire not only by lowering fund performance and investor welfare (Subsection \ref{sss:opacity_style_perf}) but also by inducing financial fragility.
@@ -109,23 +109,23 @@ region of fragility it aims to suppress. Transparency thus can backfire not only
 \subsubsection{Discontinuity and Constant Obfuscation}
 A salient feature of Figure~\ref{fig:optimal_opacity} is that $\omega_{\eta}^{*}$
 does not increase smoothly in $\omega_s$, but instead exhibits two upward jumps,
-along with a region of constant opacity between them.  The jumps arise because the
+along with a region of a constant obfuscation level between them.  The jumps arise because the
 manager's utility function is discontinuous at the equilibrium thresholds $\omega_L$
 and $\omega_H$.  At $\omega_{\eta} = \omega_L$, the equilibrium transitions from
 unique high-$\beta$ to multiple equilibria: the profitable low-$\beta$ equilibrium
 may now be realized with probability $\rho_L$, generating a discrete upward jump
 in the manager's expected utility. The same logic applies at $\omega_H$: entering the unique
 low-$\beta$ region eliminates the possibility of inefficient high-$\beta$
-trading.  Because the utility gain from crossing each threshold is discrete while the obfuscation cost is smooth, optimal opacity responds to marginal increases in $\omega_s$
+trading.  Because the utility gain from crossing each threshold is discrete while the obfuscation cost is smooth, optimal obfuscation responds to marginal increases in $\omega_s$
 with a discrete upward jump.
 
 The numerical results further reveal a region in which $\omega_\eta^*$ is
 pinned at $\omega_H$ and is unresponsive to the expected skill.  This is due to a trade-off that arises at the boundary of the unique low-$\beta$ region: a manager in the
 multiple-equilibria region can capture a discrete utility gain by pushing
-opacity exactly to $\omega_H$, eliminating the possibility of
+her obfuscation level exactly to $\omega_H$, eliminating the possibility of
 high-$\beta$ trading.  Once at $\omega_H$, however, the associated marginal benefit of additional obfuscation may not outweigh its marginal cost $C'(\omega_{\eta})$. For managers whose skill is not high enough to justify this
-incremental cost, optimal opacity is pinned at $\omega_H$.  As skill rises sufficiently, the marginal benefit of
-opacity eventually dominates, and $\omega_\eta^*$ begins increasing again above
+incremental cost, the optimal obfuscation level is pinned at $\omega_H$.  As skill rises sufficiently, the marginal benefit of
+obfuscation eventually dominates, and $\omega_\eta^*$ begins increasing again above
 $\omega_H$.
 
-These features carry concrete implications for the testable relationship between skill and opacity.  First, while opacity and skill are positively correlated in general, the cross-sectional distribution of fund opacity should exhibit discrete mass points (i.e., clusters of funds) around the thresholds for multiple equilibria, rather than following a smooth unimodal distribution. Second, the constant-opacity region implies that skill is uninformative about opacity for a non-trivial range of managers: funds with meaningfully different skill levels optimally choose identical opacity levels. Within this region, however, fund performance should still be positively correlated with skill even after controlling for opacity, providing a testable prediction that disentangles the effects of skill and opacity.
+These features carry concrete implications for the testable relationship between skill and obfuscation.  First, while obfuscation and skill are positively correlated in general, the cross-sectional distribution of fund obfuscation should exhibit discrete mass points (i.e., clusters of funds) around the thresholds for multiple equilibria, rather than following a smooth unimodal distribution. Second, the constant-obfuscation region implies that skill is uninformative about the degree of obfuscation for a non-trivial range of managers: funds with meaningfully different skill levels optimally choose identical obfuscation levels. Within this region, however, fund performance should still be positively correlated with skill even after controlling for obfuscation levels, providing a testable prediction that disentangles the effects of skill and obfuscation.

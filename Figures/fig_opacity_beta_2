@@ -6,7 +6,7 @@
     % \hspace{1mm}
     % \subfigure[High flow-performance sensitivity]{%
     %     \includegraphics[height=57mm]{./Figures/fig_opacitybeta.png}}%
-    \caption{Fund Opacity and Trading Intensity}
+    \caption{Obfuscation Level and Trading Intensity}
     \label{fig:opacitybeta}
-    \caption*{\footnotesize{Note: These figures are illustrated by seeting $\omega_{s} = 1.0, \omega_{u} = 2.0, \theta = 10 (\phi=0.08)$ for the left panel and $\theta = 27 (\phi = 0.02)$ for the right panel.}}
+    \caption*{\footnotesize{Note: The figure plots the trading intensity $\beta$ against the level of obfuscation $\omega_{\eta}$ with different values of the flow-performance sensitivity: $\omega_{s} = 2.0, \omega_{u} = 3.0, n = 2, \phi=0.0475$ ($\theta = 10.0$) for the left panel and $\phi = 0.018$ ($\theta = 27.3$) for the right panel.}}
     \end{figure}

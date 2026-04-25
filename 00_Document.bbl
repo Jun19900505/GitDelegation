@@ -5,8 +5,8 @@
 
 \begin{thebibliography}{xxx}
 
-\harvarditem[Badoera et~al.]{Badoera, Costellob, and Jamesc}{2020}{badoera2020icansee}
-\textbf{Badoera, Dominique, Charles Costellob, and Christopher Jamesc.} 2020. ``I can see clearly now: The impact of disclosure requirements on 401(k) fees.'' \textit{Journal of Financial Economics} 136 (3):   471--489.
+\harvarditem[Badoer et~al.]{Badoer, Costello, and James}{2020}{badoera2020icansee}
+\textbf{Badoer, Dominique, Charles Costello, and Christopher James.} 2020. ``I can see clearly now: The impact of disclosure requirements on 401(k) fees.'' \textit{Journal of Financial Economics} 136 (3):   471--489.
 
 \harvarditem[Berk and Green]{Berk and Green}{2004}{berk2004mutual}
 \textbf{Berk, Jonathan~B, and Richard~C Green.} 2004. ``Mutual fund flows and performance in rational markets.'' \textit{Journal of Political Economy} 112 (6):   1269--1295.
@@ -26,8 +26,8 @@
 \harvarditem[Carlin]{Carlin}{2009}{carlin2009strategic}
 \textbf{Carlin, Bruce.} 2009. ``Strategic price complexity in retail financial markets.'' \textit{Journal of Financial Economics} 91 (3):   278--287.
 
-\harvarditem[Carlin and Manso]{Carlin and Manso}{2010}{carlin2010obfuscation}
-\textbf{Carlin, Bruce, and Gustavo Manso.} 2010. ``Obfuscation, Learning, and the Evolution of Investor Sophistication.'' \textit{Journal of Financial Economics} 24 (3):   754--785.
+\harvarditem[Carlin and Manso]{Carlin and Manso}{2011}{carlin2010obfuscation}
+\textbf{Carlin, Bruce, and Gustavo Manso.} 2011. ``Obfuscation, Learning, and the Evolution of Investor Sophistication.'' \textit{Review of Financial Studies,} 24 (3):   754--785.
 
 \harvarditem[C{\'e}l{\'e}rier and Vall{\'e}e]{C{\'e}l{\'e}rier and Vall{\'e}e}{2019}{celerier2019returns}
 \textbf{C{\'e}l{\'e}rier, Claire, and Boris Vall{\'e}e.} 2019. ``Returns to talent and the finance wage premium.'' \textit{The Review of Financial Studies} 32 (10):   4005--4040.
@@ -47,11 +47,11 @@
 \harvarditem[Daniel and Moskowitz]{Daniel and Moskowitz}{2016}{daniel2016momentum}
 \textbf{Daniel, Kent, and Tobias~J Moskowitz.} 2016. ``Momentum crashes.'' \textit{Journal of Financial Economics} 122 (2):   221--247.
 
+\harvarditem[Dasgupta and Prat]{Dasgupta and Prat}{2006}{dasgupta2006financial}
+\textbf{Dasgupta, Amil, and Andrea Prat.} 2006. ``Financial equilibrium with career concerns.'' \textit{Theoretical Economics} 1 (1):   67--93.
+
 \harvarditem[Dasgupta and Prat]{Dasgupta and Prat}{2008}{dasgupta2008information}
 \textbf{Dasgupta, Amil, and Andrea Prat.} 2008. ``Information aggregation in financial markets with career concerns.'' \textit{Journal of Economic Theory} 143 (1):   83--113.
-
-\harvarditem[Dasgupta]{Dasgupta}{2006}{dasgupta2006financial}
-\textbf{Dasgupta, Amiland Andrea~Prat.} 2006. ``Financial equilibrium with career concerns.'' \textit{Theoretical Economics} 1 (1):   67--93.
 
 \harvarditem[Dass et~al.]{Dass, Massa, and Patgiri}{2008}{dass2008mutual}
 \textbf{Dass, Nishant, Massimo Massa, and Rajdeep Patgiri.} 2008. ``Mutual funds and bubbles: The surprising role of contractual incentives.'' \textit{The Review of Financial Studies} 21 (1):   51--99.
@@ -65,8 +65,8 @@
 \harvarditem[DiMaggio]{DiMaggio}{2015}{di2015fake}
 \textbf{DiMaggio, Marco.} 2015. ``Fake alphas, tail risk and reputation traps.'' \textit{Columbia Business School Research Paper} (14-4): .
 
-\harvarditem[Edelen et~al.]{Edelen, Evans, and Kadlecc}{2012}{edelen2012disclosure}
-\textbf{Edelen, Roger~M., Richard Evans, and Gregory Kadlecc.} 2012. ``Disclosure and agency conflict: Evidence from mutual fund commission bundling.'' \textit{Journal of Financial Economics} 103 (3):   308--326.
+\harvarditem[Edelen et~al.]{Edelen, Evans, and Kadlec}{2012}{edelen2012disclosure}
+\textbf{Edelen, Roger~M., Richard Evans, and Gregory Kadlec.} 2012. ``Disclosure and agency conflict: Evidence from mutual fund commission bundling.'' \textit{Journal of Financial Economics} 103 (3):   308--326.
 
 \harvarditem[Ellison and Ellison]{Ellison and Ellison}{2009}{ellison2009search}
 \textbf{Ellison, Glenn, and Sara~Fisher Ellison.} 2009. ``Search, Obfuscation, and Price Elasticities on the Internet.'' \textit{Econometrica} 77 (2):   427--452.
@@ -77,8 +77,8 @@
 \harvarditem[G{\^a}rleanu and Pedersen]{G{\^a}rleanu and Pedersen}{2018}{garleanu2018efficiently}
 \textbf{G{\^a}rleanu, Nicolae, and Lasse~Heje Pedersen.} 2018. ``Efficiently inefficient markets for assets and asset management.'' \textit{The Journal of Finance} 73 (4):   1663--1712.
 
-\harvarditem[Gennotte and Leland]{Gennotte and Leland}{1999}{gennotte1999market}
-\textbf{Gennotte, Gerard, and Hayne Leland.} 1999. ``Market liquidity, hedging, and crashes.'' \textit{American Economic Review} 80 (2):   999--1021.
+\harvarditem[Gennotte and Leland]{Gennotte and Leland}{1990}{gennotte1999market}
+\textbf{Gennotte, Gerard, and Hayne Leland.} 1990. ``Market liquidity, hedging, and crashes.'' \textit{American Economic Review} 80 (2):   999--1021.
 
 \harvarditem[Gervais and Strobl]{Gervais and Strobl}{2020}{gervais2020transparency}
 \textbf{Gervais, Simon, and Günter Strobl.} 2020. ``Transparency and Talent Allocation in Money Management.'' \textit{The Review of Financial Studies} 33 (8):   3889--3924.

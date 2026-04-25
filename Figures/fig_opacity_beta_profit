@@ -1,7 +1,7 @@
 \begin{figure}
 \centering
 \includegraphics[width=0.98\linewidth]{./Figures/fig_performance.png}
-\caption{Fund Opacity and Expected Performance}
-\caption*{\footnotesize{Note: The figure plots the unconditional expected performance of the fund $\mathrm{E}[\pi]$ against fund opacity $\omega_{\eta}$ with different values of the flow-performance sensitivity: $\theta = 10$ (the left panel) and $\theta = 27$ (the right panel). The value of other parameters are $\omega_{s}=1.5$ and $\omega_{u}=3$.}}
+\caption{Obfuscation Level and Expected Performance}
+\caption*{\footnotesize{Note: The figure plots the unconditional expected performance of the fund $\mathrm{E}[\pi]$ against the level of obfuscation $\omega_{\eta}$. Parameter values are the same as those used in Figure \ref{fig:opacitybeta}}}
 \label{fig:opacity_pi}
 \end{figure}
