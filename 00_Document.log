@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  26 APR 2026 12:05
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  26 APR 2026 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,98 +829,21 @@ Overfull \hbox (1.22705pt too wide) in paragraph at lines 100--108
 \TU/lmr/m/n/12 stricter disclosure requirements—shifts the optimal-obfuscation schedule down-
  []
 
-[34] [35]) (./02_MainBody/025_Conclusion.tex [36]) (./00_Document.bbl [37] [38] [39] [40]) [41] (./03_Appendix.tex
-
-LaTeX Warning: Reference `prop:endogenous' on page 42 undefined on input line 12.
-
-(./OtherFiles/proof_multieqm.tex [42]
-Overfull \hbox (25.16899pt too wide) detected at line 62
-[][][]\OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) + 2\OML/cmm/m/it/12 yJ[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )[] + 2\OML/cmm/m/it/12 y[]:
- []
-
-[43] [44]
-
-LaTeX Warning: Reference `fn:highlowbeta_def' on page 45 undefined on input line 128.
-
-[45] [46] [47]
-
-LaTeX Warning: Reference `prop:endogenous' on page 48 undefined on input line 222.
-
-
-Overfull \hbox (51.78593pt too wide) detected at line 243
-[]
- []
-
-[48] [49]
-Overfull \hbox (6.30333pt too wide) in paragraph at lines 312--313
- []\TU/lmr/m/it/12 Proof of Statements (iii) and (iv).[] \TU/lmr/m/n/12 Note that $[][] \OML/cmm/m/it/12 y[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 y[]$\TU/lmr/m/n/12 , and $\OML/cmm/m/it/12 J\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 ) =
- []
-
-[50]
-
-LaTeX Warning: Reference `prop:endogenous' on page 51 undefined on input line 331.
-
-
-LaTeX Warning: Reference `eq:theta' on page 51 undefined on input line 331.
-
-)
-
-LaTeX Warning: Reference `lem:MB_beta' on page 51 undefined on input line 15.
-
-
-LaTeX Warning: Reference `prop:skill_inef' on page 51 undefined on input line 15.
-
-(./OtherFiles/proof_betaHL.tex
-Overfull \hbox (63.40735pt too wide) detected at line 8
-[][][]\OT1/cmr/m/n/12 E[][\OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ![]; ^^L[]\OT1/cmr/m/n/12 )] = [] \OML/cmm/m/it/12 ^^L[] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 ^^X[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^M\OT1/cmr/m/n/12 )[] + (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12  \OT1/cmr/m/n/12 )[][]\OML/cmm/m/it/12 :
- []
-
-[51]
-Overfull \hbox (55.60274pt too wide) detected at line 13
-[]
- []
-
-
-Overfull \hbox (66.57043pt too wide) detected at line 17
-[][][]\OMS/cmsy/m/n/10.95 ^^@\OML/cmm/m/it/10.95 ^^L[][][] \OT1/cmr/m/n/10.95 + [] [] \OML/cmm/m/it/10.95 :
- []
-
-
-Overfull \hbox (13.21468pt too wide) detected at line 22
-[]
- []
-
-
-LaTeX Warning: Reference `lem:MB_beta' on page 52 undefined on input line 27.
-
-
-LaTeX Warning: Reference `prop:skill_inef' on page 52 undefined on input line 27.
-
-
-LaTeX Warning: Reference `lem:MB_beta' on page 52 undefined on input line 27.
-
-
-LaTeX Warning: Reference `eq:FOC_SA' on page 52 undefined on input line 27.
-
-)) [52] (./00_Document.aux)
+[34] [35]) (./02_MainBody/025_Conclusion.tex [36]) (./00_Document.bbl [37] [38] [39] [40]) [41] (./03_Appendix.tex (./OtherFiles/proof_multieqm.tex [42] [43] [44]) [45]) [46] (./00_Document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `00_Document.out' has not changed.
-(rerunfilecheck)             Checksum: ACE5A8D9003B0436B064AA507A8F2C1D;5621.
+(rerunfilecheck)             Checksum: E70F698A5AB0B7C3AC45DD95B69B2DAA;5651.
  ) 
 Here is how much of TeX's memory you used:
- 24688 strings out of 474773
- 459839 string characters out of 5757724
- 1933839 words of memory out of 5000000
- 46347 multiletter control sequences out of 15000+600000
- 577827 words of font info for 124 fonts, out of 8000000 for 9000
+ 24648 strings out of 474773
+ 459151 string characters out of 5757724
+ 1931839 words of memory out of 5000000
+ 46310 multiletter control sequences out of 15000+600000
+ 575358 words of font info for 115 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,14n,90p,2053b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 00_Document.pdf (52 pages).
+Output written on 00_Document.pdf (46 pages).

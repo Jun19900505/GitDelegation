@@ -9,8 +9,19 @@
 \section{Proof of Lemma \ref{lem:reputation}} \label{proofLbeliefs}
 From \eqref{x_conj}, $f$ is observationally equivalent to $\frac{f}{\beta} = s + \frac{\eta}{\beta}$. The filtering rules of normal random variables yield results in equations \eqref{eq:hats}--\eqref{eq:cond_var}.
 
-\section{Proof of Propositions \ref{prop:eqm} and \ref{prop:endogenous}} \label{proofendogenous}
+\section{Proof of Proposition \ref{prop:eqm} and Corollary \ref{cor:theta_omega}} \label{proofendogenous}
 \input{OtherFiles/proof_multieqm}
 
-\section{Proof of Lemma \ref{lem:MB_beta} and Proposition \ref{prop:skill_inef}}
-\input{OtherFiles/proof_betaHL}
+\section{Proof of Corollaries \ref{cor:beta opacity} and \ref{cor:opacity_performance}}
+Note that the solutions to the fixed-point problem lies in $a>h$, suggesting that $\beta>\sqrt{\frac{\omega_u}{\omega_s}}$ always holds. The unconditional expected performance is given by (\ref{eq:unconditional pi}), and $\mathrm{E}[\pi]$ is monotonically decreasing in $\beta$. Hence, Corollary \ref{cor:opacity_performance} directly follows from Corollary \ref{cor:beta opacity}.
+
+To show Corollary \ref{cor:beta opacity}, rewrite the fixed-point problem in \eqref{eq:fpp} as $0=J(z, \omega_{\eta})$ where
+
+\begin{equation}
+ J(z, \omega_{\eta}) = (z-1)\left(z + \frac{\omega_{\eta}}{\omega_u}\right)^2 -2\theta z^2,\label{eq:fpp_z}
+\end{equation}
+with $z\equiv \beta^2 \frac{\omega_{s}}{\omega_u}$. Also, denote $z_k = \beta_k^2 \frac{\omega_{s}}{\omega_u}$ for $k=L,H$.
+Since $\frac{\partial J(z_k, \omega_{\eta})}{\partial \omega_{\eta}} >0$ and $\frac{\partial J(z_k, \omega_{\eta})}{\partial \beta} >0$, the implicit function theorem implies $\frac{d\beta_k}{\omega_{\eta}}<0$ for $k=L,H$.
+
+%\section{Proof of Lemma \ref{lem:MB_beta} and Proposition \ref{prop:skill_inef}}
+%\input{OtherFiles/proof_betaHL}
