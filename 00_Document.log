@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  26 APR 2026 21:40
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.11)  26 APR 2026 23:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,21 +829,26 @@ Overfull \hbox (1.22705pt too wide) in paragraph at lines 100--108
 \TU/lmr/m/n/12 stricter disclosure requirements—shifts the optimal-obfuscation schedule down-
  []
 
-[34] [35]) (./02_MainBody/025_Conclusion.tex [36]) (./00_Document.bbl [37] [38] [39] [40]) [41] (./03_Appendix.tex (./OtherFiles/proof_multieqm.tex [42] [43] [44]) [45]) [46] (./00_Document.aux)
+[34] [35]) (./02_MainBody/025_Conclusion.tex [36]) (./00_Document.bbl [37] [38] [39] [40]) [41] (./03_Appendix.tex (./OtherFiles/proof_multieqm.tex [42] [43] [44]) [45] (./OtherFiles/proof_strobfuscation.tex [46] [47] [48]
+Overfull \hbox (1.98561pt too wide) in paragraph at lines 86--88
+\TU/lmr/m/n/12 since $\OML/cmm/m/it/12 Q[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ![]\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 > \OT1/cmr/m/n/12 0$ \TU/lmr/m/n/12 within each regime. By the second-order condition, $\OML/cmm/m/it/12 @H=@![] <
+ []
+
+)) [49] (./00_Document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `00_Document.out' has not changed.
-(rerunfilecheck)             Checksum: E70F698A5AB0B7C3AC45DD95B69B2DAA;5651.
+(rerunfilecheck)             Checksum: FE275C2879DE69F6CDD6DF42E61B2C6A;5825.
  ) 
 Here is how much of TeX's memory you used:
- 24648 strings out of 474773
- 459151 string characters out of 5757724
+ 24667 strings out of 474773
+ 459640 string characters out of 5757724
  1931839 words of memory out of 5000000
- 46310 multiletter control sequences out of 15000+600000
- 575358 words of font info for 115 fonts, out of 8000000 for 9000
+ 46324 multiletter control sequences out of 15000+600000
+ 575366 words of font info for 116 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,14n,90p,2053b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 00_Document.pdf (46 pages).
+Output written on 00_Document.pdf (49 pages).
