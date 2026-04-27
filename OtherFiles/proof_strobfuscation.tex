@@ -31,7 +31,7 @@
     \]
     is the expected value of $\sqrt{z}/(z+1)$ under the equilibrium selection rule. Note that $Q$ depends on $\omega_\eta$ but not on $\omega_s$, since $\omega_s$ enters $U$ only through the scalar coefficient $\phi(1+\theta)\sqrt{\omega_u \omega_s}$.
     
-    The key structural observation is that $U(\omega_\eta;\omega_s)$ satisfies strictly increasing differences in $(\omega_\eta, \omega_s)$: for any $\omega_\eta'' > \omega_\eta'$ and $\omega_s'' > \omega_s'$,
+    Observe that $U(\omega_\eta;\omega_s)$ satisfies strictly increasing differences in $(\omega_\eta, \omega_s)$: for any $\omega_\eta'' > \omega_\eta'$ and $\omega_s'' > \omega_s'$,
     \begin{align*}
     &U(\omega_\eta'';\omega_s'') - U(\omega_\eta';\omega_s'')
     - \left[U(\omega_\eta'';\omega_s') - U(\omega_\eta';\omega_s')\right]\\
@@ -40,28 +40,14 @@
     \left[Q(\omega_\eta'') - Q(\omega_\eta')\right].
     \end{align*}
     This expression is strictly positive if and only if $Q(\omega_\eta'') > Q(\omega_\eta')$, i.e., if $Q$ is increasing in $\omega_\eta$. We now verify this.
-    
-    \medskip
-    \noindent\textit{Claim: $Q(\omega_\eta)$ is strictly increasing in $\omega_\eta$.}
-    
-    Consider each regime separately.
-    \begin{itemize}
-        \item \textit{Unique-$z_H$ regime} ($\omega_\eta < \omega_L$): Here $Q(\omega_\eta) = \sqrt{z_H}/(z_H+1)$. Since $\frac{d}{dz}(\sqrt{z}/(z+1)) < 0$ and $dz_H/d\omega_\eta < 0$, we get $dQ/d\omega_\eta > 0$.
-    
-        \item \textit{Three-solution regime} ($\omega_\eta \in [\omega_L, \omega_H]$): Here $Q(\omega_\eta) = \rho\frac{\sqrt{z_L}}{z_L+1} + (1-\rho)\frac{\sqrt{z_H}}{z_H+1}$. Both $dz_L/d\omega_\eta < 0$ and $dz_H/d\omega_\eta < 0$, and $\frac{d}{dz}(\sqrt{z}/(z+1)) < 0$ for both branches, so each term is increasing in $\omega_\eta$, and thus $dQ/d\omega_\eta > 0$.
-    
-        \item \textit{Unique-$z_L$ regime} ($\omega_\eta > \omega_H$): Here $Q(\omega_\eta) = \sqrt{z_L}/(z_L+1)$, and the same argument gives $dQ/d\omega_\eta > 0$.
-    
-        \item \textit{At the boundaries $\omega_L$ and $\omega_H$}: As $\omega_\eta$ crosses $\omega_L$ upward, the realized equilibrium shifts from $z_H$ alone to the mixture $(\rho, z_L;\, 1-\rho, z_H)$. Since $z_L < z_H$ and $\sqrt{z}/(z+1)$ is decreasing in $z$, we have $\sqrt{z_L}/(z_L+1) > \sqrt{z_H}/(z_H+1)$, so introducing $z_L$ with positive weight $\rho > 0$ causes a discrete upward jump in $Q$. Similarly, as $\omega_\eta$ crosses $\omega_H$ upward, the mixture shifts to $z_L$ alone, causing another discrete upward jump in $Q$ (since $z_L < z_H$ implies $\sqrt{z_L}/(z_L+1) > (1-\rho)\sqrt{z_H}/(z_H+1) + \rho\sqrt{z_L}/(z_L+1)$ for $\rho < 1$).
-    \end{itemize}
+    Consider each regime separately. Under unique-$z_H$ and $z_L$ regimes, the claim holds due to  $\frac{d}{dz}(\sqrt{z}/(z+1)) < 0$ and $dz_k/d\omega_\eta < 0$ for $k=L,H$. Also, under multiple-equilibria regime, the same claim holds as $Q$ becomes the weighted average of $\sqrt{z_k}/(1+z_k)$. Now, consider the boundaries: As $\omega_\eta$ crosses $\omega_L$ upward, the realized equilibrium shifts from $z_H$ alone to the mixture $(\rho, z_L;\, 1-\rho, z_H)$. Since $z_L < z_H$ and $\sqrt{z}/(z+1)$ is decreasing in $z$, we have $\sqrt{z_L}/(z_L+1) > \sqrt{z_H}/(z_H+1)$, so introducing $z_L$ with positive weight $\rho > 0$ causes a discrete upward jump in $Q$. Similarly, as $\omega_\eta$ crosses $\omega_H$ upward, the mixture shifts to $z_L$ alone, causing another discrete upward jump in $Q$ (since $z_L < z_H$ implies $\sqrt{z_L}/(z_L+1) > (1-\rho)\sqrt{z_H}/(z_H+1) + \rho\sqrt{z_L}/(z_L+1)$ for $\rho < 1$).
     Therefore $Q$ is strictly increasing in $\omega_\eta$ everywhere: continuously within each regime, and with upward jumps at the boundaries.
     
     Returning to the main argument: the cross-difference is strictly positive for all $\omega_\eta'' > \omega_\eta'$ and $\omega_s'' > \omega_s'$, so $U$ has strictly increasing differences in $(\omega_\eta, \omega_s)$. By the monotone comparative statics theorem \citep{topkis1998}, every selection from the argmax correspondence $\omega_\eta^*(\omega_s)$ is non-decreasing in $\omega_s$.
     
-    \medskip
-    \noindent\textbf{Part (iii): $\omega_\eta^*$ is strictly increasing in $\omega_s$ when interior to a regime.}
+    \paragraph{\textit{\textmd{Part (iii): $\omega_\eta^*$ is strictly increasing in $\omega_s$ when interior to a regime.}}}
     
-    Suppose $\omega_\eta^*(\omega_s)$ is interior to one of the three regimes---that is, $\omega_\eta^*(\omega_s) \notin \{0, \omega_L, \omega_H\}$ and $\omega_\eta^*$ does not lie at a boundary of its regime. Then $\omega_\eta^*$ satisfies the interior first-order condition
+    Suppose $\omega_\eta^*(\omega_s)$ is interior to one of the three regimes, that is, $\omega_\eta^*(\omega_s) \notin \{0, \omega_L, \omega_H\}$ and $\omega_\eta^*$ does not lie at a boundary of its regime. Then $\omega_\eta^*$ satisfies the interior first-order condition
     \[
     \phi(1+\theta)\sqrt{\omega_u \omega_s} \cdot Q'(\omega_\eta^*) = C'(\omega_\eta^*), \tag{FOC}
     \]
@@ -70,7 +56,7 @@
     H(\omega_\eta, \omega_s)
     \equiv \phi(1+\theta)\sqrt{\omega_u \omega_s} \cdot Q'(\omega_\eta) - C'(\omega_\eta).
     \]
-    By the implicit function theorem, since the second-order condition holds (i.e., $\partial H/\partial \omega_\eta < 0$ at the optimum by assumption),
+    By the implicit function theorem, since the second-order condition holds (i.e., $\partial H/\partial \omega_\eta < 0$ at the optimum),
     \[
     \frac{d\omega_\eta^*}{d\omega_s}
     = -\frac{\partial H/\partial \omega_s}{\partial H/\partial \omega_\eta}.
@@ -88,6 +74,3 @@
     = -\frac{\partial H/\partial \omega_s}{\partial H/\partial \omega_\eta} > 0,
     \]
     so $\omega_\eta^*$ is strictly increasing in $\omega_s$ at any interior point of a regime.
-    
-    \medskip
-    Combining the three parts: $\omega_\eta^* > 0$ for all $\omega_s > 0$; $\omega_\eta^*$ is globally non-decreasing in $\omega_s$ by monotone comparative statics applied to a function with strictly increasing differences; and $\omega_\eta^*$ is strictly increasing in $\omega_s$ wherever the interior first-order condition governs, by the implicit function theorem. The flat regions correspond to $\omega_\eta^*$ being pinned at a regime boundary, where the strictly increasing differences property guarantees that any jump, if it occurs, is upward, preserving global monotonicity.
