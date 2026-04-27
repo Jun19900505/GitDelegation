@@ -74,6 +74,9 @@
 \harvarditem[Ellison and Wolitzky]{Ellison and Wolitzky}{2012}{ellison2012search}
 \textbf{Ellison, Glenn, and Alexander Wolitzky.} 2012. ``A search cost model of obfuscation.'' \textit{The RAND Journal of Economics} 3 (43):   417--441.
 
+\harvarditem[Fishman and Hagerty]{Fishman and Hagerty}{1995}{fishman1995mandatory}
+\textbf{Fishman, Micheal~J., and Kathleen~M. Hagerty.} 1995. ``The Mandatory Disclosure of Trades and Market Liquidity.'' \textit{The Review of Financial Studies} 8 (3):   637--676.
+
 \harvarditem[Froot et~al.]{Froot, Scharfstein, and Stein}{1992}{froot1992herd}
 \textbf{Froot, Kenneth~A, David~S Scharfstein, and Jeremy~C Stein.} 1992. ``Herd on the street: Informational inefficiencies in a market with short-term speculation.'' \textit{The Journal of Finance} 47 (4):   1461--1484.
 
@@ -104,8 +107,14 @@
 \harvarditem[Huddart]{Huddart}{1999}{huddart1999reputation}
 \textbf{Huddart, Steven.} 1999. ``Reputation and performance fee effects on portfolio choice by investment advisers.'' \textit{Journal of Financial Markets} 2 (3):   227--271.
 
+\harvarditem[Huddart et~al.]{Huddart, Hughes, and Levine}{2001}{huddart2003public}
+\textbf{Huddart, Steven, John~S. Hughes, and Carolyn~B. Levine.} 2001. ``Public Disclosure and Dissimulation of Insider Trades.'' \textit{Econometrica} 69 (3):   665--681.
+
 \harvarditem[Jensen]{Jensen}{1967}{jensen1967performance}
 \textbf{Jensen, Michael.} 1967. ``The performance of mutual funds in the period 1945-1964.'' \textit{The Journal of Finance} 23  389--416.
+
+\harvarditem[John and Narayanan]{John and Narayanan}{1997}{john1997market}
+\textbf{John, Kose, and Ranga Narayanan.} 1997. ``Market Manipulation and the Role of Insider Trading Regulations.'' \textit{Journal of Business}.
 
 \harvarditem[Khandani and Lo]{Khandani and Lo}{2011}{khandani2011what}
 \textbf{Khandani, Amir, and Andrew~W. Lo.} 2011. ``What happened to the quants in August 2007? Evidence from factors and transactions data.'' \textit{Journal of Financial Markets} 14 (1):   1--46.

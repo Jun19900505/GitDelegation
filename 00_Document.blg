@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2025)
+This is BibTeX, Version 0.99d (TeX Live 2024)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: 00_Document.aux
 The style file: econ-aea.bst
@@ -12,45 +12,46 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--there's a number but no volume in di2015fake
-You've used 48 entries,
+Warning--there is no volume, number, and pages in john1997market
+You've used 51 entries,
             6828 wiz_defined-function locations,
-            1578 strings with 16296 characters,
-and the built_in function-call counts, 52459 in all, are:
-= -- 8241
-> -- 1700
-< -- 139
-+ -- 558
-- -- 548
-* -- 3055
-:= -- 6572
-add.period$ -- 45
-call.type$ -- 48
-change.case$ -- 346
-chr.to.int$ -- 48
-cite$ -- 49
-duplicate$ -- 1584
-empty$ -- 2800
-format.name$ -- 524
-if$ -- 13654
+            1594 strings with 16700 characters,
+and the built_in function-call counts, 55688 in all, are:
+= -- 8753
+> -- 1821
+< -- 147
++ -- 599
+- -- 588
+* -- 3244
+:= -- 6983
+add.period$ -- 48
+call.type$ -- 51
+change.case$ -- 369
+chr.to.int$ -- 51
+cite$ -- 53
+duplicate$ -- 1676
+empty$ -- 2961
+format.name$ -- 562
+if$ -- 14495
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 152
-num.names$ -- 408
-pop$ -- 578
+newline$ -- 161
+num.names$ -- 433
+pop$ -- 615
 preamble$ -- 1
-purify$ -- 346
+purify$ -- 369
 quote$ -- 0
-skip$ -- 4030
+skip$ -- 4270
 stack$ -- 0
-substring$ -- 4691
-swap$ -- 397
-text.length$ -- 43
+substring$ -- 4958
+swap$ -- 415
+text.length$ -- 45
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 785
-warning$ -- 1
-while$ -- 393
+type$ -- 836
+warning$ -- 2
+while$ -- 415
 width$ -- 0
-write$ -- 723
-(There was 1 warning)
+write$ -- 767
+(There were 2 warnings)
