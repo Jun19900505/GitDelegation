@@ -1,0 +1,20 @@
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.synctex(busy)
+
+# Generated PDFs
+*.pdf
+
+# macOS
+.DS_Store
+
+# Revision diff files
+00_Document_diff.tex
+diff_build/
