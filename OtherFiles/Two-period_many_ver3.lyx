@@ -1,0 +1,1916 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /Users/junaoyagi/Library/CloudStorage/Dropbox/Reputation/Note_twoperiod/
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Setting
+\end_layout
+
+\begin_layout Standard
+The market and the fund investors have fundamentally different abilities to learn from a manager's trading history.
+\end_layout
+
+\begin_layout Subsection
+Manager's Behavior and Financial Market
+\end_layout
+
+\begin_layout Itemize
+A continuum of managers,
+ indexed by 
+\begin_inset Formula $i\in I$
+\end_inset
+
+,
+ make investments in a two-period economy (
+\begin_inset Formula $t=1,2$
+\end_inset
+
+).
+ At the beginning of 
+\begin_inset Formula $t=1$
+\end_inset
+
+,
+ manager 
+\begin_inset Formula $i$
+\end_inset
+
+ draws her skill 
+\begin_inset Formula $s_{i}\sim N(0,\sigma_{s}^{2})$
+\end_inset
+
+,
+ where 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ is independent across 
+\begin_inset Formula $i\in I$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In 
+\begin_inset Formula $t=1$
+\end_inset
+
+,
+ manager 
+\begin_inset Formula $i$
+\end_inset
+
+ identifies a single risky asset (asset 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+) with payoff 
+\begin_inset Formula $\delta_{A_{i}}=\bar{\delta}+s_{i}$
+\end_inset
+
+.
+ She trades this asset in both periods by placing a market order for 
+\begin_inset Formula $x_{A_{i},t}$
+\end_inset
+
+ units in period 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ The payoff 
+\begin_inset Formula $\delta_{A_{i}}$
+\end_inset
+
+ is realized in the end of 
+\begin_inset Formula $t=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset Formula $t=2$
+\end_inset
+
+,
+ manager 
+\begin_inset Formula $i$
+\end_inset
+
+ identifies another asset (asset 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+) whose payoff is 
+\begin_inset Formula $\delta_{B_{i}}=\bar{\delta}+s_{i}$
+\end_inset
+
+.
+ She trades this asset only in 
+\begin_inset Formula $t=2$
+\end_inset
+
+ by placing a market order for 
+\begin_inset Formula $x_{B_{i},2}$
+\end_inset
+
+ units,
+ and the payoff 
+\begin_inset Formula $\delta_{B_{i}}$
+\end_inset
+
+ is realized in the end of 
+\begin_inset Formula $t=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We may extend this setting to OLG so that both assets are long-lived.
+ But the essential point here is that two assets have different tracking record from market makers' perspective,
+ as specified below.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+For each asset,
+ there is a competitive market maker and a noise trader.
+ The noise trader places a random market order for 
+\begin_inset Formula $u_{k,t}$
+\end_inset
+
+ units of asset 
+\begin_inset Formula $k$
+\end_inset
+
+,
+ where 
+\begin_inset Formula $u_{k,t}\sim N(0,\sigma_{u}^{2})$
+\end_inset
+
+ is iid across 
+\begin_inset Formula $k$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ The market maker for a particular asset observes the total order flow and sets the price 
+\begin_inset Formula $p_{k,t}$
+\end_inset
+
+.
+ Importantly,
+ the financial market is anonymous.
+ Together with the fact that there is a continuum of managers trading a continuum of assets,
+ the anonymity implies the following:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For assets 
+\begin_inset Formula $\{B_{i}\}_{i\in I}$
+\end_inset
+
+,
+ market makers do not use information in 
+\begin_inset Formula $t=1$
+\end_inset
+
+ to update her belief about 
+\begin_inset Formula $\delta_{B_{i}}$
+\end_inset
+
+.
+ Since a manager picks different assets in 
+\begin_inset Formula $t=1$
+\end_inset
+
+ and 
+\begin_inset Formula $t=2$
+\end_inset
+
+,
+ even though the market maker knows there is informed trading by a manager,
+ she cannot infer which asset this informed manager has traded in 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+For assets 
+\begin_inset Formula $\{A_{i}\}_{i\in I}$
+\end_inset
+
+,
+ market makers use information in 
+\begin_inset Formula $t=1$
+\end_inset
+
+ to update their belief about 
+\begin_inset Formula $\delta_{A_{i}}$
+\end_inset
+
+ in 
+\begin_inset Formula $t=2$
+\end_inset
+
+.
+ This is because a single asset is traded twice only if the same manager trades it across 
+\begin_inset Formula $t=1$
+\end_inset
+
+ and 
+\begin_inset Formula $t=2$
+\end_inset
+
+,
+ thereby allowing the market maker to use 
+\begin_inset Formula $y_{A_{i},1}=x_{A_{i},1}+u_{A_{i},1}$
+\end_inset
+
+ to update her belief.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Investor's Behavior
+\end_layout
+
+\begin_layout Standard
+There are two alternative settings of investor capital allocation and the fund structure,
+ while setting 2 is not feasible because a symmetric Nash equilibrium cannot be obtained.
+ In both setting,
+ consider investor 
+\begin_inset Formula $j$
+\end_inset
+
+ allocating capital 
+\begin_inset Formula $m_{j,i,t}$
+\end_inset
+
+ to manager 
+\begin_inset Formula $i$
+\end_inset
+
+ in period 
+\begin_inset Formula $t$
+\end_inset
+
+,
+ while the total capital flow to manager 
+\begin_inset Formula $i$
+\end_inset
+
+ in period 
+\begin_inset Formula $t$
+\end_inset
+
+ is 
+\begin_inset Formula $M_{i,t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+(Separate vintage;
+ closed-end fund).
+ The manager holds fund 
+\begin_inset Formula $F_{i,1}$
+\end_inset
+
+ in the first period,
+ which is specified by her position in asset 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ (i.e.,
+ 
+\begin_inset Formula $x_{A_{i},1}$
+\end_inset
+
+) and the risk-free asset.
+ In 
+\begin_inset Formula $t=2$
+\end_inset
+
+,
+ she forms another fund 
+\begin_inset Formula $F_{i,2}$
+\end_inset
+
+ that consists of 
+\begin_inset Formula $x_{A,2}$
+\end_inset
+
+ units of asset 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{B,2}$
+\end_inset
+
+ units of asset 
+\begin_inset Formula $B$
+\end_inset
+
+ (and the risk-free asset).
+ Each fund generates fund proceeds 
+\begin_inset Formula $V_{i,1}=(\delta_{A_{i},1}-p_{A_{i},1})x_{A_{i},1}+M_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{i,2}=\sum_{k=A,B}(\delta_{k_{i},1}-p_{k_{i},1})x_{k_{i},1}+M_{2}$
+\end_inset
+
+.
+ After taking 
+\begin_inset Formula $\phi$
+\end_inset
+
+ fraction of 
+\begin_inset Formula $V_{i,t}$
+\end_inset
+
+ as a fee,
+ the manager allocates 
+\begin_inset Formula $V_{i,t}$
+\end_inset
+
+ to her investors according to their contributions.
+ Hence,
+ investor 
+\begin_inset Formula $j$
+\end_inset
+
+ receives 
+\begin_inset Formula $I_{j}=\sum_{t=1,2}(1-\phi)\frac{m_{j,i,t}}{M_{i,t}}V_{i,t}$
+\end_inset
+
+ in the end of 
+\begin_inset Formula $t=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+(NAV-based payoff;
+ open-end fund).
+ By denoting the fund's total proceeds as 
+\begin_inset Formula $V=\sum_{t=1,2}(\delta_{A_{i},t}-p_{A_{i},t})x_{A_{i},t}+(\delta_{B_{i},2}-p_{B_{i},2})x_{B_{i},2}+M_{1}+M_{2}$
+\end_inset
+
+,
+ the investor's end-of-period payoff is proportional to her total share:
+ 
+\begin_inset Formula $I_{j}=\frac{\sum_{t=1,2}m_{j,i,t}}{\sum_{t=1,2}M_{i,t}}(1-\phi)V$
+\end_inset
+
+.
+ Note that the share is computed based on NAV.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+In this case,
+\begin_inset Formula 
+\[
+I=\frac{m_{j,1}+m_{j,2}}{M}(1-\phi)\Pi-\phi(m_{j,1}+m_{j,2})
+\]
+
+\end_inset
+
+ the FOC is 
+\begin_inset Formula 
+\[
+\frac{M-(m_{j,1}+m_{j,2})}{M^{2}}(1-\phi)\Pi=\phi
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+m_{j,2}=\sqrt{(\sum_{t=1,2}\sum_{l\neq j}m_{l,t})\frac{1-\phi}{\phi}E[\Pi]}-M_{1}-\sum_{l\neq j}m_{l,2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ As the share depends on the capital allocations in both periods,
+ 
+\begin_inset Formula $m_{j,i,2}$
+\end_inset
+
+ depends on 
+\begin_inset Formula $m_{j,i,1}$
+\end_inset
+
+.
+ Although the symmetric equilibrium in 
+\begin_inset Formula $t=2$
+\end_inset
+
+ may exist under the symmetric assumption in 
+\begin_inset Formula $t=1$
+\end_inset
+
+,
+ we cannot rule out profitable deviation in 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The following note adopts setting 1.
+ 
+\end_layout
+
+\begin_layout Standard
+Another issue is about the population of investors.
+ If we do not endogenize the distribution of investors across managers,
+ both settings yield the same result.
+\end_layout
+
+\begin_layout Enumerate
+Assume that there is a continuum of investors in each period,
+ and 
+\begin_inset Formula $M_{t}$
+\end_inset
+
+ is determined by the free entry condition period-by-period.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Assume that each manager has 
+\begin_inset Formula $n$
+\end_inset
+
+ investors,
+ where 
+\begin_inset Formula $n$
+\end_inset
+
+ is exogenously given and fixed throughout the periods.
+ Endogenous 
+\begin_inset Formula $n$
+\end_inset
+
+ is not feasible:
+ the equilibrium variables depend on 
+\begin_inset Formula $n$
+\end_inset
+
+ through flow-performance sensitivity 
+\begin_inset Formula $\theta=\frac{n-1}{n}\frac{1-\phi}{\phi}$
+\end_inset
+
+.
+ Deriving 
+\begin_inset Formula $n$
+\end_inset
+
+ by the free-entry condition is complicated.
+\end_layout
+
+\begin_layout Standard
+At the end of 
+\begin_inset Formula $t=1$
+\end_inset
+
+,
+ manager 
+\begin_inset Formula $i$
+\end_inset
+
+ tells her investors about the noisy information about her period-1 investment in asset 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+,
+ that is 
+\begin_inset Formula $x_{A,1}.$
+\end_inset
+
+ The signal is 
+\begin_inset Formula $f=x_{A,1}+\eta$
+\end_inset
+
+ with 
+\begin_inset Formula $\eta\sim N(0,\sigma_{\eta}^{2})$
+\end_inset
+
+ which can be used to estimate 
+\begin_inset Formula $s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Solution
+\end_layout
+
+\begin_layout Standard
+The model is symmetric across managers 
+\begin_inset Formula $i\in I$
+\end_inset
+
+,
+ and we can focus on a generic manager by omitting manager index 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Period 2 
+\end_layout
+
+\begin_layout Subsubsection
+Financial Market
+\end_layout
+
+\begin_layout Itemize
+The manager trades two assets 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ We guess and later verify the following linear strategies:
+ 
+\begin_inset Formula 
+\[
+x_{A,2}=\beta_{A,2}(\delta_{A}-p_{A,1}),\ p_{A,2}=p_{A,1}+\lambda_{A,2}y_{A,2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{B,2}=\beta_{B,2}s,\ p_{B,2}=\bar{\delta}+\lambda_{B,2}y_{B,2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Given the price conjecture and noting that 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ is already fixed,
+ the manager in 
+\begin_inset Formula $t=2$
+\end_inset
+
+ solves
+\begin_inset Formula 
+\[
+\max_{x_{A,2},x_{B,2}}\mathrm{E}\left[\sum_{k=A,B}(\delta_{k}-p_{k,2})x_{k,2}|s\right]=(\delta_{A}-p_{A,1}-\lambda_{A,2}x_{A,2})x_{A,2}+(s-\lambda_{B,2}x_{B,2})x_{B,2}.
+\]
+
+\end_inset
+
+The FOCs lead to 
+\begin_inset Formula $x_{A,2}=\frac{\delta_{A}-p_{A,1}}{2\lambda_{A,2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{B,2}=\frac{s}{2\lambda_{B,2}}$
+\end_inset
+
+,
+ suggesting that 
+\begin_inset Formula $\beta_{k,2}=\frac{1}{2\lambda_{k,2}}$
+\end_inset
+
+ for 
+\begin_inset Formula $k=A,B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The market maker of asset 
+\begin_inset Formula $A$
+\end_inset
+
+ knows that the manager is trading the asset again,
+ so she uses 
+\begin_inset Formula $\{y_{A,1},y_{A,2}\}$
+\end_inset
+
+ to compute the price:
+\begin_inset Formula 
+\[
+p_{A,2}=p_{A,1}+\mathrm{E}[(\delta-p_{A,1})|y_{A,1},y_{A,2}]=p_{A,1}+\lambda_{A,2}y_{A,2}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\lambda_{A,2}=\frac{\beta_{A,2}\sigma_{A}^{2}}{\beta_{A,2}^{2}\sigma_{A}^{2}+\sigma_{u}^{2}}
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula 
+\begin{align}
+\sigma_{A}^{2} & \equiv\mathrm{Var}[\delta-p_{A,1}|y_{A,1}]=\mathrm{Var}[s|y_{A,1}]\nonumber \\
+ & =\frac{\sigma_{s}^{2}\sigma_{u}^{2}}{\beta_{A,1}^{2}\sigma_{s}^{2}+\sigma_{u}^{2}}.\label{eq:sigmaA}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The market maker of asset 
+\begin_inset Formula $B$
+\end_inset
+
+ does not know which manager is trading this asset.
+ Hence,
+ she rely only on 
+\begin_inset Formula $y_{B,2}$
+\end_inset
+
+ and computes
+\begin_inset Formula 
+\[
+p_{B,2}=\mathrm{E}[\delta|y_{B,2}]=\bar{\delta}+\lambda_{B,2}y_{B,2},
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+\lambda_{B,2}=\frac{\beta_{B,2}\sigma_{s}^{2}}{\beta_{B,2}^{2}\sigma_{s}^{2}+\sigma_{u}^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Combining with 
+\begin_inset Formula $\beta_{k,2}=\frac{1}{2\lambda_{k,2}},$
+\end_inset
+
+the equilibrium strategies in 
+\begin_inset Formula $t=2$
+\end_inset
+
+ are
+\begin_inset Formula 
+\[
+\beta_{A,2}=\frac{\sigma_{u}}{\sigma_{A}},\ \lambda_{A,2}=\frac{\sigma_{A}}{2\sigma_{u}},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\beta_{B,2}=\frac{\sigma_{u}}{\sigma_{s}},\ \lambda_{B,2}=\frac{\sigma_{s}}{2\sigma_{u}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The period-2 realized profit of fund 
+\begin_inset Formula $A$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+\pi_{A,2}=(\delta_{A}-p_{A,2})x_{A,2}=\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}(\delta_{A}-p_{A,1})^{2}-\lambda_{A,2}u_{A,2}x_{A,2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore\mathrm{E}[\pi_{A,2}|s]=\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}\left[(s-\lambda_{A,1}x_{A,1})^{2}+\lambda_{A,1}^{2}\sigma_{u}^{2}\right]
+\]
+
+\end_inset
+
+The period-2 realized profit of fund 
+\begin_inset Formula $B$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+\pi_{B,2}=\frac{1}{2}\frac{\sigma_{u}}{\sigma_{s}}s^{2}-\frac{1}{2}u_{B,2}s.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\therefore\mathrm{E}[\pi_{B,2}|s]=\frac{1}{2}\frac{\sigma_{u}}{\sigma_{s}}s^{2}.\label{eq:pib2}
+\end{equation}
+
+\end_inset
+
+Thus,
+ the expected fund proceeds from fund 
+\begin_inset Formula $F_{2}$
+\end_inset
+
+,
+ conditional on 
+\begin_inset Formula $s$
+\end_inset
+
+,
+ is 
+\begin_inset Formula 
+\[
+V_{2}=\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}\left[(s-\lambda_{A,1}x_{A,1})^{2}+\lambda_{A,1}^{2}\sigma_{u}^{2}\right]+\frac{1}{2}\frac{\sigma_{u}}{\sigma_{s}}s^{2}+M_{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Investors' Capital Allocation
+\end_layout
+
+\begin_layout Itemize
+Investors in 
+\begin_inset Formula $t=2$
+\end_inset
+
+ allocate capital to the manager based on information 
+\begin_inset Formula $F=\{f\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Consider investor 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Her return is 
+\begin_inset Formula 
+\[
+\frac{m_{j,2}}{M_{2}}(1-\phi)(\sum_{k=A,B}\pi_{k,2}+M_{2})-m_{j,2}=\frac{m_{j,2}}{M_{2}}(1-\phi)\sum_{k=A,B}\pi_{k,2}-\phi m_{j,2}.
+\]
+
+\end_inset
+
+ By taking the expectation conditional on 
+\begin_inset Formula $y_{A,1}=x_{A,1}+u_{A,1}$
+\end_inset
+
+ and taking the FOC,
+ 
+\begin_inset Formula 
+\[
+m_{j,2}=\left(\frac{1-\phi}{\phi}\mathrm{E}\left[\sum_{k=A,B}\pi_{k,2}|f\right]\sum_{l\neq j}m_{l,2}\right)^{\frac{1}{2}}-\sum_{l\neq i}m_{l,2}.
+\]
+
+\end_inset
+
+At the symmetric equilibrium,
+ where all investors of the manager allocate the same amount of capital,
+ it reduces to 
+\begin_inset Formula 
+\[
+m_{2}=\frac{n-1}{n^{2}}\frac{1-\phi}{\phi}\mathrm{E}\left[\sum_{k=A,B}\pi_{k,2}|f\right],
+\]
+
+\end_inset
+
+so that 
+\begin_inset Formula 
+\begin{equation}
+M_{2}=\theta\mathrm{E}\left[\sum_{k=A,B}\pi_{k,2}|f\right]\label{eq:MB}
+\end{equation}
+
+\end_inset
+
+with 
+\begin_inset Formula $\theta\equiv\frac{n-1}{n}\frac{1-\phi}{\phi}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Note that
+\begin_inset Formula 
+\[
+\pi_{A,2}=\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}\left(s-\lambda_{A,1}(x_{A,1}+u_{A,1})\right)^{2}-\lambda_{A,2}u_{A,2}x_{A,2}
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+\pi_{B,2}=\frac{1}{2}\frac{\sigma_{u}}{\sigma_{s}}s^{2}-\frac{1}{2}u_{B,2}s,
+\]
+
+\end_inset
+
+so that
+\begin_inset Formula 
+\[
+\mathrm{E}\left[\sum_{k=A,B}\pi_{k,2}|f\right]=\mathrm{E}\left[\frac{1}{2}\frac{\sigma_{u}}{\sigma_{s}}s^{2}+\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}\left(s-\lambda_{A,1}(x_{A,1}+u_{A,1})\right)^{2}|f\right].
+\]
+
+\end_inset
+
+Expanding further,
+\begin_inset Formula 
+\[
+\mathrm{E}\left[\left(s-\lambda_{A,1}(x_{A,1}+u_{A,1})\right)^{2}|f\right]=\mathrm{E}\left[\left(s-\lambda_{A,1}(x_{A,1}+u_{A,1})\right)|f\right]^{2}+\mathrm{Var}\left[\left(s-\lambda_{A,1}(x_{A,1}+u_{A,1})\right)|f\right]
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+\mathrm{E}\left[s-\lambda_{A,1}(x_{A,1}+u_{A,1})|f\right]=(1-\lambda_{A,1}\beta_{A,1})\mathrm{E}\left[s|f\right],
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathrm{Var}\left[\left(s-\lambda_{A,1}(x_{A,1}+u_{A,1})\right)|f\right]=(1-\lambda_{A,1}\beta_{A,1})^{2}\mathrm{Var}\left[s|f\right]+\lambda_{A,1}^{2}\sigma_{u}^{2}.
+\]
+
+\end_inset
+
+Since the variance decomposition implies
+\begin_inset Formula 
+\[
+\mathrm{E}[s^{2}|f]=\mathrm{E}[s|f]^{2}+\mathrm{Var}[s|f]
+\]
+
+\end_inset
+
+we obtain
+\begin_inset Formula 
+\begin{align*}
+\mathrm{E}\left[\sum_{k=A,B}\pi_{k,2}|f\right] & =\frac{1}{2}\frac{\sigma_{u}}{\sigma_{s}}\left(\mathrm{E}[s|f]^{2}+\mathrm{Var}[s|f]\right)\\
+ & +\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}\left[(1-\lambda_{A,1}\beta_{A,1})^{2}\mathrm{E}\left[s|f\right]^{2}+(1-\lambda_{A,1}\beta_{A,1})^{2}\mathrm{Var}\left[s|f\right]+\lambda_{A,1}^{2}\sigma_{u}^{2}\right]\\
+ & =\frac{\sigma_{u}}{2}\left(\frac{1}{\sigma_{s}}+\frac{(1-\lambda_{A,1}\beta_{A,1})^{2}}{\sigma_{A}}\right)\left(\mathrm{E}\left[s|f\right]^{2}+\mathrm{Var}\left[s|f\right]\right)+\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}\lambda_{A,1}^{2}\sigma_{u}^{2}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The updated skill estimate is
+\begin_inset Formula 
+\begin{align*}
+\mathrm{E}[s|f] & =\mathrm{E}[s|\beta_{A,1}s+\eta]=\gamma(x_{A,1}+\eta)
+\end{align*}
+
+\end_inset
+
+with 
+\begin_inset Formula 
+\[
+\gamma=\frac{\beta_{A,1}\sigma_{s}^{2}}{\beta_{A,1}^{2}\sigma_{s}^{2}+\sigma_{\eta}^{2}},
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula $\mathrm{Var}[s|f]=\frac{\sigma_{\eta}^{2}\sigma_{s}^{2}}{\beta_{A,1}^{2}\sigma_{s}^{2}+\sigma_{\eta}^{2}}$
+\end_inset
+
+.
+ Thus,
+ 
+\begin_inset Formula 
+\[
+\mathrm{E}[s^{2}|f]=\mathrm{E}\left[s|f\right]^{2}+\mathrm{Var}\left[s|f\right]=\frac{\sigma_{\eta}^{2}\sigma_{s}^{2}}{\beta_{A,1}^{2}\sigma_{s}^{2}+\sigma_{\eta}^{2}}+\gamma^{2}(x_{A,1}+\eta)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Period 1
+\end_layout
+
+\begin_layout Subsubsection
+Financial Market
+\end_layout
+
+\begin_layout Itemize
+At the beginning of 
+\begin_inset Formula $t=1$
+\end_inset
+
+,
+ the manager's expected payoff is 
+\begin_inset Formula 
+\[
+\phi\mathrm{E}[\sum_{t=1,2}\pi_{A,t}+M_{1}+\pi_{B,2}+M_{2}|s].
+\]
+
+\end_inset
+
+At this stage,
+ 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ is already fixed,
+ and 
+\begin_inset Formula $\pi_{B,2}$
+\end_inset
+
+ is independent of her period-1 trading strategy 
+\begin_inset Formula $x_{A,1}$
+\end_inset
+
+ (see [
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pib2"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+]).
+ However,
+ 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\pi_{A,2}$
+\end_inset
+
+ depend on 
+\begin_inset Formula $x_{A,1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+By focusing on terms related to 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+,
+ the manager maximizes the following expected profit in 
+\begin_inset Formula $t=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\max_{x_{A,1}}(s-\lambda_{A,1}x_{A,1})x_{A,1}+\theta\frac{\sigma_{u}}{2}\left(\frac{1}{\sigma_{s}}+\frac{(1-\lambda_{A,1}\beta_{A,1})^{2}}{\sigma_{A}}\right)\gamma^{2}x_{A,1}^{2}+\frac{1}{2}\frac{\sigma_{u}}{\sigma_{A}}(s-\lambda_{A,1}x_{A,1})^{2},
+\]
+
+\end_inset
+
+where the first term comes from the trading profit in 
+\begin_inset Formula $t=1$
+\end_inset
+
+,
+ the second term comes from 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+,
+ and the last term comes from 
+\begin_inset Formula $\pi_{A,2}$
+\end_inset
+
+.
+ The FOC is
+\begin_inset Formula 
+\[
+s-2\lambda_{A,1}x_{A,1}+\theta\sigma_{u}\left(\frac{1}{\sigma_{s}}+\frac{(1-\lambda_{A,1}\beta_{A,1})^{2}}{\sigma_{A}}\right)\gamma^{2}x_{A,1}-\lambda_{A,1}\frac{\sigma_{u}}{\sigma_{A}}(s-\lambda_{A,1}x_{A,1})=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\therefore x_{A,1}=\frac{1-\lambda_{A,1}\frac{\sigma_{u}}{\sigma_{A}}}{2\lambda_{A,1}-\theta\sigma_{u}\left(\frac{1}{\sigma_{s}}+\frac{(1-\lambda_{A,1}\beta_{A,1})^{2}}{\sigma_{A}}\right)\gamma^{2}-\frac{\sigma_{u}}{\sigma_{A}}\lambda_{A,1}^{2}}s.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The market maker's pricing is standard,
+ leading to 
+\begin_inset Formula $\lambda_{A,1}=\frac{\beta_{A,1}\sigma_{s}^{2}}{\beta_{A,1}^{2}\sigma_{s}^{2}+\sigma_{u}^{2}}.$
+\end_inset
+
+ Hence,
+ 
+\begin_inset Formula 
+\[
+1-\lambda_{A,1}\beta_{A,1}=\frac{\sigma_{u}^{2}}{\beta_{A,1}^{2}\sigma_{s}^{2}+\sigma_{u}^{2}}
+\]
+
+\end_inset
+
+This leads to 
+\begin_inset Formula $\sigma_{A}^{2}=\sigma_{s}^{2}(1-\beta_{A,1}\lambda_{A,1})=\frac{\sigma_{s}^{2}\sigma_{u}^{2}}{\beta_{A,1}^{2}\sigma_{s}^{2}+\sigma_{u}^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Denote 
+\begin_inset Formula $\rho=\frac{\sigma_{u}}{\sigma_{s}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $b=\frac{\sigma_{\eta}}{\sigma_{s}}$
+\end_inset
+
+.
+ Also,
+ to focus on mathematical analyses,
+ we drop subscripts.
+ Then,
+ 
+\begin_inset Formula $\lambda=\frac{\beta}{\beta^{2}+\rho^{2}}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\sigma_{A}^{2}=\frac{\rho^{2}}{\beta^{2}+\rho^{2}}\sigma_{s}^{2},$
+\end_inset
+
+ 
+\begin_inset Formula $1-\lambda\beta=\frac{\rho^{2}}{\beta^{2}+\rho^{2}}$
+\end_inset
+
+,
+ and 
+\begin_inset Formula $\gamma=\frac{\beta}{\beta^{2}+b^{2}}$
+\end_inset
+
+.
+ The equilibrium trading strategy is determined by 
+\begin_inset Formula $\beta=F(\beta)$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\begin{align*}
+F & =\frac{1-\frac{\beta}{\beta^{2}+\rho^{2}}\frac{\sigma_{u}}{\sqrt{\frac{\rho^{2}}{\beta^{2}+\rho^{2}}\sigma_{s}^{2}}}}{2\frac{\beta}{\beta^{2}+\rho^{2}}-\theta\sigma_{u}\left(\frac{1}{\sigma_{s}}+\frac{\left(\frac{\rho^{2}}{\beta^{2}+\rho^{2}}\right)^{2}}{\sqrt{\frac{\rho^{2}}{\beta^{2}+\rho^{2}}\sigma_{s}^{2}}}\right)\left(\frac{\beta}{\beta^{2}+b^{2}}\right)^{2}-\frac{\sigma_{u}}{\sqrt{\frac{\rho^{2}}{\beta^{2}+\rho^{2}}\sigma_{s}^{2}}}\left(\frac{\beta}{\beta^{2}+\rho^{2}}\right)^{2}}\\
+ & =\frac{1-\sqrt{\beta^{2}+\rho^{2}}\frac{\beta}{\beta^{2}+\rho^{2}}}{2\frac{\beta}{\beta^{2}+\rho^{2}}-\theta\rho\left(1+\frac{\sqrt{\beta^{2}+\rho^{2}}}{\rho}\left(\frac{\rho^{2}}{\beta^{2}+\rho^{2}}\right)^{2}\right)\left(\frac{\beta}{\beta^{2}+b^{2}}\right)^{2}-\sqrt{\beta^{2}+\rho^{2}}\left(\frac{\beta}{\beta^{2}+\rho^{2}}\right)^{2}}
+\end{align*}
+
+\end_inset
+
+Denote 
+\begin_inset Formula $z=\beta/\rho$
+\end_inset
+
+ so that 
+\begin_inset Formula 
+\begin{align*}
+z & =F/\rho=\frac{1-\sqrt{\beta^{2}+\rho^{2}}\frac{\beta}{\beta^{2}+\rho^{2}}}{2\frac{\beta\rho}{\beta^{2}+\rho^{2}}-\theta\rho^{2}\left(1+\frac{\sqrt{\beta^{2}+\rho^{2}}}{\rho}\left(\frac{\rho^{2}}{\beta^{2}+\rho^{2}}\right)^{2}\right)\left(\frac{\beta}{\beta^{2}+b^{2}}\right)^{2}-\rho\sqrt{\beta^{2}+\rho^{2}}\left(\frac{\beta}{\beta^{2}+\rho^{2}}\right)^{2}}\\
+ & =\frac{1-\sqrt{z^{2}+1}\frac{z}{z^{2}+1}}{2\frac{z}{z^{2}+1}-\theta\left(1+\sqrt{z^{2}+1}\left(\frac{1}{z^{2}+1}\right)^{2}\right)\left(\frac{z}{z^{2}+\kappa^{2}}\right)^{2}-\sqrt{z^{2}+1}\left(\frac{z}{z^{2}+1}\right)^{2}}
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\kappa=b/\rho=\sigma_{\eta}/\sigma_{u}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Proof
+\end_layout
+
+\begin_layout Standard
+Fixed point problem is given by 
+\begin_inset Formula 
+\begin{align*}
+z & =F(z)\equiv\frac{1-\sqrt{z^{2}+1}\frac{z}{z^{2}+1}}{2\frac{z}{z^{2}+1}-\theta\left(1+\sqrt{z^{2}+1}\left(\frac{1}{z^{2}+1}\right)^{2}\right)\left(\frac{z}{z^{2}+\kappa^{2}}\right)^{2}-\sqrt{z^{2}+1}\left(\frac{z}{z^{2}+1}\right)^{2}}.
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ are positive parameters.
+ Also,
+ 
+\begin_inset Formula $z>0$
+\end_inset
+
+.
+ Rearranging it with respect to 
+\begin_inset Formula $\theta$
+\end_inset
+
+,
+ it becomes 
+\begin_inset Formula 
+\[
+\theta=G(z)\equiv\frac{(z^{2}+\kappa^{2})^{2}\left[z^{4}-1+z\left(z^{2}+1\right)^{\frac{1}{2}}\right]}{z^{3}(z^{2}+1)^{2}\left(1+\left(z^{2}+1\right)^{-\frac{3}{2}}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Firstly,
+ we focus on 
+\begin_inset Formula $z$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+A(z)=z^{4}-1+z\left(z^{2}+1\right)^{\frac{1}{2}}>0.
+\]
+
+\end_inset
+
+Otherwise,
+ there is no solution.
+ 
+\begin_inset Formula $A(z)$
+\end_inset
+
+ is monotonically increasing in 
+\begin_inset Formula $z$
+\end_inset
+
+ and 
+\begin_inset Formula $A(z)=0$
+\end_inset
+
+ has a unique solution 
+\begin_inset Formula $z_{0}\approx0.66$
+\end_inset
+
+.
+ Hence,
+ there is no solution to the fixed point problem,
+ and we focus on 
+\begin_inset Formula $z>z_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Secondly,
+ consider 
+\begin_inset Formula 
+\[
+\frac{dG}{dz}\propto g(z)=T(z)-\kappa^{2}S(z),
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+T(z)/z^{2}=z^{6}+5z^{4}+3z^{2}-1+\left[-z^{5}+4z^{4}+z^{3}+z^{2}+2z-1\right]\left(z^{2}+1\right)^{-\frac{1}{2}}+2z
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+S(z)=3z^{6}-z^{4}-7z^{2}+2z-3+\left[5z^{5}+7z^{3}-z^{2}+2z-3\right]\left(z^{2}+1\right)^{-\frac{1}{2}}.
+\]
+
+\end_inset
+
+As we know 
+\begin_inset Formula $z>z_{0}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $5z^{4}>\left(z^{2}+1\right)^{-\frac{1}{2}}z^{5}$
+\end_inset
+
+ and 
+\begin_inset Formula $2z>1$
+\end_inset
+
+.
+ Therefore,
+ all negative terms in 
+\begin_inset Formula $T(z)/z^{2}$
+\end_inset
+
+ are more than offset by other terms,
+ so that 
+\begin_inset Formula $T(z)>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Moreover,
+ 
+\begin_inset Formula 
+\begin{align*}
+\frac{dS(z)}{dz} & =2z(9z^{2}+7)(z^{4}-1)+2+\left\{ 20z^{6}+39z^{4}-z^{3}+21z^{2}+z+2\right\} \left(z^{2}+1\right)^{-\frac{1}{2}}\\
+ & >-2z(9z^{2}+7)z(1+z^{2})^{\frac{1}{2}}+2+\left\{ 20z^{6}+39z^{4}-z^{3}+21z^{2}+z+2\right\} \left(z^{2}+1\right)^{-\frac{1}{2}}\\
+ & \propto-2z^{2}(9z^{2}+7)(1+z^{2})+2(1+z^{2})^{\frac{1}{2}}+\left\{ 20z^{6}+39z^{4}-z^{3}+21z^{2}+z+2\right\} \\
+ & =2z^{6}+7z^{4}-z^{3}+7z^{2}+z+2+2(1+z^{2})^{\frac{1}{2}}\\
+ & >0,
+\end{align*}
+
+\end_inset
+
+where the first and the last inequalities come from 
+\begin_inset Formula $A(z)>0$
+\end_inset
+
+ (and thus 
+\begin_inset Formula $z>z_{0}>0.6$
+\end_inset
+
+).
+ Thus,
+ 
+\begin_inset Formula $S(z)$
+\end_inset
+
+ is monotonically increasing in 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ Also,
+ evaluating at 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+,
+ 
+\begin_inset Formula 
+\begin{align*}
+S(z_{0}) & =-2z_{0}^{7}-3z_{0}^{5}+z_{0}^{3}(z_{0}-2)+(z_{0}^{2}-3)+z_{0}(z_{0}-1)\\
+ & <0,
+\end{align*}
+
+\end_inset
+
+where we apply 
+\begin_inset Formula $A(z_{0})=0$
+\end_inset
+
+,
+ and the last inequality is due to 
+\begin_inset Formula $z_{0}<1$
+\end_inset
+
+.
+ It is also easy to check 
+\begin_inset Formula $\lim_{z\rightarrow\infty}S(z)=\infty>0$
+\end_inset
+
+.
+ Therefore,
+ 
+\begin_inset Formula $S(z)=0$
+\end_inset
+
+ has a unique solution in 
+\begin_inset Formula $z>z_{0}$
+\end_inset
+
+,
+ which we denote by 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Finally,
+ we want to characterize the behavior of 
+\begin_inset Formula $H(z)\equiv\frac{T(z)}{S(z)}$
+\end_inset
+
+.
+ Namely,
+ if 
+\begin_inset Formula $z_{0}<z<z_{1}$
+\end_inset
+
+,
+ then 
+\begin_inset Formula $S<0$
+\end_inset
+
+,
+ and thus 
+\begin_inset Formula $G'(z)>0$
+\end_inset
+
+,
+ i.e.,
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ is monotonically increasing in 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $z_{1}\le z$
+\end_inset
+
+,
+ 
+\begin_inset Formula $G'(z)>0$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $\frac{T(z)}{S(z)}=H(z)>\kappa^{2}$
+\end_inset
+
+,
+ while 
+\begin_inset Formula $G'(z)<0$
+\end_inset
+
+ otherwise.
+ Since 
+\begin_inset Formula $S(z)\rightarrow0$
+\end_inset
+
+ as 
+\begin_inset Formula $z\rightarrow z_{1}$
+\end_inset
+
+,
+ we have 
+\begin_inset Formula $H(z)\rightarrow\infty$
+\end_inset
+
+ as 
+\begin_inset Formula $z\rightarrow z_{1}$
+\end_inset
+
+.
+ Also,
+ due to the L'Hopital's theorem,
+ 
+\begin_inset Formula $H(z)\rightarrow\infty$
+\end_inset
+
+ as 
+\begin_inset Formula $z\rightarrow\infty$
+\end_inset
+
+.
+ Thus,
+ 
+\begin_inset Formula $H$
+\end_inset
+
+ takes a globally U-shaped curve.
+ Note that 
+\begin_inset Formula $H'(z)=\frac{W(z)}{S(z)^{2}}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $W(z)=T'(z)S(z)-T(z)S'(z)$
+\end_inset
+
+ and is summrized as
+\begin_inset Formula 
+\[
+W(z)=\frac{2z(p(z)+q(z)u)}{(z^{2}+1)^{2}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $u=\sqrt{z^{2}+1}$
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{aligned}
+\end_layout
+
+\begin_layout Plain Layout
+
+p(z)={}&3z^{16}+4z^{14}-41z^{12}+8z^{11}-167z^{10}+74z^{9}-285z^{8}+134z^{7}-274z^{6}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+58z^{5}-127z^{4}-30z^{3}-7z^{2}-20z+6,
+\backslash
+
+\backslash
+[4pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+q(z)={}&10z^{13}-6z^{12}+50z^{11}-10z^{10}+110z^{9}-80z^{8}+136z^{7}-170z^{6}+70z^{5}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&-110z^{4}-20z^{3}-10z^{2}-20z+6.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{aligned}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+To analyze the solution to 
+\begin_inset Formula $p(z)+uq(z)=0$
+\end_inset
+
+,
+ consider 
+\begin_inset Formula $B(z)=p^{2}-u^{2}q^{2}=z^{4}(z^{2}+1)\Lambda(z)$
+\end_inset
+
+,
+ where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{aligned}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Lambda(z)={}&9z^{26}+15z^{24}-345z^{22}+168z^{21}-2121z^{20}+1260z^{19}-5100z^{18}+4200z^{17}-4666z^{16}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+7632z^{15}+8635z^{14}+7980z^{13}+37205z^{12}+7464z^{11}+58034z^{10}+9900z^{9}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+46962z^{8}+9960z^{7}+19926z^{6}+5580z^{5}+3780z^{4}+1908z^{3}-135z^{2}+396z-135.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{aligned}
+\end_layout
+
+\begin_layout Plain Layout
+
+$$
+\end_layout
+
+\end_inset
+
+From Sturm's theorem,
+ 
+\begin_inset Formula $\Lambda=0$
+\end_inset
+
+ has at most three solutions.
+ Also,
+ we can check that 
+\begin_inset Formula $\Lambda(0)<0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\Lambda(1/2)>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\Lambda(3/2)>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\Lambda(2)<0$
+\end_inset
+
+,
+ and 
+\begin_inset Formula $\Lambda(3)>0$
+\end_inset
+
+.
+ Hence,
+ 
+\begin_inset Formula $\Lambda=0$
+\end_inset
+
+ has three solutions 
+\begin_inset Formula $l_{0},l_{1},l_{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $0<l_{0}<1/2$
+\end_inset
+
+ and 
+\begin_inset Formula $3/2<l_{1}<2<l_{2}<3$
+\end_inset
+
+ hold.
+ Note that these solutions make 
+\begin_inset Formula $B=0$
+\end_inset
+
+,
+ while 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ must have the opposing sign when 
+\begin_inset Formula $W=0$
+\end_inset
+
+.
+ This is achieved only by 
+\begin_inset Formula $z_{m}=l_{1}$
+\end_inset
+
+ (
+\begin_inset Formula $l_{0}<z_{0}$
+\end_inset
+
+,
+ and 
+\begin_inset Formula $l_{2}$
+\end_inset
+
+ makes sign
+\begin_inset Formula $p=$
+\end_inset
+
+sign
+\begin_inset Formula $q$
+\end_inset
+
+).
+ Hence,
+ we conclude that 
+\begin_inset Formula $G$
+\end_inset
+
+ has a uniqe local minimum at 
+\begin_inset Formula $z=z_{m}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In summary,
+ we have the following result:
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\frac{\sigma_{\eta}^{2}}{\sigma_{u}^{2}}\le H_{m}\equiv H(z_{m})$
+\end_inset
+
+,
+ then 
+\begin_inset Formula $G$
+\end_inset
+
+ is monotonically increasing in 
+\begin_inset Formula $z$
+\end_inset
+
+ for all 
+\begin_inset Formula $z>z_{0}$
+\end_inset
+
+.
+ Thus,
+ there is a unique solution to the fixed point problem.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\frac{\sigma_{\eta}^{2}}{\sigma_{u}^{2}}>H_{m}$
+\end_inset
+
+,
+ then 
+\begin_inset Formula $H(z)=\kappa^{2}$
+\end_inset
+
+ has two solutions,
+ 
+\begin_inset Formula $z_{h}$
+\end_inset
+
+ and 
+\begin_inset Formula $z_{l}(>z_{h})$
+\end_inset
+
+.
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ takes its local maximum 
+\begin_inset Formula $G_{h}=G(z_{h})$
+\end_inset
+
+ at 
+\begin_inset Formula $z_{h}$
+\end_inset
+
+ and its local minimum 
+\begin_inset Formula $G_{l}=G(z_{l})$
+\end_inset
+
+ at 
+\begin_inset Formula $z_{l}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\theta<\text{\underbar{\ensuremath{\theta}}}\equiv G_{l}$
+\end_inset
+
+,
+ then the low-
+\begin_inset Formula $\beta$
+\end_inset
+
+ equilibrium is a unique solution;
+ if 
+\begin_inset Formula $\text{\underbar{\ensuremath{\theta}}}<\theta<\bar{\theta}\equiv G_{h}$
+\end_inset
+
+,
+ then the low- and high-
+\begin_inset Formula $\beta$
+\end_inset
+
+ equilibria coexist;
+ if 
+\begin_inset Formula $\bar{\theta}<\theta$
+\end_inset
+
+,
+ then the high-
+\begin_inset Formula $\beta$
+\end_inset
+
+ equilibrium is a uniqe solution.
+\end_layout
+
+\end_body
+\end_document
